@@ -329,4 +329,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Construire le quiz au chargement de la page
     buildQuiz();
+
 });
