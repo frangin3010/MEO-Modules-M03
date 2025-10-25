@@ -268,7 +268,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     explication: "LOL",
                     page: "N/A"
                 }
-        ]},
+            ]
+        }
     };
 
     // --- LOGIQUE DE L'APPLICATION ---
@@ -494,5 +495,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialisation au chargement de la page ---
     populateDropdown();
 });
+
 
 
