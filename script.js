@@ -243,20 +243,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // --- LOGIQUE DE L'APPLICATION ---
 document.addEventListener('DOMContentLoaded', () => {
+
+    // --- Références aux éléments HTML ---
+    const quizSelect = document.getElementById('quiz-select');
+    const quizContent = document.getElementById('quiz-content');
+    const initialMessage = document.getElementById('initial-message');
+    const courseTitle = document.getElementById('course-title');
     const quizContainer = document.getElementById('quiz-container');
     const submitBtn = document.getElementById('submit-btn');
     const resultContainer = document.getElementById('result-container');
     const historyScoresContainer = document.getElementById('history-scores');
     const userInput = document.getElementById('user-name');
-    const HISTORY_KEY = 'multiUserQuizHistory_MEO_M03'; // Clé unique pour le registre de ce cours
-    const MAX_HISTORY = 5; // On garde les 5 derniers scores par utilisateur
+    const MAX_HISTORY = 5;
 
-    let currentSection = "";
+    // --- Variables d'état pour suivre le quiz actuel ---
+    let currentQuizData = [];
+    let currentModuleId = '';
 
-    // --- Fonctions pour gérer l'historique multi-utilisateurs ---
+    // --- Fonctions de gestion de l'historique (maintenant dépendantes du module) ---
+    function getHistoryKey() {
+        // Crée une clé unique pour chaque module, ex: "multiUserQuizHistory_M03"
+        return `multiUserQuizHistory_${currentModuleId}`;
+    }
+
     function getFullHistory() {
         try {
-            const history = localStorage.getItem(HISTORY_KEY);
+            const history = localStorage.getItem(getHistoryKey());
             return history ? JSON.parse(history) : {};
         } catch (e) {
             console.error("Erreur lors de la lecture de l'historique :", e);
@@ -265,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function saveScore(userName, score) {
-        if (!userName || userName.trim() === '') return;
+        if (!userName || userName.trim() === '' || !currentModuleId) return;
         const fullHistory = getFullHistory();
         if (!fullHistory[userName]) {
             fullHistory[userName] = [];
@@ -274,24 +286,26 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const newEntry = {
             score: score,
-            total: quizData.length,
+            total: currentQuizData.length,
             date: new Date().toLocaleString('fr-FR')
         };
-        userHistory.unshift(newEntry);
+        userHistory.unshift(newEntry); // Ajoute le nouveau score au début
         if (userHistory.length > MAX_HISTORY) {
-            userHistory.pop();
+            userHistory.pop(); // Supprime le plus ancien si on dépasse la limite
         }
         
-        localStorage.setItem(HISTORY_KEY, JSON.stringify(fullHistory));
+        localStorage.setItem(getHistoryKey(), JSON.stringify(fullHistory));
     }
 
     function loadUserHistory(userName) {
+        historyScoresContainer.innerHTML = '';
+        if (!currentModuleId) return;
+
         const fullHistory = getFullHistory();
         const userHistory = (userName && fullHistory[userName]) ? fullHistory[userName] : [];
         
-        historyScoresContainer.innerHTML = '';
         if (userHistory.length === 0) {
-            historyScoresContainer.innerHTML = `<p>Aucune tentative enregistrée pour ${userName ? `<strong>${userName}</strong>` : 'cet utilisateur'}.</p>`;
+            historyScoresContainer.innerHTML = `<p>Aucune tentative pour <strong>${userName || 'cet utilisateur'}</strong> sur ce module.</p>`;
             return;
         }
         userHistory.forEach(entry => {
@@ -314,9 +328,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function buildQuiz() {
-        currentSection = "";
+        let currentSection = "";
         quizContainer.innerHTML = '';
-        quizData.forEach((item, index) => {
+        currentQuizData.forEach((item, index) => {
             if (item.section && item.section !== currentSection) {
                 currentSection = item.section;
                 const sectionTitle = document.createElement('h2');
@@ -359,7 +373,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const userName = userInput.value.trim();
         let score = 0;
         
-        quizData.forEach((item, index) => {
+        currentQuizData.forEach((item, index) => {
             const questionBlock = document.getElementById('question-' + index);
             const selectedOption = questionBlock.querySelector(`input[name="question${index}"]:checked`);
             
@@ -391,7 +405,7 @@ document.addEventListener('DOMContentLoaded', () => {
             questionBlock.appendChild(explanation);
         });
 
-        resultContainer.innerHTML = `Votre score : ${score} / ${quizData.length}`;
+        resultContainer.innerHTML = `Votre score : ${score} / ${currentQuizData.length}`;
         saveScore(userName, score);
         loadUserHistory(userName);
         submitBtn.textContent = "Réessayer le quiz";
@@ -403,7 +417,40 @@ document.addEventListener('DOMContentLoaded', () => {
         buildQuiz();
     }
 
-    // --- Gestionnaires d'événements ---
+    // --- Logique principale de l'application ---
+    function populateDropdown() {
+        for (const moduleId in allQuizzes) {
+            const option = document.createElement('option');
+            option.value = moduleId;
+            option.textContent = allQuizzes[moduleId].title;
+            quizSelect.appendChild(option);
+        }
+    }
+
+    function loadModule(moduleId) {
+        if (moduleId && allQuizzes[moduleId]) {
+            currentModuleId = moduleId;
+            currentQuizData = allQuizzes[moduleId].questions;
+            courseTitle.textContent = allQuizzes[moduleId].title;
+            
+            initialMessage.style.display = 'none';
+            quizContent.style.display = 'block';
+            
+            resetQuiz();
+            loadUserHistory(userInput.value.trim());
+        } else {
+            currentModuleId = '';
+            currentQuizData = [];
+            initialMessage.style.display = 'block';
+            quizContent.style.display = 'none';
+        }
+    }
+
+    // --- Écouteurs d'événements ---
+    quizSelect.addEventListener('change', (e) => {
+        loadModule(e.target.value);
+    });
+    
     submitBtn.addEventListener('click', () => {
         if (submitBtn.textContent === "Réessayer le quiz") {
             resetQuiz();
@@ -413,12 +460,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     userInput.addEventListener('input', () => {
-        const userName = userInput.value.trim();
-        loadUserHistory(userName);
+        loadUserHistory(userInput.value.trim());
     });
 
-    // --- Initialisation au chargement ---
-    buildQuiz();
-    loadUserHistory(userInput.value.trim());
+    // --- Initialisation au chargement de la page ---
+    populateDropdown();
 });
-
