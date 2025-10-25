@@ -257,19 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         }
         // Vous pourrez ajouter 'M05', etc. ici
-        'M05':{
-            title: 'MEO-M05 : Just to see',
-            questions: [
-                {
-                    section:"Concepts de base",
-                    question:"Qui suis-je?",
-                    options :{a:"Blablabla", b:"Blobloblo", c:"Bliblibli", d:"Blebleble"},
-                    reponse: "c",
-                    explication: "LOL",
-                    page: "N/A"
-                }
-            ]
-        }
+     
     };
 
     // --- LOGIQUE DE L'APPLICATION ---
@@ -495,6 +483,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialisation au chargement de la page ---
     populateDropdown();
 });
+
 
 
 
