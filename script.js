@@ -662,6 +662,109 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             ]
         },
+
+        //Module 06
+
+'M06': {
+            title: 'MEO-M06 : Systèmes de Management (Qualité, Env., SST)',
+            questions: [
+                {
+                    section: "Chapitre 1 : Le Système de Management de la Qualité (SMQ)",
+                    question: "Selon le cours, quelle est la définition principale de la qualité ?",
+                    options: { a: "Un produit de luxe à un prix élevé", b: "La conformité d'un produit ou service aux attentes implicites et explicites d'un client", c: "L'absence totale de défauts, quel qu'en soit le coût", d: "La rapidité de production avant tout" },
+                    reponse: "b",
+                    explication: "La qualité est définie comme 'la conformité d'un produit, d'un service, d'une organisation par rapport aux attentes implicites et explicites d'un client'.",
+                    page: "SMQ-2"
+                },
+                {
+                    question: "Quel est l'objectif premier d'une démarche qualité ?",
+                    options: { a: "Augmenter les salaires du personnel", b: "Obtenir une certification pour l'image", c: "Améliorer sans cesse les performances d'une structure", d: "Réduire le nombre de clients pour mieux les servir" },
+                    reponse: "c",
+                    explication: "Une démarche qualité a pour objectif premier d'améliorer sans cesse les performances d'une structure.",
+                    page: "SMQ-5"
+                },
+                {
+                    question: "Le principe de l'orientation client implique pour l'organisme de :",
+                    options: { a: "Ignorer les mécontentements pour ne garder que les bons clients", b: "Imposer ses produits aux clients", c: "Travailler sur les attentes des clients, les identifier et même les prévoir", d: "Répondre uniquement aux attentes explicites" },
+                    reponse: "c",
+                    explication: "Pour renforcer son orientation client, l'organisme doit travailler sur les attentes de ses clients : les identifier (et même les prévoir) et tout mettre en œuvre pour y répondre.",
+                    page: "SMQ-11"
+                },
+                {
+                    question: "La 'roue de Deming', ou cycle PDCA, est un outil pour :",
+                    options: { a: "L'analyse financière", b: "L'amélioration continue", c: "La gestion des ressources humaines", d: "La définition de la stratégie initiale" },
+                    reponse: "b",
+                    explication: "Le principe de l'amélioration continue est souvent représenté par un cycle d'actions, appelé 'roue de Deming' ou cycle PDCA : Plan, Do, Check, Act.",
+                    page: "SMQ-15"
+                },
+                {
+                    section: "Chapitre 2 : Le Système de Management de l'Environnement (SME)",
+                    question: "Quel est l'objectif principal d'un Système de Management Environnemental (SME) ?",
+                    options: { a: "Payer des amendes pour pouvoir polluer légalement", b: "Faciliter la gestion d'une entité pour estimer, réduire et maîtriser ses impacts sur l'environnement", c: "Augmenter la consommation d'énergie pour produire plus", d: "Uniquement rédiger un rapport annuel sur l'environnement" },
+                    reponse: "b",
+                    explication: "L'objectif du SME est de faciliter la gestion d'une entité et de lui permettre de s'organiser efficacement de façon à estimer, réduire et maîtriser ses impacts sur l'environnement.",
+                    page: "SME-4"
+                },
+                {
+                    question: "Quelle norme internationale prescrit les exigences relatives à un système de management environnemental ?",
+                    options: { a: "ISO 9001", b: "ISO 45001", c: "ISO 14001", d: "ISO 27001" },
+                    reponse: "c",
+                    explication: "La norme ISO 14001 prescrit les exigences relatives à l'élaboration, la mise en œuvre, la mise à jour et l'évaluation d'un système de management environnemental.",
+                    page: "SME-2"
+                },
+                {
+                    question: "Lequel de ces éléments est un avantage direct de la mise en place d'un SME ?",
+                    options: { a: "L'augmentation garantie des ventes", b: "La simplification des processus de production", c: "La réduction des consommations d'énergie, d'eau et de matières premières", d: "L'élimination totale des risques" },
+                    reponse: "c",
+                    explication: "Parmi les avantages du SME, on trouve : maîtriser les risques sur l'environnement, réduire les consommations d'énergie, d'eau, de matières premières et maîtriser les coûts.",
+                    page: "SME-12"
+                },
+                {
+                    section: "Chapitre 3 : Le Système de Management de la Santé et Sécurité au Travail (SMSST)",
+                    question: "Quel est le double objectif d'une démarche de prévention en Santé et Sécurité au Travail (SST) ?",
+                    options: { a: "Augmenter la vitesse et la quantité de production", b: "Diminuer le nombre et la gravité des accidents, incidents et maladies professionnelles", c: "Réduire les salaires et les effectifs", d: "Satisfaire uniquement les exigences légales minimales" },
+                    reponse: "b",
+                    explication: "L'objectif est la diminution des accidents, incidents et maladies professionnelles en nombre et en gravité.",
+                    page: "SMSST-4"
+                },
+                {
+                    question: "La norme ISO 45001 vise à aider les organisations à :",
+                    options: { a: "Améliorer la qualité de leurs produits", b: "Réduire leur impact environnemental", c: "Améliorer la sécurité de leurs employés et réduire les risques sur le lieu de travail", d: "Sécuriser leurs systèmes d'information" },
+                    reponse: "c",
+                    explication: "ISO 45001 est la norme élaborée par l'ISO pour les organisations soucieuses d'améliorer la sécurité de leurs employés, de réduire les risques sur le lieu de travail et de créer des conditions de travail meilleures et plus sûres.",
+                    page: "SMSST-8"
+                },
+                {
+                    question: "Un SMSST est une démarche qui doit être :",
+                    options: { a: "Imposée par la force et sans explication", b: "Statique et ne jamais évoluer", c: "Participative et collaborative, impliquant tous les acteurs de l'entreprise", d: "Gérée uniquement par le directeur, sans impliquer les autres niveaux" },
+                    reponse: "c",
+                    explication: "Le schéma de développement d'un SMSST s'inscrit dans une dynamique de changement qui requiert de la pédagogie, une démarche participative et collaborative.",
+                    page: "SMSST-12"
+                },
+                {
+                    section: "Chapitre 4 : Le Système de Management de la Sécurité de l'Information (SMSI)",
+                    question: "Que permet principalement un Système de Management de la Sécurité de l'Information (SMSI) ?",
+                    options: { a: "Augmenter la vitesse des réseaux informatiques", b: "Gérer les risques relatifs à l'information au moyen de processus", c: "Archiver toutes les données de l'entreprise", d: "Contrôler l'utilisation d'internet par les employés" },
+                    reponse: "b",
+                    explication: "Le Système de Management de la Sécurité de l'Information (SMSI) permet de gérer les risques relatifs à l'information au moyen de processus, et définit les différentes responsabilités.",
+                    page: "SMSI-4"
+                },
+                {
+                    question: "La norme de référence pour la mise en place d'un SMSI est :",
+                    options: { a: "ISO 9001", b: "ISO 14001", c: "ISO 45001", d: "ISO/IEC 27001" },
+                    reponse: "d",
+                    explication: "La norme ISO/IEC 27001 fournit aux entreprises... des lignes directrices pour l'établissement, la mise en œuvre... d'un système de management de la sécurité de l'information.",
+                    page: "SMSI-4"
+                },
+                {
+                    question: "Quels sont les trois objectifs fondamentaux de la sécurité de l'information (triade DIC) ?",
+                    options: { a: "Données, Intégrité, Communication", b: "Disponibilité, Intégrité, Confidentialité", c: "Données, Informatique, Communication", d: "Disponibilité, Information, Contrôle" },
+                    reponse: "b",
+                    explication: "Les objectifs sont : L'intégrité (garantir que les données sont correctes), La disponibilité (maintenir le bon fonctionnement), La confidentialité (rendre l'information inintelligible aux personnes non autorisées).",
+                    page: "SMSI-10"
+                }
+            ]
+        },
         
         // Vous pourrez ajouter 'M05', etc. ici
      
@@ -890,6 +993,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialisation au chargement de la page ---
     populateDropdown();
 });
+
 
 
 
