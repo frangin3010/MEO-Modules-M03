@@ -232,10 +232,15 @@ const quizData = [
 
 // --- LOGIQUE DE L'APPLICATION ---
 document.addEventListener('DOMContentLoaded', () => {
-    // ... (les références aux éléments HTML restent les mêmes)
+    const quizContainer = document.getElementById('quiz-container');
+    const submitBtn = document.getElementById('submit-btn');
+    const resultContainer = document.getElementById('result-container');
+    const historyScoresContainer = document.getElementById('history-scores');
     const userInput = document.getElementById('user-name');
-    const HISTORY_KEY = 'multiUserQuizHistory_MEO_M03'; // Clé unique pour le registre
-    const MAX_HISTORY = 5;
+    const HISTORY_KEY = 'multiUserQuizHistory_MEO_M03'; // Clé unique pour le registre de ce cours
+    const MAX_HISTORY = 5; // On garde les 5 derniers scores par utilisateur
+
+    let currentSection = "";
 
     // --- Fonctions pour gérer l'historique multi-utilisateurs ---
     function getFullHistory() {
@@ -243,10 +248,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function saveScore(userName, score) {
-        if (!userName) return; // Ne rien sauvegarder si le nom est vide
+        if (!userName || userName.trim() === '') return;
         const fullHistory = getFullHistory();
         if (!fullHistory[userName]) {
-            fullHistory[userName] = []; // Crée une entrée pour le nouvel utilisateur
+            fullHistory[userName] = [];
         }
         const userHistory = fullHistory[userName];
         
@@ -265,69 +270,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function loadUserHistory(userName) {
         const fullHistory = getFullHistory();
-        const userHistory = fullHistory[userName] || [];
+        const userHistory = (userName && fullHistory[userName]) ? fullHistory[userName] : [];
         
-        const historyScoresContainer = document.getElementById('history-scores');
         historyScoresContainer.innerHTML = '';
         if (userHistory.length === 0) {
             historyScoresContainer.innerHTML = `<p>Aucune tentative enregistrée pour ${userName || 'cet utilisateur'}.</p>`;
-            return;
-        }
-        userHistory.forEach(entry => {
-            const scoreCard = document.createElement('div');
-            scoreCard.className = 'score-card';
-            scoreCard.innerHTML = `
-                <span class="score-value">${entry.score} / ${entry.total}</span>
-                <span class="score-date">${entry.date}</span>
-            `;
-            historyScoresContainer.appendChild(scoreCard);
-        });
-    }
-
-    function showResults() {
-        const userName = userInput.value.trim();
-        let score = 0;
-        // ... (la logique de calcul du score et d'affichage des corrections est inchangée)
-        
-        quizData.forEach((item, index) => {
-             const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
-             if (selectedOption && selectedOption.value === item.reponse) {
-                score++;
-             }
-        });
-        
-        document.getElementById('result-container').innerHTML = `Votre score : ${score} / ${quizData.length}`;
-        saveScore(userName, score); // On sauvegarde le score POUR L'UTILISATEUR ACTUEL
-        loadUserHistory(userName); // On rafraîchit son historique
-        document.getElementById('submit-btn').textContent = "Réessayer le quiz";
-    }
-
-    // --- NOUVELLE FONCTION DE RÉINITIALISATION ---
-    function resetQuiz() {
-        quizContainer.innerHTML = ''; // Vide le conteneur du quiz
-        resultContainer.innerHTML = ''; // Vide le conteneur du résultat
-        submitBtn.textContent = "Vérifier mes réponses"; // Remet le texte du bouton
-        buildQuiz(); // Reconstruit le quiz avec un nouvel ordre
-    }
-
-    submitBtn.addEventListener('click', () => {
-        // --- LOGIQUE DE BOUTON MISE À JOUR ---
-        if(submitBtn.textContent === "Réessayer le quiz") {
-            resetQuiz();
-        } else {
-            showResults();
-        }
-    });
-
-    buildQuiz();
-});
- // --- GESTIONNAIRE D'ÉVÉNEMENT POUR LE CHANGEMENT DE NOM ---
-    userInput.addEventListener('input', () => {
-        const userName = userInput.value.trim();
-        loadUserHistory(userName);
-    });
-
-    // --- Initialisation au chargement ---
-    buildQuiz();
-    loadUserHistory(userInput.value.trim()); // Charge l'historique pour le nom actuellement dans le champ
-});
