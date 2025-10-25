@@ -538,6 +538,131 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             ]
         },
+
+        //Module 05
+
+'M05': {
+            title: 'MEO-M05 : Notion de management',
+            questions: [
+                {
+                    section: "Chapitre 1 : Généralités du management",
+                    question: "D'après le cours, le management est défini comme :",
+                    options: { a: "L'ensemble des connaissances concernant l'organisation et la gestion des organisations", b: "L'art de faire tourner un cheval dans un manège", c: "Uniquement l'administration au sens de Fayol", d: "Une science exacte permettant de prédire les résultats" },
+                    reponse: "a",
+                    explication: "Le management est l'ensemble des connaissances concernant l'organisation et la gestion des organisations. Le mot vient de l'anglais 'manager' qui veut dire gérer, diriger.",
+                    page: 6
+                },
+                {
+                    question: "Quelles sont les deux finalités principales du management retenues dans le cours ?",
+                    options: { a: "La finalité politique et la finalité culturelle", b: "La finalité technologique et la finalité environnementale", c: "La finalité économique et la finalité sociale", d: "La finalité financière exclusive" },
+                    reponse: "c",
+                    explication: "Dans le management, on peut retenir une finalité économique (produire des biens/services) et sociale (création d'emplois et leur pérennité).",
+                    page: 7
+                },
+                {
+                    question: "Selon Henri Fayol, les 5 fonctions de l'administration (management) sont résumées par l'acronyme POCCC. Que signifie le 'P' ?",
+                    options: { a: "Planification", b: "Prévision", c: "Production", d: "Personnel" },
+                    reponse: "b",
+                    explication: "Henri Fayol décrit l'administration à partir de cinq éléments : Prévoyance, Organisation, Commandement, Coordination et Contrôle (POCCC).",
+                    page: 11
+                },
+                {
+                    question: "Quelle est la différence fondamentale entre l'efficacité et l'efficience ?",
+                    options: { a: "L'efficacité est d'atteindre l'objectif, l'efficience est de le faire en optimisant les ressources", b: "L'efficience est d'atteindre l'objectif, l'efficacité est de le faire en optimisant les ressources", c: "Il n'y a aucune différence, les deux termes sont synonymes", d: "L'efficacité concerne les objectifs à long terme, l'efficience les objectifs à court terme" },
+                    reponse: "a",
+                    explication: "On distingue efficacité et efficience : l'efficacité, qui consiste à atteindre l'objectif fixé ; l'efficience, qui consiste à atteindre cet objectif en optimisant les ressources mobilisées.",
+                    page: 12
+                },
+                {
+                    section: "Chapitre 2 : Évolution historique de la pensée managériale",
+                    question: "Le Taylorisme (ou Management Scientifique du Travail) repose sur quel principe majeur ?",
+                    options: { a: "L'autonomie totale des ouvriers", b: "La division verticale du travail (séparation conception/exécution)", c: "La polyvalence des tâches pour chaque employé", d: "La prise de décision par consensus" },
+                    reponse: "b",
+                    explication: "Le Taylorisme est fondé sur la division verticale du travail : Partager la responsabilité entre les ouvriers (exécution) et les dirigeants (conception, supervision).",
+                    page: 15
+                },
+                {
+                    question: "L'école des relations humaines, avec Elton Mayo, est née en réaction à :",
+                    options: { a: "L'école de la contingence", b: "L'école sociologique", c: "L'école de la prise de décision", d: "Aux excès du Taylorisme et à la déshumanisation du travail" },
+                    reponse: "d",
+                    explication: "L'école des relations humaines s'est développée en réaction aux excès du taylorisme qui dans sa recherche de la productivité a engendré des comportements contraires à ses objectifs.",
+                    page: 19
+                },
+                {
+                    question: "L'effet Hawthorne, mis en évidence par Elton Mayo, démontre que la productivité est influencée par :",
+                    options: { a: "Uniquement l'amélioration de l'éclairage", b: "Le niveau du salaire au rendement", c: "Des facteurs psychosociaux, comme le sentiment d'être observé et valorisé", d: "La stricte application des règles" },
+                    reponse: "c",
+                    explication: "Mayo en déduit que la simple connaissance par un individu qu'il est sujet d'observation modifie son comportement. C'est ce qu'on appelle « effet Hawthorne ».",
+                    page: 19
+                },
+                {
+                    question: "La Théorie Y de Douglas McGregor suppose que l'individu moyen :",
+                    options: { a: "Éprouve une aversion innée pour le travail", b: "Préfère être dirigé et éviter les responsabilités", c: "Peut considérer l'effort au travail comme aussi naturel que le jeu ou le repos", d: "Doit être contrôlé et menacé de sanctions pour être productif" },
+                    reponse: "c",
+                    explication: "La Théorie Y propose des hypothèses optimistes : L'effort au travail est aussi naturel que l'effort au jeu ou au plaisir du repos.",
+                    page: 21
+                },
+                {
+                    question: "Selon Rensis Likert, quel style de management est caractérisé par une confiance absolue envers les équipes et favorise les décisions collectives ?",
+                    options: { a: "Le style autoritaire exploiteur", b: "Le style autoritaire paternaliste", c: "Le style consultatif", d: "Le style participatif" },
+                    reponse: "d",
+                    explication: "Le style participatif : il est caractérisé par une confiance absolue envers les équipes de travail ce qui conduit à prendre des décisions collectives et à favoriser l'élaboration de rapports de coopération.",
+                    page: 23
+                },
+                {
+                    question: "La théorie de la contingence structurelle rompt avec les courants précédents en affirmant que :",
+                    options: { a: "Il existe une seule et unique meilleure façon d'organiser une entreprise ('one best way')", b: "La structure de l'entreprise est indépendante de son environnement", c: "Il n'y a pas de structure idéale, mais autant de 'best way' qu'il existe de contextes différents", d: "La motivation des employés est le seul facteur important" },
+                    reponse: "c",
+                    explication: "Les théories de la contingence se caractérisent par leur rupture avec... l'existence d'une seule forme structurelle meilleure... pour donner comme alternative le principe selon lequel il n'y a pas de structure d'organisation idéale, mais autant de « best way » qu'il existe de contextes différents.",
+                    page: 27
+                },
+                {
+                    section: "Chapitre 3 : Types et styles de management",
+                    question: "Quelle est la principale différence entre le management stratégique et le management opérationnel ?",
+                    options: { a: "Le stratégique concerne le court terme, l'opérationnel le long terme", b: "Le stratégique engage l'organisation sur le moyen/long terme, l'opérationnel concerne la gestion courante", c: "Le stratégique est géré par la hiérarchie intermédiaire, l'opérationnel par la direction générale", d: "Il n'y a pas de différence notable" },
+                    reponse: "b",
+                    explication: "Le management stratégique engage l'organisation sur le moyen et le long terme. Le management opérationnel concerne la gestion courante de l'entreprise... avec des objectifs fixés à court et moyen terme.",
+                    page: "32-33"
+                },
+                {
+                    question: "Le style de management directif est particulièrement adapté pour un collaborateur qui est :",
+                    options: { a: "Très expérimenté et autonome", b: "Compétent et très motivé", c: "Très inexpérimenté et peu autonome ('hésitant')", d: "Expert dans son domaine et force de proposition" },
+                    reponse: "c",
+                    explication: "Il est important d'être directif lorsque votre collaborateur a une très faible autonomie : il est très inexpérimenté dans sa fonction/mission, et il est ‘hésitant’.",
+                    page: 34
+                },
+                {
+                    question: "Lequel de ces principes est à la base du management participatif ?",
+                    options: { a: "La centralisation de toutes les décisions", b: "La limitation de la communication pour éviter les désaccords", c: "La délégation et la concertation pour rendre les collaborateurs autonomes", d: "L'imposition d'un mode de fonctionnement unique" },
+                    reponse: "c",
+                    explication: "Un des grands principes du management participatif est la délégation et la concertation : il faut rendre les collaborateurs autonomes, leur permettre de travailler à leur façon, les responsabiliser et les consulter.",
+                    page: 35
+                },
+                {
+                    section: "Chapitre 4 : Outils de management",
+                    question: "La méthode des '5, 10, 15, 30' est un outil qui sert à :",
+                    options: { a: "Calculer la rentabilité d'un projet", b: "Planifier le temps à accorder aux collaborateurs (par jour, semaine, mois, trimestre)", c: "Mesurer la satisfaction client", d: "Définir les objectifs stratégiques de l'entreprise" },
+                    reponse: "b",
+                    explication: "Cette méthode présente tout simplement le temps qu'il est conseillé d'accorder à vos collaborateurs. 5 minutes par jour, 10 minutes par semaine, 15 minutes par mois et 30 minutes par trimestre.",
+                    page: 38
+                },
+                {
+                    question: "La 'grille socio-dynamique' ou 'carte des acteurs' a pour principal objectif de :",
+                    options: { a: "Mesurer la performance financière des équipes", b: "Identifier le niveau d'adhésion des partenaires d'un projet", c: "Planifier les congés des collaborateurs", d: "Réaliser l'organigramme de l'entreprise" },
+                    reponse: "b",
+                    explication: "Cet outil, issu de la Socio-dynamique, permet d'identifier le niveau d'adhésion des partenaires (collaborateurs impactés) d'un projet.",
+                    page: 38
+                },
+                {
+                    question: "Le Visual Management (Gestion par la vue) a pour objectif de :",
+                    options: { a: "Rendre la communication plus complexe et détaillée", b: "Limiter l'accès à l'information aux seuls managers", c: "Faciliter la transmission d'informations entre toutes les parties prenantes de manière simple et visible", d: "Remplacer tous les outils numériques par des tableaux papier" },
+                    reponse: "c",
+                    explication: "Le management visuel... a pour objectif de faciliter la transmission d'informations entre toutes les parties prenantes et pour chaque niveau hiérarchique.",
+                    page: 41
+                }
+            ]
+        },
+        
         // Vous pourrez ajouter 'M05', etc. ici
      
     };
@@ -765,6 +890,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialisation au chargement de la page ---
     populateDropdown();
 });
+
 
 
 
