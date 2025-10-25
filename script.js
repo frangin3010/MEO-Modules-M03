@@ -244,7 +244,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Fonctions pour gérer l'historique multi-utilisateurs ---
     function getFullHistory() {
-        return JSON.parse(localStorage.getItem(HISTORY_KEY)) || {};
+        try {
+            const history = localStorage.getItem(HISTORY_KEY);
+            return history ? JSON.parse(history) : {};
+        } catch (e) {
+            console.error("Erreur lors de la lecture de l'historique :", e);
+            return {};
+        }
     }
 
     function saveScore(userName, score) {
@@ -274,4 +280,133 @@ document.addEventListener('DOMContentLoaded', () => {
         
         historyScoresContainer.innerHTML = '';
         if (userHistory.length === 0) {
-            historyScoresContainer.innerHTML = `<p>Aucune tentative enregistrée pour ${userName || 'cet utilisateur'}.</p>`;
+            historyScoresContainer.innerHTML = `<p>Aucune tentative enregistrée pour ${userName ? `<strong>${userName}</strong>` : 'cet utilisateur'}.</p>`;
+            return;
+        }
+        userHistory.forEach(entry => {
+            const scoreCard = document.createElement('div');
+            scoreCard.className = 'score-card';
+            scoreCard.innerHTML = `
+                <span class="score-value">${entry.score} / ${entry.total}</span>
+                <span class="score-date">${entry.date}</span>
+            `;
+            historyScoresContainer.appendChild(scoreCard);
+        });
+    }
+
+    // --- Fonctions du Quiz ---
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    function buildQuiz() {
+        currentSection = "";
+        quizContainer.innerHTML = '';
+        quizData.forEach((item, index) => {
+            if (item.section && item.section !== currentSection) {
+                currentSection = item.section;
+                const sectionTitle = document.createElement('h2');
+                sectionTitle.className = 'section-title';
+                sectionTitle.textContent = currentSection;
+                quizContainer.appendChild(sectionTitle);
+            }
+
+            const questionBlock = document.createElement('div');
+            questionBlock.className = 'question-block';
+            questionBlock.id = 'question-' + index;
+
+            const questionText = document.createElement('p');
+            questionText.className = 'question-text';
+            questionText.textContent = `${index + 1}. ${item.question}`;
+            questionBlock.appendChild(questionText);
+            
+            const optionsArray = Object.entries(item.options);
+            shuffleArray(optionsArray);
+
+            const displayLetters = ['a', 'b', 'c', 'd'];
+            optionsArray.forEach(([key, value], i) => {
+                const label = document.createElement('label');
+                label.className = 'option';
+                
+                const radio = document.createElement('input');
+                radio.type = 'radio';
+                radio.name = 'question' + index;
+                radio.value = key;
+
+                label.appendChild(radio);
+                label.append(` ${displayLetters[i]}) ${value}`);
+                questionBlock.appendChild(label);
+            });
+            quizContainer.appendChild(questionBlock);
+        });
+    }
+
+    function showResults() {
+        const userName = userInput.value.trim();
+        let score = 0;
+        
+        quizData.forEach((item, index) => {
+            const questionBlock = document.getElementById('question-' + index);
+            const selectedOption = questionBlock.querySelector(`input[name="question${index}"]:checked`);
+            
+            const oldExplanation = questionBlock.querySelector('.explanation');
+            if (oldExplanation) oldExplanation.remove();
+            
+            questionBlock.querySelectorAll('.option').forEach(label => {
+                label.classList.remove('correct', 'incorrect');
+            });
+
+            if (selectedOption) {
+                const userAnswer = selectedOption.value;
+                if (userAnswer === item.reponse) {
+                    score++;
+                    selectedOption.parentElement.classList.add('correct');
+                } else {
+                    selectedOption.parentElement.classList.add('incorrect');
+                    const correctOptionInput = questionBlock.querySelector(`input[value="${item.reponse}"]`);
+                    if (correctOptionInput) correctOptionInput.parentElement.classList.add('correct');
+                }
+            } else {
+                const correctOptionInput = questionBlock.querySelector(`input[value="${item.reponse}"]`);
+                if (correctOptionInput) correctOptionInput.parentElement.classList.add('correct');
+            }
+            
+            const explanation = document.createElement('div');
+            explanation.className = 'explanation';
+            explanation.innerHTML = `<strong>Explication :</strong> ${item.explication} <em>(Page : ${item.page})</em>`;
+            questionBlock.appendChild(explanation);
+        });
+
+        resultContainer.innerHTML = `Votre score : ${score} / ${quizData.length}`;
+        saveScore(userName, score);
+        loadUserHistory(userName);
+        submitBtn.textContent = "Réessayer le quiz";
+    }
+
+    function resetQuiz() {
+        resultContainer.innerHTML = '';
+        submitBtn.textContent = "Vérifier mes réponses";
+        buildQuiz();
+    }
+
+    // --- Gestionnaires d'événements ---
+    submitBtn.addEventListener('click', () => {
+        if (submitBtn.textContent === "Réessayer le quiz") {
+            resetQuiz();
+        } else {
+            showResults();
+        }
+    });
+
+    userInput.addEventListener('input', () => {
+        const userName = userInput.value.trim();
+        loadUserHistory(userName);
+    });
+
+    // --- Initialisation au chargement ---
+    buildQuiz();
+    loadUserHistory(userInput.value.trim());
+});
