@@ -263,7 +263,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 {
                     section:"Concepts de base",
                     question:"Qui suis-je?",
-                    options :{Blablabla}]}
+                    options :{a:"Blablabla", b:"Blobloblo", c:"Bliblibli", d:"Blebleble"},
+                    reponse: "c",
+                    explication: "LOL",
+                    page: "N/A"
+                }
+        ]},
     };
 
     // --- LOGIQUE DE L'APPLICATION ---
@@ -489,4 +494,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialisation au chargement de la page ---
     populateDropdown();
 });
+
 
