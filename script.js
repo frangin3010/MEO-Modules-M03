@@ -1,5 +1,4 @@
 // --- BASE DE DONNÉES DES QUESTIONS ---
-// Pour changer de cours, il suffit de remplacer le contenu de ce tableau.
 const quizData = [
     // CHAPITRE I
     {
@@ -236,15 +235,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const quizContainer = document.getElementById('quiz-container');
     const submitBtn = document.getElementById('submit-btn');
     const resultContainer = document.getElementById('result-container');
+    
     let currentSection = "";
 
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
     function buildQuiz() {
+        currentSection = ""; // Réinitialiser la section
         quizData.forEach((item, index) => {
-            // Afficher le titre de la section si c'est une nouvelle section
             if (item.section && item.section !== currentSection) {
                 currentSection = item.section;
                 const sectionTitle = document.createElement('h2');
-                sectionTitle.className = 'section-title';
                 sectionTitle.textContent = currentSection;
                 quizContainer.appendChild(sectionTitle);
             }
@@ -257,8 +263,12 @@ document.addEventListener('DOMContentLoaded', () => {
             questionText.className = 'question-text';
             questionText.textContent = `${index + 1}. ${item.question}`;
             questionBlock.appendChild(questionText);
+            
+            const optionsArray = Object.entries(item.options);
+            shuffleArray(optionsArray);
 
-            for (const key in item.options) {
+            const displayLetters = ['a', 'b', 'c', 'd'];
+            optionsArray.forEach(([key, value], i) => { // 'i' est l'index après mélange
                 const label = document.createElement('label');
                 label.className = 'option';
                 
@@ -268,9 +278,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 radio.value = key;
 
                 label.appendChild(radio);
-                label.append(` ${key}) ${item.options[key]}`);
+                label.append(` ${displayLetters[i]}) ${value}`);
                 questionBlock.appendChild(label);
-            }
+            });
             quizContainer.appendChild(questionBlock);
         });
     }
@@ -281,33 +291,28 @@ document.addEventListener('DOMContentLoaded', () => {
             const questionBlock = document.getElementById('question-' + index);
             const selectedOption = questionBlock.querySelector(`input[name="question${index}"]:checked`);
             
-            // Supprimer les anciennes explications s'il y en a
             const oldExplanation = questionBlock.querySelector('.explanation');
             if(oldExplanation) oldExplanation.remove();
             
-            // Réinitialiser les styles des options
             questionBlock.querySelectorAll('.option').forEach(label => {
                 label.classList.remove('correct', 'incorrect');
             });
 
             if (selectedOption) {
                 const userAnswer = selectedOption.value;
-                const correctLabel = selectedOption.parentElement;
-                
                 if (userAnswer === item.reponse) {
                     score++;
-                    correctLabel.classList.add('correct');
+                    selectedOption.parentElement.classList.add('correct');
                 } else {
-                    correctLabel.classList.add('incorrect');
-                    // Mettre en évidence la bonne réponse
-                    const correctOption = questionBlock.querySelector(`input[value="${item.reponse}"]`);
-                    if(correctOption) {
-                        correctOption.parentElement.classList.add('correct');
-                    }
+                    selectedOption.parentElement.classList.add('incorrect');
+                    const correctOptionInput = questionBlock.querySelector(`input[value="${item.reponse}"]`);
+                    if(correctOptionInput) correctOptionInput.parentElement.classList.add('correct');
                 }
+            } else {
+                 const correctOptionInput = questionBlock.querySelector(`input[value="${item.reponse}"]`);
+                 if(correctOptionInput) correctOptionInput.parentElement.classList.add('correct');
             }
             
-            // Ajouter l'explication
             const explanation = document.createElement('div');
             explanation.className = 'explanation';
             explanation.innerHTML = `<strong>Explication :</strong> ${item.explication} <em>(Page : ${item.page})</em>`;
@@ -315,19 +320,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         resultContainer.innerHTML = `Votre score : ${score} / ${quizData.length}`;
-        submitBtn.textContent = "Réessayer le quiz"; // Optionnel, pour recommencer
+        submitBtn.textContent = "Réessayer le quiz";
     }
 
-    // Gérer le clic sur le bouton
+    // --- NOUVELLE FONCTION DE RÉINITIALISATION ---
+    function resetQuiz() {
+        quizContainer.innerHTML = ''; // Vide le conteneur du quiz
+        resultContainer.innerHTML = ''; // Vide le conteneur du résultat
+        submitBtn.textContent = "Vérifier mes réponses"; // Remet le texte du bouton
+        buildQuiz(); // Reconstruit le quiz avec un nouvel ordre
+    }
+
     submitBtn.addEventListener('click', () => {
+        // --- LOGIQUE DE BOUTON MISE À JOUR ---
         if(submitBtn.textContent === "Réessayer le quiz") {
-            window.location.reload(); // recharge la page pour recommencer
+            resetQuiz();
         } else {
             showResults();
         }
     });
 
-    // Construire le quiz au chargement de la page
     buildQuiz();
-
 });
