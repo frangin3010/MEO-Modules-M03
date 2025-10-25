@@ -18,8 +18,6 @@ body {
 
 header {
     text-align: center;
-    border-bottom: 2px solid #007BFF;
-    margin-bottom: 20px;
     padding-bottom: 10px;
 }
 
@@ -102,6 +100,7 @@ h1 {
 .correct-answer {
     font-weight: bold;
 }
+
 .creator-info {
     text-align: center;
     font-size: 0.9em;
@@ -109,13 +108,16 @@ h1 {
     margin-top: -10px;
     margin-bottom: 20px;
 }
+
 .creator-info a {
     color: #007BFF;
     text-decoration: none;
 }
+
 .creator-info a:hover {
     text-decoration: underline;
 }
+
 .user-container {
     margin: 20px 0;
     text-align: center;
@@ -168,3 +170,22 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 123, 255, 0.75), rgba(0, 0, 0, 0));
     margin: 30px 0;
 }
+
+/* Styles pour l'historique des scores */
+#history-container {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #007BFF;
+}
+
+#history-scores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.score-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px
