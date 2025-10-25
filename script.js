@@ -154,6 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             ]
         },
+        
+        //Module 03
         'M03': {
             title: 'MEO-M03 : Accord Canada-États-Unis–Mexique (ACEUM)',
             questions: [
@@ -388,25 +390,154 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         'M04': {
-            title: 'MEO-M04 : Comptabilité et Outils de Gestion (Exemple)',
+            title: 'MEO-M04 : Environnement Juridique des Affaires',
             questions: [
+                // PREMIERE PARTIE
                 {
-                    section: "Concepts de base",
-                    question: "La comptabilité générale permet principalement de :",
-                    options: { a: "Analyser les tendances macroéconomiques", b: "Mesurer la productivité des employés", c: "Recueillir, classer et enregistrer les données financières d'une entreprise", d: "Évaluer la valeur marchande des biens publics" },
+                    section: "Première Partie : Cohabitation des Normes",
+                    question: "Quelle organisation a pour vocation d'harmoniser les législations de ses États membres dans des domaines comme les activités de banque, de change et de concurrence ?",
+                    options: { a: "L'OAPI", b: "La CIMA", c: "L'UEMOA", d: "La CIPRES" },
                     reponse: "c",
-                    explication: "La comptabilité générale a pour objectif principal de fournir une image fidèle du patrimoine, de la situation financière et du résultat de l'entreprise.",
-                    page: "N/A"
+                    explication: "L'organisation UEMOA... a aussi pour vocation d'harmoniser les législations de ses Etats membres... notamment les pratiques anticoncurrentielles, des changes et dans le domaine des banques etc.",
+                    page: 4
                 },
                 {
-                    question: "Le bilan d'une entreprise représente :",
-                    options: { a: "Le plan d'action futur de l'entreprise", b: "La liste des ventes réalisées dans l'année", c: "La photographie du patrimoine à une date donnée", d: "Le tableau de trésorerie mensuelle" },
+                    question: "Le Règlement n°02/18/CEMAC/UMAC/CM concerne principalement :",
+                    options: { a: "Le droit des assurances", b: "La propriété intellectuelle", c: "La réglementation des changes dans la CEMAC", d: "Le droit de la concurrence dans l'UEMOA" },
                     reponse: "c",
-                    explication: "Le bilan est un document comptable qui représente la situation patrimoniale de l'entreprise à un instant T, en listant l'actif (ce qu'elle possède) et le passif (ce qu'elle doit).",
-                    page: "N/A"
+                    explication: "Les règles CEMAC relatives à la réglementation des changes sont très similaires à celles de l'UEMOA ; ce règlement qui date de 2018 (Règlement n°02/18/CEMAC/UMAC/CM du 21 décembre 2018 portant réglementation des changes dans la CEMAC)...",
+                    page: 6
+                },
+                {
+                    question: "L'OAPI (Organisation Africaine de la Propriété Intellectuelle) a pour mission de protéger et publier des droits concernant :",
+                    options: { a: "Uniquement le droit des assurances", b: "Uniquement le droit bancaire", c: "Les brevets d'invention, les marques, les modèles industriels et le droit d'auteur", d: "Les contrats de transport de marchandises" },
+                    reponse: "c",
+                    explication: "Cette réglementation concerne respectivement : les brevets d'invention ; les modèles d'utilité ; les marques de produit ou de service ; les dessins ou modèles industriels... le droit d'auteur...",
+                    page: 7
+                },
+                {
+                    question: "La législation unique des assurances CIMA s'applique à :",
+                    options: { a: "Toutes les assurances, y compris maritimes et fluviales", b: "Uniquement aux sociétés de réassurance", c: "Uniquement aux assurances maritimes et fluviales", d: "Aux assurances terrestres, à l'exclusion des assurances maritimes et fluviales" },
+                    reponse: "d",
+                    explication: "La législation des assurances ne s'applique qu'aux assurances terrestres à l'exclusion des assurances maritimes et fluviales.",
+                    page: 8
+                },
+                {
+                    question: "Combien d'États membres l'OHADA comprend-elle actuellement ?",
+                    options: { a: "14 États", b: "17 États", c: "10 États", d: "21 États" },
+                    reponse: "b",
+                    explication: "...née en 1993, l'OHADA comprend actuellement 17 Etats...",
+                    page: 10
+                },
+                {
+                    question: "Comment s'appellent les lois produites par l'OHADA qui couvrent divers domaines du droit des affaires ?",
+                    options: { a: "Les Règlements communautaires", b: "Les Directives", c: "Les Actes uniformes", d: "Les Traités constitutifs" },
+                    reponse: "c",
+                    explication: "Les lois qu'elle sécrète sont appelées « actes uniformes » et elles couvrent un certain nombre de domaines du droit des affaires.",
+                    page: 10
+                },
+                {
+                    question: "Lequel de ces domaines N'EST PAS couvert par un Acte uniforme de l'OHADA ?",
+                    options: { a: "Le droit commercial général", b: "Le droit des sociétés commerciales", c: "Le droit fiscal", d: "Le droit de l'arbitrage" },
+                    reponse: "c",
+                    explication: "Le droit fiscal n'est pas cité parmi les domaines d'application des actes uniformes de l'OHADA. Les autres domaines (droit commercial, sociétés, arbitrage, etc.) sont explicitement mentionnés.",
+                    page: "10-11"
+                },
+                {
+                    question: "Quelle institution du système OHADA est compétente pour adopter et modifier les actes uniformes ?",
+                    options: { a: "La Conférence des chefs d'Etat et de Gouvernement", b: "La Cour Commune de Justice et d'Arbitrage (CCJA)", c: "Le Secrétariat Permanent", d: "Le Conseil des Ministres" },
+                    reponse: "d",
+                    explication: "Le conseil des Ministres... Celui-ci est notamment compétent pour adopter, modifier les actes uniformes et déterminer le domaine du droit des affaires.",
+                    page: 12
+                },
+                {
+                    question: "La Cour Commune de Justice et d'Arbitrage (CCJA) a pour principale vocation de :",
+                    options: { a: "Juger les affaires pénales liées au droit des affaires", b: "Former les magistrats des États membres", c: "Se substituer aux Cours nationales de cassation pour unifier l'interprétation du droit uniforme", d: "Proposer des projets d'Actes uniformes au Conseil des Ministres" },
+                    reponse: "c",
+                    explication: "La CCJA... a pour vocation de substituer aux Cours nationales de cassation afin d'unifier l'interprétation du droit uniforme par les juridictions de fond...",
+                    page: 12
+                },
+                // DEUXIEME PARTIE
+                {
+                    section: "Deuxième Partie : Les Acteurs",
+                    question: "Selon l'Acte uniforme OHADA portant droit commercial général, qui est le nouvel acteur juridique apparu en 2010 ?",
+                    options: { a: "L'artisan", b: "Le commerçant", c: "L'entreprenant", d: "L'agriculteur" },
+                    reponse: "c",
+                    explication: "Avec l'entrée en vigueur du nouvel acte uniforme portant droit commercial général du 15 décembre 2010, il y a l'entrée en scène d'un nouvel acteur dans le monde des affaires qui est l'entreprenant.",
+                    page: 15
+                },
+                {
+                    question: "Quelle est la principale différence entre un artisan et un commerçant ?",
+                    options: { a: "L'artisan est immatriculé au RCCM, le commerçant au Répertoire des métiers", b: "L'artisan vit de son travail manuel, le commerçant tire profit d'actes de commerce", c: "L'artisan ne peut pas avoir de fonds de commerce", d: "Le commerçant relève des juridictions civiles, l'artisan des juridictions commerciales" },
+                    reponse: "b",
+                    explication: "Celui-ci [l'artisan] vit de son travail manuel alors que le commerçant trouve son profit dans l'accomplissement d'actes de commerce.",
+                    page: 14
+                },
+                {
+                    question: "Selon l'article 2 de l'Acte uniforme OHADA, comment est défini le commerçant ?",
+                    options: { a: "Celui qui exerce une activité manuelle de manière indépendante", b: "Celui qui fait de l'accomplissement des actes de commerce par nature sa profession", c: "Toute personne physique dirigeant une entreprise", d: "Celui qui est inscrit au Répertoire des métiers" },
+                    reponse: "b",
+                    explication: "Le commerçant est défini par son activité : selon l'article 2 de l'acte uniforme portant droit commercial général : « Est commerçant celui qui fait de l'accomplissement des actes de commerce par nature sa profession ».",
+                    page: 16
+                },
+                {
+                    question: "Lequel de ces éléments est un exemple d'incompatibilité avec l'exercice de la profession de commerçant ?",
+                    options: { a: "Être actionnaire dans une société anonyme", b: "Être un franchisé", c: "Être un fonctionnaire", d: "Être un mineur émancipé" },
+                    reponse: "c",
+                    explication: "L'article 9 du même acte uniforme prévoit des incompatibilités... notamment ; -les fonctionnaires et personnels des collectivités publiques...",
+                    page: 17
+                },
+                {
+                    question: "Selon l'Acte uniforme OHADA, qu'est-ce qu'une société commerciale ?",
+                    options: { a: "Toute activité générant un bénéfice", b: "Un contrat par lequel deux ou plusieurs personnes affectent des biens à une activité pour partager le bénéfice", c: "Une entreprise individuelle dotée de la personnalité morale", d: "Toute organisation immatriculée au RCCM" },
+                    reponse: "b",
+                    explication: "...« la société commerciale est créée par deux ou plusieurs personnes qui conviennent, par un contrat, d'affecter à une activité des biens en numéraire ou en nature, dans le but de partager le bénéfice... »",
+                    page: 18
+                },
+                {
+                    question: "Quel type d'apport ne compte pas dans la détermination du capital social ?",
+                    options: { a: "L'apport en numéraire", b: "L'apport en nature", c: "L'apport en industrie", d: "L'apport en jouissance" },
+                    reponse: "c",
+                    explication: "On dit qu'il y a apport en industrie lorsque l'associé apporte... son expertise, son intelligence ou encore sa force de travail... il ne compte pas pour la détermination du capital social.",
+                    page: 20
+                },
+                {
+                    question: "Qu'est-ce qu'une clause léonine ?",
+                    options: { a: "Une clause qui répartit les bénéfices de manière égale entre tous les associés", b: "Une clause qui prive un associé de tout droit aux bénéfices ou le met à l'abri des pertes", c: "Une clause qui donne tous les pouvoirs au gérant", d: "Une clause qui prévoit la dissolution de la société en cas de conflit" },
+                    reponse: "b",
+                    explication: "Ce sont des clauses privant un ou plusieurs associés de tout droit aux bénéfices ou les mettant à l'abri de toute contribution aux pertes.",
+                    page: 21
+                },
+                {
+                    question: "Une société commerciale acquiert la personnalité juridique à compter de :",
+                    options: { a: "La signature des statuts", b: "La première assemblée générale", c: "Son immatriculation au RCCM", d: "La libération totale du capital social" },
+                    reponse: "c",
+                    explication: "À la faveur de l'adoption des actes uniformes « toute société jouit de la personnalité juridique à compter de son immatriculation au RCCM ».",
+                    page: 21
+                },
+                {
+                    question: "Quelle est la principale caractéristique d'une société de personnes comme la SNC ?",
+                    options: { a: "Les parts sociales sont librement cessibles", b: "La responsabilité des associés est limitée à leurs apports", c: "La considération de la personne de l'associé est essentielle (intuitu personae)", d: "Le nombre d'associés est illimité" },
+                    reponse: "c",
+                    explication: "Dans les sociétés de personnes, la considération de l'associé est essentielle. Les parts sociales ne sont pas librement cessibles. Ce sont des sociétés à fort intuitu personae...",
+                    page: 23
+                },
+                {
+                    question: "Quelle Assemblée Générale est seule habilitée à modifier les statuts d'une société ?",
+                    options: { a: "L'Assemblée Générale Ordinaire (AGO)", b: "L'Assemblée Générale Extraordinaire (AGE)", c: "L'Assemblée Générale Spéciale", d: "L'Assemblée constitutive" },
+                    reponse: "b",
+                    explication: "L'Assemblée Générale extraordinaire est seule habilitée à modifier les statuts dans toutes leurs dispositions.",
+                    page: 30
+                },
+                {
+                    question: "Quel est le rôle essentiel d'un commissaire aux comptes dans une société anonyme ?",
+                    options: { a: "Conseiller les dirigeants sur les opportunités de gestion", b: "Représenter les actionnaires au conseil d'administration", c: "Vérifier la légalité des actes des dirigeants et la conformité de la comptabilité", d: "Déclencher la procédure de redressement judiciaire" },
+                    reponse: "c",
+                    explication: "Son rôle essentiel est de vérifier que les actes des dirigeants ont été pris dans la légalité... le commissaire aux comptes a pour mission de vérifier les valeurs et les documents comptables... et de contrôler la conformité de sa comptabilité...",
+                    page: 32
                 }
             ]
-        }
+        },
         // Vous pourrez ajouter 'M05', etc. ici
      
     };
@@ -634,6 +765,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialisation au chargement de la page ---
     populateDropdown();
 });
+
 
 
 
