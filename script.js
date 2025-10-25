@@ -1,5 +1,10 @@
-// --- BASE DE DONNÉES DES QUESTIONS ---
-const quizData = [
+document.addEventListener('DOMContentLoaded', () => {
+
+    // --- NOUVELLE BIBLIOTHÈQUE DE QUIZ ---
+    const allQuizzes = {
+        'M03': {
+            title: 'MEO-M03 : Accord Canada-États-Unis–Mexique (ACEUM)',
+            questions: [
     // CHAPITRE I
     {
         section: "Chapitre I : Historique du libre-échange nord-américain à partir de l'ALENA",
@@ -228,7 +233,13 @@ const quizData = [
         explication: "...« [s]i une Partie conclut un accord de libre-échange avec un pays n'ayant pas une économie de marché, les autres Parties pourront mettre fin au présent accord moyennant un préavis de six mois, et remplacer le présent accord par un accord bilatéral entre elles ».",
         page: 26
     }
-];
+]
+        },
+
+        'M04': {
+            title: 'MEO-M04 : Comptabilité et Outils de Gestion (Exemple)',
+            questions: [
+                {Blablabla }]};
 
 // --- LOGIQUE DE L'APPLICATION ---
 document.addEventListener('DOMContentLoaded', () => {
@@ -410,3 +421,4 @@ document.addEventListener('DOMContentLoaded', () => {
     buildQuiz();
     loadUserHistory(userInput.value.trim());
 });
+
