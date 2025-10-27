@@ -690,7 +690,6 @@ document.addEventListener('DOMContentLoaded', () => {
         'M04': {
             title: 'MEO-M04 : Environnement Juridique des Affaires',
             questions: [
-                // PREMIERE PARTIE
                 {
                     section: "Première Partie : Cohabitation des Normes",
                     question: "Quelle organisation a pour vocation d'harmoniser les législations de ses États membres dans des domaines comme les activités de banque, de change et de concurrence ?",
@@ -714,11 +713,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: 7
                 },
                 {
-                    question: "La législation unique des assurances CIMA s'applique à :",
+                    question: "La législation unique des assurances CIMA (Conférence Interafricaine des Marchés d'Assurances) s'applique à :",
                     options: { a: "Toutes les assurances, y compris maritimes et fluviales", b: "Uniquement aux sociétés de réassurance", c: "Uniquement aux assurances maritimes et fluviales", d: "Aux assurances terrestres, à l'exclusion des assurances maritimes et fluviales" },
                     reponse: "d",
                     explication: "La législation des assurances ne s'applique qu'aux assurances terrestres à l'exclusion des assurances maritimes et fluviales.",
                     page: 8
+                },
+                {
+                    question: "Quel est l'objectif principal du traité de l'OHADA ?",
+                    options: { a: "Créer une monnaie unique pour l'Afrique", b: "Harmoniser le droit des affaires pour garantir la sécurité juridique et judiciaire", c: "Gérer la propriété intellectuelle au niveau continental", d: "Réglementer le secteur des assurances maritimes" },
+                    reponse: "b",
+                    explication: "L'OHADA vise à harmoniser le droit des affaires en Afrique pour restaurer la confiance des investisseurs et garantir la sécurité juridique et judiciaire des activités économiques.",
+                    page: 10
                 },
                 {
                     question: "Combien d'États membres l'OHADA comprend-elle actuellement ?",
@@ -755,13 +761,26 @@ document.addEventListener('DOMContentLoaded', () => {
                     explication: "La CCJA... a pour vocation de substituer aux Cours nationales de cassation afin d'unifier l'interprétation du droit uniforme par les juridictions de fond...",
                     page: 12
                 },
-                // DEUXIEME PARTIE
+                {
+                    question: "Au sein de l'OHADA, quel est le rôle de l'ERSUMA (École Régionale Supérieure de la Magistrature) ?",
+                    options: { a: "Rédiger les projets d'Actes uniformes", b: "Assurer la formation et le perfectionnement des magistrats et auxiliaires de justice", c: "Juger les litiges en dernière instance", d: "Gérer l'immatriculation des entreprises au RCCM" },
+                    reponse: "b",
+                    explication: "L'ERSUMA, basée à Porto-Novo, est l'institution en charge de la formation, du perfectionnement et de la recherche en droit des affaires unifié.",
+                    page: 12
+                },
                 {
                     section: "Deuxième Partie : Les Acteurs",
                     question: "Selon l'Acte uniforme OHADA portant droit commercial général, qui est le nouvel acteur juridique apparu en 2010 ?",
                     options: { a: "L'artisan", b: "Le commerçant", c: "L'entreprenant", d: "L'agriculteur" },
                     reponse: "c",
                     explication: "Avec l'entrée en vigueur du nouvel acte uniforme portant droit commercial général du 15 décembre 2010, il y a l'entrée en scène d'un nouvel acteur dans le monde des affaires qui est l'entreprenant.",
+                    page: 15
+                },
+                {
+                    question: "Comment l'Acte uniforme définit-il l'entreprenant ?",
+                    options: { a: "Une personne qui accomplit des actes de commerce par nature", b: "Un professionnel, personne physique, qui exerce une activité professionnelle civile", c: "Un dirigeant de société anonyme", d: "Un artisan qui emploie plus de 10 personnes" },
+                    reponse: "b",
+                    explication: "L'entreprenant est une personne physique qui, sur simple déclaration, exerce une activité professionnelle civile, artisanale ou agricole. Il est distinct du commerçant.",
                     page: 15
                 },
                 {
@@ -779,6 +798,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: 16
                 },
                 {
+                    question: "Quelle est l'une des obligations principales du commerçant en vertu du droit OHADA ?",
+                    options: { a: "Avoir un diplôme en gestion", b: "S'immatriculer au Registre du Commerce et du Crédit Mobilier (RCCM)", c: "Ne travailler qu'avec des fournisseurs de la zone OHADA", d: "Publier ses comptes dans un journal chaque mois" },
+                    reponse: "b",
+                    explication: "Tout commerçant a l'obligation de s'immatriculer au RCCM, ce qui lui confère la personnalité juridique et atteste de sa qualité de commerçant.",
+                    page: 17
+                },
+                {
                     question: "Lequel de ces éléments est un exemple d'incompatibilité avec l'exercice de la profession de commerçant ?",
                     options: { a: "Être actionnaire dans une société anonyme", b: "Être un franchisé", c: "Être un fonctionnaire", d: "Être un mineur émancipé" },
                     reponse: "c",
@@ -793,6 +819,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: 18
                 },
                 {
+                    question: "Comment se nomme la volonté commune des associés de collaborer activement à la poursuite de l'œuvre commune ?",
+                    options: { a: "Le capital social", b: "L'intuitu personae", c: "L'affectio societatis", d: "L'objet social" },
+                    reponse: "c",
+                    explication: "L'affectio societatis est l'intention de s'associer, de collaborer sur un pied d'égalité au succès de l'entreprise commune. C'est un élément essentiel du contrat de société.",
+                    page: 18
+                },
+                {
                     question: "Quel type d'apport ne compte pas dans la détermination du capital social ?",
                     options: { a: "L'apport en numéraire", b: "L'apport en nature", c: "L'apport en industrie", d: "L'apport en jouissance" },
                     reponse: "c",
@@ -800,10 +833,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: 20
                 },
                 {
+                    question: "Qu'est-ce qu'un apport en nature ?",
+                    options: { a: "Un apport d'une somme d'argent", b: "Un apport de connaissances techniques", c: "Un apport d'un bien autre qu'une somme d'argent (immeuble, fonds de commerce, brevet...)", d: "Un apport de force de travail" },
+                    reponse: "c",
+                    explication: "L'apport en nature est l'apport de tout bien autre que de l'argent. Il doit faire l'objet d'une évaluation par un commissaire aux apports.",
+                    page: 20
+                },
+                {
                     question: "Qu'est-ce qu'une clause léonine ?",
                     options: { a: "Une clause qui répartit les bénéfices de manière égale entre tous les associés", b: "Une clause qui prive un associé de tout droit aux bénéfices ou le met à l'abri des pertes", c: "Une clause qui donne tous les pouvoirs au gérant", d: "Une clause qui prévoit la dissolution de la société en cas de conflit" },
                     reponse: "b",
-                    explication: "Ce sont des clauses privant un ou plusieurs associés de tout droit aux bénéfices ou les mettant à l'abri de toute contribution aux pertes.",
+                    explication: "Ce sont des clauses privant un ou plusieurs associés de tout droit aux bénéfices ou les mettant à l'abri de toute contribution aux pertes. Elles sont réputées non écrites.",
                     page: 21
                 },
                 {
@@ -821,10 +861,38 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: 23
                 },
                 {
+                    question: "Quelle est la principale caractéristique d'une société de capitaux comme la SA ?",
+                    options: { a: "Les associés sont indéfiniment et solidairement responsables des dettes", b: "La personne de l'associé est plus importante que ses apports", c: "Les titres (actions) sont en principe librement négociables et la responsabilité est limitée aux apports", d: "Elle ne peut être constituée que par 2 associés maximum" },
+                    reponse: "c",
+                    explication: "Dans les sociétés de capitaux (SA, SAS), la considération des capitaux apportés est essentielle. Les actions sont librement cessibles et la responsabilité des actionnaires est limitée à leurs apports.",
+                    page: 23
+                },
+                {
+                    question: "Dans une Société à Responsabilité Limitée (SARL), la responsabilité des associés est :",
+                    options: { a: "Indéfinie et solidaire sur leurs biens personnels", b: "Limitée au montant de leurs apports", c: "Nulle, car seul le gérant est responsable", d: "Définie par le juge au cas par cas" },
+                    reponse: "b",
+                    explication: "La SARL est une société dans laquelle la responsabilité des associés pour les dettes sociales est limitée au montant de leurs apports.",
+                    page: 26
+                },
+                {
+                    question: "Quelle forme de société offre une grande liberté statutaire pour organiser sa direction et son fonctionnement ?",
+                    options: { a: "La Société en Nom Collectif (SNC)", b: "La Société Anonyme (SA)", c: "La Société par Actions Simplifiée (SAS)", d: "La Société en Commandite Simple (SCS)" },
+                    reponse: "c",
+                    explication: "La SAS est une forme de société très prisée pour sa souplesse, offrant une grande liberté aux associés pour organiser les règles de fonctionnement dans les statuts.",
+                    page: 28
+                },
+                {
                     question: "Quelle Assemblée Générale est seule habilitée à modifier les statuts d'une société ?",
                     options: { a: "L'Assemblée Générale Ordinaire (AGO)", b: "L'Assemblée Générale Extraordinaire (AGE)", c: "L'Assemblée Générale Spéciale", d: "L'Assemblée constitutive" },
                     reponse: "b",
-                    explication: "L'Assemblée Générale extraordinaire est seule habilitée à modifier les statuts dans toutes leurs dispositions.",
+                    explication: "L'Assemblée Générale extraordinaire est seule habilitée à modifier les statuts dans toutes leurs dispositions (augmentation de capital, changement d'objet social, etc.).",
+                    page: 30
+                },
+                {
+                    question: "Quel est le rôle principal de l'Assemblée Générale Ordinaire (AGO) ?",
+                    options: { a: "Modifier la forme juridique de la société", b: "Approuver les comptes annuels, décider de l'affectation du résultat et nommer les dirigeants", c: "Décider de la fusion avec une autre société", d: "Transférer le siège social à l'étranger" },
+                    reponse: "b",
+                    explication: "L'AGO est réunie au moins une fois par an pour statuer sur les comptes de l'exercice écoulé, décider de la distribution de dividendes, et nommer ou révoquer les organes de gestion.",
                     page: 30
                 },
                 {
@@ -833,6 +901,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     reponse: "c",
                     explication: "Son rôle essentiel est de vérifier que les actes des dirigeants ont été pris dans la légalité... le commissaire aux comptes a pour mission de vérifier les valeurs et les documents comptables... et de contrôler la conformité de sa comptabilité...",
                     page: 32
+                },
+                {
+                    question: "La 'procédure d'alerte' déclenchée par le commissaire aux comptes a pour but :",
+                    options: { a: "De dénoncer la société aux autorités fiscales", b: "D'attirer l'attention des dirigeants sur des faits de nature à compromettre la continuité de l'exploitation", c: "De lancer un audit de qualité", d: "De préparer l'assemblée générale ordinaire" },
+                    reponse: "b",
+                    explication: "En cas de difficultés, le commissaire aux comptes a l'obligation de déclencher une procédure d'alerte pour informer les dirigeants des risques pesant sur la pérennité de l'entreprise.",
+                    page: 33
                 }
             ]
         },
@@ -1533,6 +1608,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialisation au chargement de la page ---
     populateDropdown();
 });
+
 
 
 
