@@ -154,6 +154,230 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             ]
         },
+
+        //Module 02
+
+        'M02': {
+            title: 'MEO-M02 : Gouvernance des organisations',
+            questions: [
+                {
+                    section: "Chapitre I : Notion de gouvernance",
+                    question: "D'où le terme 'gouvernance' tire-t-il son origine étymologique ?",
+                    options: { a: "Du verbe latin 'gubernare' signifiant diriger", b: "Du verbe grec 'kubernân' signifiant 'piloter un navire ou un char'", c: "D'un terme médiéval anglais signifiant 'gérer les terres'", d: "Du mot français 'gouvernement'" },
+                    reponse: "b",
+                    explication: "Le terme « gouvernance » tire ses origines du verbe grec kubernân qui signifie « piloter un navire ou un char », utilisé métaphoriquement par Platon.",
+                    page: 7
+                },
+                {
+                    question: "Dans les années 1980, le concept de 'corporate governance' a été développé initialement par :",
+                    options: { a: "Les politologues", b: "Les sociologues", c: "Les économistes", d: "Les juristes" },
+                    reponse: "c",
+                    explication: "Le terme gouvernance est développé chez les économistes qui explorent l'idée de « corporate governance ».",
+                    page: 8
+                },
+                {
+                    question: "Qu'est-ce que la 'bonne gouvernance' selon la perspective de la Banque Mondiale ?",
+                    options: { a: "Un outil pour imposer une politique unique à tous les pays", b: "Un concept purement théorique sans application pratique", c: "Un cadre normatif impliquant un État de droit, la transparence et la responsabilité", d: "Laisser le marché s'autoréguler sans aucune intervention" },
+                    reponse: "c",
+                    explication: "La 'bonne gouvernance' repose sur des leviers comme l'état de droit, des lois qui structurent la société, le respect des lois et la lutte contre l'impunité.",
+                    page: 13
+                },
+                {
+                    question: "La 'gouvernance des organisations' est un courant qui étudie :",
+                    options: { a: "Uniquement le pilotage hiérarchique et vertical", b: "Les mécanismes de coordination non hiérarchique et le pilotage horizontal", c: "Exclusivement les relations entre États", d: "La gestion des ressources humaines uniquement" },
+                    reponse: "b",
+                    explication: "Ce courant analyse les mécanismes de contrôle et les institutions qui facilitent la coordination, l'arbitrage et la cohésion par un pilotage plus « horizontal » que « vertical ».",
+                    page: 14
+                },
+                {
+                    question: "La 'gouvernance mondiale' (governance without government) s'intéresse principalement à :",
+                    options: { a: "La création d'un gouvernement mondial unique", b: "La résolution de problèmes de coordination en dehors de l'autorité centrale d'un État", c: "La gestion des entreprises multinationales", d: "La politique intérieure des États" },
+                    reponse: "b",
+                    explication: "C'est un système de règles destiné à résoudre des problèmes en dehors de l'autorité d'un État. Elle permet d'appréhender l'élaboration d'accords pour résoudre des problèmes de coordination.",
+                    page: "14-15"
+                },
+                {
+                    section: "Chapitre II : Dispositif institutionnel et organisationnel",
+                    question: "Sur quel principe fondamental repose le dispositif institutionnel de la gouvernance entre les États ?",
+                    options: { a: "Le principe de la force militaire", b: "Le principe de la souveraineté des États", c: "Le principe de la domination économique", d: "Le principe de non-coopération" },
+                    reponse: "b",
+                    explication: "Il est utile d'évoquer deux principes fondamentaux sur lesquels reposent ces dispositifs. Il s'agit de la souveraineté des Etats (II.1) et le système politique de la démocratie et de l'état de droit (II.2).",
+                    page: 18
+                },
+                {
+                    question: "Quels sont les trois piliers des pouvoirs dans un État de droit ?",
+                    options: { a: "L'armée, la police et la justice", b: "Le Président, le Premier Ministre et le Parlement", c: "Le pouvoir économique, le pouvoir social et le pouvoir culturel", d: "Le pouvoir exécutif, le pouvoir législatif et le pouvoir judiciaire" },
+                    reponse: "d",
+                    explication: "Le dispositif au niveau des Etats repose sur les constitutions, et les trois piliers des pouvoirs exécutif, législatif et judiciaire.",
+                    page: 19
+                },
+                {
+                    question: "Au niveau international, quel système principal sert de cadre à la gouvernance ?",
+                    options: { a: "Le système de l'Union Européenne", b: "Le système des accords commerciaux régionaux", c: "Le système des Nations Unies (ONU)", d: "Le système du G20" },
+                    reponse: "c",
+                    explication: "Au niveau international, le dispositif institutionnel et organisationnel de la gouvernance repose sur le système des nations unies, l'ONU.",
+                    page: 21
+                },
+                {
+                    question: "Quel organe de l'ONU est chargé de veiller sur la paix et la sécurité mondiales ?",
+                    options: { a: "L'Assemblée générale", b: "Le Conseil de Sécurité", c: "Le Conseil Economique et Social", d: "La Cour Pénale Internationale de Justice" },
+                    reponse: "b",
+                    explication: "Le Conseil de Sécurité, organe exécutif chargé de veiller sur la paix et la sécurité mondiales.",
+                    page: 21
+                },
+                {
+                    question: "Quelle institution est citée comme un acteur technique majeur dans le dispositif de gouvernance internationale ?",
+                    options: { a: "Le Comité International Olympique", b: "L'Organisation Internationale du Travail (OIT/BIT)", c: "Médecins Sans Frontières", d: "Amnesty International" },
+                    reponse: "b",
+                    explication: "Dans le domaine technique : l'Organisation Internationale du Travail/Bureau International du Travail (OIT/BIT), l'AIEA, l'OMM, etc.",
+                    page: 21
+                },
+                {
+                    section: "Chapitre III : Activités et fonctionnement des organisations",
+                    question: "Parmi les trois catégories principales d'organisations, laquelle a pour but de partager des bénéfices ?",
+                    options: { a: "Les administrations publiques", b: "Les entreprises publiques ou privées", c: "Les associations", d: "Les ONG" },
+                    reponse: "b",
+                    explication: "L'organisation poursuit la réalisation de profits. Les associations, elles, ont un but autre que de partager des bénéfices.",
+                    page: 24
+                },
+                {
+                    question: "La fonction d'une entreprise qui 'réfléchit sur ce que les clients veulent' est la fonction :",
+                    options: { a: "Production", b: "Logistique", c: "Ressources humaines", d: "Marketing et Ventes" },
+                    reponse: "d",
+                    explication: "Fonction Marketing et Ventes : elle réfléchit sur ce que les clients veulent et sur la façon de leur vendre les produits ou services de l'entreprise.",
+                    page: 25
+                },
+                {
+                    question: "Une structure organisationnelle où un exécutant peut recevoir des ordres de plusieurs responsables spécialisés est une structure :",
+                    options: { a: "Hiérarchique linéaire", b: "Hiérarchico-fonctionnelle (avec staff)", c: "Fonctionnelle", d: "Matricielle" },
+                    reponse: "c",
+                    explication: "Dans la structure fonctionnelle, plusieurs responsables (A, B) assurent le commandement, chacun dans son domaine. Un exécutant (C, D, E ou F) peut recevoir des ordres des différents responsables.",
+                    page: 26
+                },
+                {
+                    question: "Qu'est-ce qu'une matrice RACI ?",
+                    options: { a: "Un type d'organigramme en étoile", b: "Un outil pour visualiser la hiérarchie de l'entreprise", c: "Une matrice qui représente les rôles et responsabilités des acteurs sur un projet (Responsible, Accountable, Consulted, Informed)", d: "Un schéma des flux financiers" },
+                    reponse: "c",
+                    explication: "La matrice RACI représente les rôles et responsabilités : R=Responsible, A=Accountable, C=Consulted, I=Informed.",
+                    page: 27
+                },
+                {
+                    question: "Dans le processus de gestion de l'information, l'étape qui suit 'La collecte de l'information' est :",
+                    options: { a: "Le stockage des informations", b: "Le traitement et l'édition", c: "La transmission ou diffusion", d: "La saisie des informations" },
+                    reponse: "d",
+                    explication: "L'étape 2, après la collecte (1), est 'La saisie des informations' sur un support en vue de leur traitement.",
+                    page: 30
+                },
+                {
+                    question: "Comment se définit le secteur tertiaire ?",
+                    options: { a: "Il regroupe l'exploitation des ressources naturelles (agriculture, pêche)", b: "Il regroupe la transformation des matières premières (industries)", c: "Il se définit par complémentarité avec les secteurs primaire et secondaire", d: "Il concerne uniquement les activités liées à l'innovation et au numérique" },
+                    reponse: "c",
+                    explication: "Le secteur tertiaire se définit par complémentarité avec les activités agricoles et industrielles (secteurs primaire et secondaire).",
+                    page: 31
+                },
+                {
+                    section: "Chapitre IV : Systèmes de gouvernance",
+                    question: "La gouvernance d'entreprise se définit comme un système pour :",
+                    options: { a: "Maximiser les profits à court terme uniquement", b: "Diriger et contrôler l'entreprise en protégeant les intérêts des parties prenantes", c: "Gérer uniquement les relations avec les syndicats", d: "Mettre en place des réglementations gouvernementales" },
+                    reponse: "b",
+                    explication: "La gouvernance d'entreprise se définit comme un système déployé dans l'objectif de diriger et de contrôler l'entreprise de la manière la plus optimale, tout en protégeant les intérêts des parties prenantes.",
+                    page: 34
+                },
+                {
+                    question: "La gouvernance partenariale, ou modèle 'stakeholders', prend en compte les intérêts :",
+                    options: { a: "Uniquement de l'actionnariat (shareholders)", b: "Uniquement des dirigeants", c: "De l'ensemble des parties prenantes (employés, clients, environnement...)", d: "Uniquement de l'État" },
+                    reponse: "c",
+                    explication: "La gouvernance partenariale, aussi nommée modèle stakeholders, tient compte de l'ensemble des parties prenantes et de leurs intérêts.",
+                    page: 35
+                },
+                {
+                    question: "Lequel de ces éléments est un principe clé de la gouvernance d'entreprise ?",
+                    options: { a: "L'opacité totale", b: "L'indépendance des administrateurs et la transparence", c: "La centralisation absolue du pouvoir", d: "L'absence de reddition de comptes" },
+                    reponse: "b",
+                    explication: "Les principes incluent l'indépendance des administrateurs, la transparence, la reddition de compte, l'intégrité, etc.",
+                    page: 36
+                },
+                {
+                    question: "La 'bonne gouvernance' d'État comprend des composantes comme :",
+                    options: { a: "L'opacité des procédures et la centralisation du savoir", b: "La participation effective, le pluralisme politique et la lutte contre la corruption", c: "Le non-respect de l'environnement et l'iniquité", d: "L'absence de responsabilité des institutions" },
+                    reponse: "b",
+                    explication: "La « bonne gouvernance » comprend : le plein respect des droits de l'homme, la participation effective, les partenariats multipartites, le pluralisme politique, la transparence, la lutte contre la corruption, etc.",
+                    page: 38
+                },
+                {
+                    question: "Quelle est l'une des caractéristiques de la gouvernance coloniale en Afrique de l'Ouest, selon Olivier De Sardan ?",
+                    options: { a: "Une démocratie participative", b: "Une gouvernance despotique marquée par une bureaucratie du mépris et la corruption", c: "Une transparence totale des comptes publics", d: "Un respect total des traditions locales" },
+                    reponse: "b",
+                    explication: "La gouvernance ouest-africaine serait la résultante d'une gouvernance coloniale caractérisée par une gouvernance despotique marquée par une bureaucratie du mépris, les élections truquées, la corruption, etc.",
+                    page: 40
+                },
+                {
+                    question: "Une critique adressée à la notion de gouvernance est qu'elle fait du réseau à la fois :",
+                    options: { a: "Une force et une faiblesse", b: "Un problème et une solution", c: "Un outil et un objectif", d: "Un coût et un bénéfice" },
+                    reponse: "b",
+                    explication: "...la gouvernance fait du réseau à la fois un problème (fragmentation) et une solution ('mise en réseau' des acteurs).",
+                    page: 41
+                },
+                {
+                    section: "Chapitre V : Influences internes et externes",
+                    question: "Que signifie le terme 'partie prenante' (stakeholder) ?",
+                    options: { a: "Uniquement les actionnaires de l'entreprise", b: "Uniquement les employés", c: "Toute personne ou groupe ayant un intérêt dans le fonctionnement et les résultats de l'entreprise", d: "Uniquement les concurrents" },
+                    reponse: "c",
+                    explication: "Il s'agit des personnes physiques ou morales, groupes d'individus... qui ont chacune, un quelconque intérêt dans son fonctionnement et ses résultats.",
+                    page: 45
+                },
+                {
+                    question: "Lesquels de ces acteurs sont des parties prenantes INTERNES ?",
+                    options: { a: "Les clients et les fournisseurs", b: "L'État et les associations", c: "Les dirigeants, les salariés et les syndicats", d: "Les concurrents et les créanciers" },
+                    reponse: "c",
+                    explication: "Les parties prenantes internes sont constituées des Dirigeants, des Managers, des Salariés, des Actionnaires... et des syndicats.",
+                    page: 46
+                },
+                {
+                    question: "Quel est le rôle principal des syndicats en tant que partie prenante interne ?",
+                    options: { a: "Définir la stratégie globale de l'entreprise", b: "Appliquer la stratégie décidée par les dirigeants", c: "Représenter les actionnaires", d: "Agir comme un contre-pouvoir attentif aux intérêts des salariés" },
+                    reponse: "d",
+                    explication: "Ils sont attentifs aux intérêts des salariés, les syndicats ont un rôle de contre-pouvoir au sein de la structure.",
+                    page: 47
+                },
+                {
+                    question: "Lequel de ces acteurs est une partie prenante EXTERNE ?",
+                    options: { a: "Les managers", b: "Les salariés", c: "Les clients et les fournisseurs", d: "Le comité de direction" },
+                    reponse: "c",
+                    explication: "Les parties prenantes externes incluent les Clients, les Utilisateurs, les Fournisseurs, les Concurrents, les Créanciers, l'Etat, etc.",
+                    page: 48
+                },
+                {
+                    question: "Quelle est la première étape d'une stratégie de management des parties prenantes ?",
+                    options: { a: "Mettre immédiatement en place un plan de gestion", b: "Instaurer une communication intensive", c: "Établir une étude diagnostique pour identifier et cartographier les parties prenantes", d: "Analyser les influences des acteurs" },
+                    reponse: "c",
+                    explication: "Une telle stratégie consistera à : 1. Etablir une étude diagnostique, un état des lieux des parties prenantes en présence, une cartographie.",
+                    page: 50
+                },
+                {
+                    section: "Chapitre VI : Interactions des acteurs de l'écosystème",
+                    question: "Le concept d'écosystème des organisations désigne :",
+                    options: { a: "Uniquement les concurrents d'un même secteur", b: "Une communauté d'acteurs hétérogènes (entreprises, institutions, clients...) poursuivant une vision stratégique commune", c: "L'environnement naturel autour de l'entreprise", d: "Le marché boursier" },
+                    reponse: "b",
+                    explication: "Le concept d'écosystème des organisations désigne une communauté d'acteurs (entreprises, organisations, institutions, fournisseurs, clients, actionnaires...), issus de domaines d'activités différents, qui poursuivent une vision stratégique commune.",
+                    page: 52
+                },
+                {
+                    question: "Pour une grande entreprise, la stratégie d'implantation répond principalement à deux soucis. Lesquels ?",
+                    options: { a: "L'image de marque et la satisfaction des employés", b: "La réduction des coûts et la volonté d'innover", c: "La proximité des concurrents et le respect de l'environnement", d: "L'accès aux loisirs et à la culture" },
+                    reponse: "b",
+                    explication: "Pour une grande entreprise, la stratégie d'implantation répond à deux soucis, la réduction des coûts et la volonté d'innover.",
+                    page: 53
+                },
+                {
+                    question: "Qu'est-ce qu'une 'grappe d'entreprises' ou 'cluster' ?",
+                    options: { a: "Une seule grande entreprise qui domine un marché", b: "Un réseau d'entreprises, souvent des PME, qui s'associent avec d'autres acteurs d'une filière sur un territoire", c: "Un regroupement informel de concurrents pour fixer les prix", d: "Les filiales d'une multinationale" },
+                    reponse: "b",
+                    explication: "Une grappe d'entreprises ou « cluster » est un réseau d'entreprises qui s'associent à l'ensemble des acteurs d'une filière (autres entreprises, centres de formation, laboratoires, etc.).",
+                    page: 55
+                }
+            ]
+        },
         
         //Module 03
         'M03': {
@@ -1235,6 +1459,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialisation au chargement de la page ---
     populateDropdown();
 });
+
 
 
 
