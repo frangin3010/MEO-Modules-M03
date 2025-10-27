@@ -553,6 +553,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: 6
                 },
                 {
+                    question: "Le management oscille entre deux pôles qui lui donnent ses spécificités. Lesquels ?",
+                    options: { a: "Le profit et la perte", b: "Le long terme et le court terme", c: "La théorie et la pratique", d: "La hiérarchie et l'autonomie" },
+                    reponse: "c",
+                    explication: "En tant que science, le management oscille entre plusieurs pôles qui le caractérisent... une alternance entre théorie et pratique.",
+                    page: 6
+                },
+                {
+                    question: "Parmi les enjeux du management, lequel vise à limiter le départ des salariés ?",
+                    options: { a: "L'optimisation des résultats", b: "La cohésion d'équipe", c: "Le développement de la performance", d: "La fidélisation de l'équipe" },
+                    reponse: "d",
+                    explication: "Un des enjeux du management est la fidélisation de l'équipe : en prenant en compte les valeurs de chaque salarié, le manager a tout intérêt à fidéliser son équipe afin de limiter le turn-over.",
+                    page: 7
+                },
+                {
                     question: "Quelles sont les deux finalités principales du management retenues dans le cours ?",
                     options: { a: "La finalité politique et la finalité culturelle", b: "La finalité technologique et la finalité environnementale", c: "La finalité économique et la finalité sociale", d: "La finalité financière exclusive" },
                     reponse: "c",
@@ -560,8 +574,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: 7
                 },
                 {
+                    question: "Quel avantage du management est directement lié à un meilleur climat social et de meilleures conditions de travail ?",
+                    options: { a: "Plus de croissance", b: "Moins de turnover et d'absentéisme", c: "Plus de recrutement de clients", d: "Un gain de temps pour le manager" },
+                    reponse: "b",
+                    explication: "Le premier avantage est qu'il va permettre de réduire le turnover et l'absentéisme des équipes... grâce à une meilleure ambiance et de meilleures conditions de travail.",
+                    page: 8
+                },
+                {
+                    question: "Selon le cours, sur quelles deux composantes indissociables le management repose-t-il ?",
+                    options: { a: "Le marketing et la finance", b: "Les ressources humaines et la production", c: "La stratégie et l'organisation", d: "L'innovation et le contrôle" },
+                    reponse: "c",
+                    explication: "Le management repose plus que jamais sur deux composantes indissociables : la stratégie et l'organisation. L'une est externe (environnement), l'autre interne.",
+                    page: 10
+                },
+                {
                     question: "Selon Henri Fayol, les 5 fonctions de l'administration (management) sont résumées par l'acronyme POCCC. Que signifie le 'P' ?",
-                    options: { a: "Planification", b: "Prévision", c: "Production", d: "Personnel" },
+                    options: { a: "Planification", b: "Prévoyance", c: "Production", d: "Personnel" },
                     reponse: "b",
                     explication: "Henri Fayol décrit l'administration à partir de cinq éléments : Prévoyance, Organisation, Commandement, Coordination et Contrôle (POCCC).",
                     page: 11
@@ -582,6 +610,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: 15
                 },
                 {
+                    question: "Parmi les 14 principes de Fayol, lequel stipule qu'un subordonné ne doit recevoir d'instructions que d'un seul supérieur ?",
+                    options: { a: "La discipline", b: "L'unité de direction", c: "L'ordre", d: "L'unité de commandement" },
+                    reponse: "d",
+                    explication: "L'unité de commandement : ce principe, hérité de l'organisation des armées, signifie qu'un subordonné ne reçoit des instructions que de la part d'un seul supérieur.",
+                    page: 16
+                },
+                {
+                    question: "Selon Max Weber, sur quel type de légitimité repose l'autorité dans une organisation bureaucratique moderne ?",
+                    options: { a: "La légitimité charismatique (fondée sur les dons du leader)", b: "La légitimité traditionnelle (fondée sur la coutume)", c: "La légitimité rationnelle-légale (fondée sur des règles écrites)", d: "La légitimité par la force" },
+                    reponse: "c",
+                    explication: "Dans l'organisation proposée par Weber, l'autorité est fondée sur la légitimité rationnelle-légale, basée sur la croyance en la validité d'un statut légal et de règles établies.",
+                    page: 18
+                },
+                {
                     question: "L'école des relations humaines, avec Elton Mayo, est née en réaction à :",
                     options: { a: "L'école de la contingence", b: "L'école sociologique", c: "L'école de la prise de décision", d: "Aux excès du Taylorisme et à la déshumanisation du travail" },
                     reponse: "d",
@@ -594,6 +636,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     reponse: "c",
                     explication: "Mayo en déduit que la simple connaissance par un individu qu'il est sujet d'observation modifie son comportement. C'est ce qu'on appelle « effet Hawthorne ».",
                     page: 19
+                },
+                {
+                    question: "Dans la pyramide de Maslow, quel besoin doit être satisfait avant de pouvoir chercher à satisfaire le besoin d'appartenance ?",
+                    options: { a: "Le besoin d'accomplissement", b: "Le besoin d'estime", c: "Le besoin de sécurité", d: "Aucun, l'ordre n'est pas important" },
+                    reponse: "c",
+                    explication: "Un individu cherche d'abord à satisfaire le besoin le plus vital. Le besoin de sécurité (niveau 2) doit être satisfait avant le besoin d'appartenance (niveau 3).",
+                    page: 20
+                },
+                {
+                    question: "D'après la théorie de Herzberg, comment sont qualifiés les facteurs qui, s'ils sont absents, créent de l'insatisfaction (ex: salaire, conditions de travail) ?",
+                    options: { a: "Facteurs de motivation", b: "Facteurs de satisfaction", c: "Facteurs d'hygiène", d: "Facteurs de performance" },
+                    reponse: "c",
+                    explication: "Herzberg qualifie de 'facteurs d'hygiène' les éléments (salaire, sécurité, etc.) qui ne sont pas une source de motivation mais dont l'absence peut empêcher l'insatisfaction.",
+                    page: 21
                 },
                 {
                     question: "La Théorie Y de Douglas McGregor suppose que l'individu moyen :",
@@ -610,11 +666,39 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: 23
                 },
                 {
+                    question: "L'école de la prise de décision, avec H.A. Simon, introduit le concept de :",
+                    options: { a: "Rationalité absolue de l'homo economicus", b: "Rationalité limitée, où le décideur cherche une solution 'satisfaisante' et non 'optimale'", c: "Prise de décision basée uniquement sur l'intuition", d: "Élimination totale de l'incertitude" },
+                    reponse: "b",
+                    explication: "Pour H.A. Simon, la rationalité est limitée par l'information disponible et les capacités du décideur, qui adopte une solution qui satisfait son critère sans chercher l'optimum.",
+                    page: 24
+                },
+                {
+                    question: "La Direction Participative Par Objectifs (DPPO) est un processus de management qui repose sur :",
+                    options: { a: "Des objectifs imposés par la direction sans discussion", b: "Des objectifs vagues et non quantifiés", c: "Des objectifs négociés, quantifiés et datés, fixés en concertation entre hiérarchie et subordonnés", d: "L'absence totale d'objectifs pour favoriser la créativité" },
+                    reponse: "c",
+                    explication: "La DPPO est un processus de concertation établi entre la hiérarchie et les subordonnés dans le but de fixer des objectifs négociés de travail qui seront quantifiés et datés.",
+                    page: 26
+                },
+                {
                     question: "La théorie de la contingence structurelle rompt avec les courants précédents en affirmant que :",
                     options: { a: "Il existe une seule et unique meilleure façon d'organiser une entreprise ('one best way')", b: "La structure de l'entreprise est indépendante de son environnement", c: "Il n'y a pas de structure idéale, mais autant de 'best way' qu'il existe de contextes différents", d: "La motivation des employés est le seul facteur important" },
                     reponse: "c",
                     explication: "Les théories de la contingence se caractérisent par leur rupture avec... l'existence d'une seule forme structurelle meilleure... pour donner comme alternative le principe selon lequel il n'y a pas de structure d'organisation idéale, mais autant de « best way » qu'il existe de contextes différents.",
                     page: 27
+                },
+                {
+                    question: "Selon Burns et Stalker, une structure de type 'mécaniste' convient mieux à un environnement :",
+                    options: { a: "Stable", b: "Instable et changeant", c: "Innovant", d: "Hautement compétitif" },
+                    reponse: "a",
+                    explication: "La structure d'organisation de type mécaniste... convient mieux de ce fait à un environnement stable.",
+                    page: 29
+                },
+                {
+                    question: "Qu'est-ce que la Théorie Z de William Ouchi ?",
+                    options: { a: "Une théorie opposée à la théorie Y de McGregor", b: "Une synthèse des caractéristiques des entreprises japonaises et occidentales, fondée sur la loyauté et la confiance", c: "Un modèle de management purement autocratique", d: "Une théorie basée sur la fin du management" },
+                    reponse: "b",
+                    explication: "La théorie Z de William Ouchi s'appuie sur une synthèse des caractéristiques des entreprises japonaises et occidentales... Elle est fondée sur des valeurs, telles que : la loyauté, la fidélité, l'amitié et la confiance.",
+                    page: 31
                 },
                 {
                     section: "Chapitre 3 : Types et styles de management",
@@ -632,11 +716,25 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: 34
                 },
                 {
+                    question: "Un manager qui entraîne ses collaborateurs à se dépasser et fait parler sa créativité en proposant de nouvelles idées adopte un style :",
+                    options: { a: "Directif", b: "Persuasif", c: "Participatif", d: "Délégatif" },
+                    reponse: "b",
+                    explication: "Le manager persuasif est celui qui entraîne ses collaborateurs à se dépasser, à faire toujours plus que ce dont ils s'estiment capables, et fait parler sa créativité en proposant toujours de nouvelles idées.",
+                    page: 35
+                },
+                {
                     question: "Lequel de ces principes est à la base du management participatif ?",
                     options: { a: "La centralisation de toutes les décisions", b: "La limitation de la communication pour éviter les désaccords", c: "La délégation et la concertation pour rendre les collaborateurs autonomes", d: "L'imposition d'un mode de fonctionnement unique" },
                     reponse: "c",
                     explication: "Un des grands principes du management participatif est la délégation et la concertation : il faut rendre les collaborateurs autonomes, leur permettre de travailler à leur façon, les responsabiliser et les consulter.",
                     page: 35
+                },
+                {
+                    question: "Le management délégatif est basé principalement sur :",
+                    options: { a: "Le contrôle constant et les instructions précises", b: "La persuasion et la motivation par le discours", c: "La responsabilisation, la confiance et l'évaluation des résultats", d: "La prise de décision en groupe" },
+                    reponse: "c",
+                    explication: "Le management délégatif est basé sur la responsabilisation et la confiance, la déléguation et l'évaluation de ses collaborateurs. Il indique les missions et les résultats à obtenir en laissant la liberté des méthodes.",
+                    page: 36
                 },
                 {
                     section: "Chapitre 4 : Outils de management",
@@ -654,6 +752,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: 38
                 },
                 {
+                    question: "L'écoute active, concept développé à partir des travaux de Carl Rogers, consiste principalement à :",
+                    options: { a: "Parler plus que son interlocuteur pour le convaincre", b: "Se concentrer sur l'autre pour comprendre, interpréter et évaluer ce qu'il dit, en utilisant la reformulation", c: "Écouter sans jamais poser de questions", d: "Donner immédiatement son avis et une solution" },
+                    reponse: "b",
+                    explication: "L'écoute active est une façon structurée d'écouter son interlocuteur... votre attention se porte sur l'autre personne pour vous permettre de comprendre, d'interpréter et d'évaluer ce qu'elle vous dit.",
+                    page: 39
+                },
+                {
                     question: "Le Visual Management (Gestion par la vue) a pour objectif de :",
                     options: { a: "Rendre la communication plus complexe et détaillée", b: "Limiter l'accès à l'information aux seuls managers", c: "Faciliter la transmission d'informations entre toutes les parties prenantes de manière simple et visible", d: "Remplacer tous les outils numériques par des tableaux papier" },
                     reponse: "c",
@@ -668,6 +773,7 @@ document.addEventListener('DOMContentLoaded', () => {
 'M06': {
             title: 'MEO-M06 : Systèmes de Management (Qualité, Env., SST)',
             questions: [
+                // --- CHAPITRE 1 : SMQ ---
                 {
                     section: "Chapitre 1 : Le Système de Management de la Qualité (SMQ)",
                     question: "Selon le cours, quelle est la définition principale de la qualité ?",
@@ -684,11 +790,25 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: "SMQ-5"
                 },
                 {
-                    question: "Le principe de l'orientation client implique pour l'organisme de :",
-                    options: { a: "Ignorer les mécontentements pour ne garder que les bons clients", b: "Imposer ses produits aux clients", c: "Travailler sur les attentes des clients, les identifier et même les prévoir", d: "Répondre uniquement aux attentes explicites" },
+                    question: "Parmi les enjeux économiques de la qualité, on trouve :",
+                    options: { a: "La motivation du personnel", b: "L'obligation de respecter les lois", c: "La diminution des coûts de non-qualité et la fidélisation des clients", d: "La protection de l'environnement" },
                     reponse: "c",
-                    explication: "Pour renforcer son orientation client, l'organisme doit travailler sur les attentes de ses clients : les identifier (et même les prévoir) et tout mettre en œuvre pour y répondre.",
-                    page: "SMQ-11"
+                    explication: "Les enjeux économiques incluent la compétitivité par la diminution des prix de revient et des coûts de non-qualité, ainsi que la fidélisation des clients et la capture de nouveaux marchés.",
+                    page: "SMQ-7"
+                },
+                {
+                    question: "Le principe de 'Leadership' (Responsabilité de la Direction) implique que la direction doit principalement :",
+                    options: { a: "Réaliser elle-même toutes les tâches de contrôle", b: "Définir les orientations de l'organisme et assurer la disponibilité des ressources", c: "Se concentrer uniquement sur les bénéfices financiers", d: "Sanctionner le personnel à chaque erreur" },
+                    reponse: "b",
+                    explication: "La direction doit définir les orientations, assurer la disponibilité des ressources pour atteindre les objectifs et impliquer le personnel.",
+                    page: "SMQ-12"
+                },
+                {
+                    question: "Que signifie 'l'approche processus' dans le management de la qualité ?",
+                    options: { a: "Gérer chaque service de l'entreprise de manière isolée", b: "Considérer l'activité comme un ensemble de sous-activités corrélées avec des données d'entrée et de sortie", c: "Suivre une procédure unique et rigide pour toutes les tâches", d: "Se focaliser uniquement sur le processus de vente" },
+                    reponse: "b",
+                    explication: "L'approche processus revient à considérer l'activité de l'organisme comme un ensemble de sous-activités corrélées, où chaque processus a des données d'entrée et de sortie.",
+                    page: "SMQ-14"
                 },
                 {
                     question: "La 'roue de Deming', ou cycle PDCA, est un outil pour :",
@@ -697,6 +817,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     explication: "Le principe de l'amélioration continue est souvent représenté par un cycle d'actions, appelé 'roue de Deming' ou cycle PDCA : Plan, Do, Check, Act.",
                     page: "SMQ-15"
                 },
+                {
+                    question: "Le principe de 'prise de décision fondée sur des preuves' vise à :",
+                    options: { a: "Augmenter la part de l'intuition dans les décisions", b: "Réduire l'incertitude en s'appuyant sur des données objectives", c: "Prendre des décisions plus rapidement, même sans information", d: "Suivre systématiquement l'avis du plus haut gradé" },
+                    reponse: "b",
+                    explication: "L'idée de ce principe est de réduire l'incertitude inévitable lors des prises de décisions, en s'appuyant sur des données objectives pour comprendre les causes et les effets.",
+                    page: "SMQ-17"
+                },
+                {
+                    question: "Quelle est l'une des premières étapes clés de la mise en place d'une démarche qualité ?",
+                    options: { a: "Mesurer immédiatement les performances", b: "Définir et communiquer la politique qualité de l'organisme", c: "Acheter un nouveau logiciel de gestion", d: "Former tout le personnel à l'audit" },
+                    reponse: "b",
+                    explication: "Les premières étapes incluent la définition de l'objet de l'organisme (1) et la définition et communication de la politique de l'organisme (2).",
+                    page: "SMQ-19"
+                },
+                // --- CHAPITRE 2 : SME ---
                 {
                     section: "Chapitre 2 : Le Système de Management de l'Environnement (SME)",
                     question: "Quel est l'objectif principal d'un Système de Management Environnemental (SME) ?",
@@ -713,12 +848,41 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: "SME-2"
                 },
                 {
+                    question: "Quel enjeu financier est un moteur important pour la mise en place d'un SME ?",
+                    options: { a: "Le coût croissant de réparation des dommages causés à l'environnement", b: "Les subventions garanties par l'État", c: "L'augmentation du prix des actions", d: "La réduction des salaires" },
+                    reponse: "a",
+                    explication: "Un des enjeux du management environnemental est financier. Les coûts de réparation des dommages causés sur l'environnement sont de plus en plus importants.",
+                    page: "SME-5"
+                },
+                {
+                    question: "La notion de 'préservation de l'environnement' est hétérogène. Lequel de ces enjeux est cité comme exemple dans le cours ?",
+                    options: { a: "La satisfaction des clients", b: "La qualité de l'air et de l'eau", c: "La rentabilité financière", d: "La sécurité des employés" },
+                    reponse: "b",
+                    explication: "Les enjeux sont variables et hétérogènes : respect de la biodiversité, effet de serre, déforestation, qualité de l'eau, qualité de l'air, etc.",
+                    page: "SME-7"
+                },
+                {
+                    question: "Selon le cours, quel est le premier critère de la performance managériale pour 88% des managers ?",
+                    options: { a: "Le climat social", b: "L'autonomie des collaborateurs", c: "L'excellence opérationnelle", d: "L'innovation" },
+                    reponse: "c",
+                    explication: "Logiquement, l'excellence opérationnelle est le premier critère de la performance managériale pour 88% des managers.",
+                    page: "SME-8"
+                },
+                {
+                    question: "Un des objectifs concrets d'un SME est de se conformer à :",
+                    options: { a: "La demande des actionnaires", b: "La législation en vigueur", c: "Les pratiques des concurrents", d: "La tradition de l'entreprise" },
+                    reponse: "b",
+                    explication: "Un des points clés de l'objectif du SME est de 'Se conformer à la législation en vigueur'.",
+                    page: "SME-11"
+                },
+                {
                     question: "Lequel de ces éléments est un avantage direct de la mise en place d'un SME ?",
                     options: { a: "L'augmentation garantie des ventes", b: "La simplification des processus de production", c: "La réduction des consommations d'énergie, d'eau et de matières premières", d: "L'élimination totale des risques" },
                     reponse: "c",
                     explication: "Parmi les avantages du SME, on trouve : maîtriser les risques sur l'environnement, réduire les consommations d'énergie, d'eau, de matières premières et maîtriser les coûts.",
                     page: "SME-12"
                 },
+                // --- CHAPITRE 3 : SMSST ---
                 {
                     section: "Chapitre 3 : Le Système de Management de la Santé et Sécurité au Travail (SMSST)",
                     question: "Quel est le double objectif d'une démarche de prévention en Santé et Sécurité au Travail (SST) ?",
@@ -728,11 +892,39 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: "SMSST-4"
                 },
                 {
+                    question: "Un SMSST est une démarche volontaire qui vise notamment à :",
+                    options: { a: "Réagir aux changements après qu'ils se soient produits", b: "Augmenter les dysfonctionnements pour les identifier", c: "Anticiper les changements et augmenter la performance de l'entreprise en prévention", d: "Isoler la démarche SST des autres démarches de management" },
+                    reponse: "c",
+                    explication: "Le SMSST est une démarche volontaire qui vise à : anticiper les changements, augmenter la réactivité et la performance de l'entreprise dans la prévention des risques.",
+                    page: "SMSST-5"
+                },
+                {
+                    question: "En plus d'améliorer la santé des personnes, une démarche de prévention SST contribue aussi à :",
+                    options: { a: "Complexifier l'organisation", b: "Améliorer l'efficacité, la qualité des prestations et la rentabilité de l'entreprise", c: "Augmenter la consommation de ressources", d: "Réduire la communication interne" },
+                    reponse: "b",
+                    explication: "Maîtriser l'environnement de travail contribue aussi à améliorer l'efficacité d'une entreprise, la qualité de ses prestations ainsi que sa rentabilité.",
+                    page: "SMSST-7"
+                },
+                {
                     question: "La norme ISO 45001 vise à aider les organisations à :",
                     options: { a: "Améliorer la qualité de leurs produits", b: "Réduire leur impact environnemental", c: "Améliorer la sécurité de leurs employés et réduire les risques sur le lieu de travail", d: "Sécuriser leurs systèmes d'information" },
                     reponse: "c",
                     explication: "ISO 45001 est la norme élaborée par l'ISO pour les organisations soucieuses d'améliorer la sécurité de leurs employés, de réduire les risques sur le lieu de travail et de créer des conditions de travail meilleures et plus sûres.",
                     page: "SMSST-8"
+                },
+                {
+                    question: "Quelle obligation légale l'employeur a-t-il concernant les risques professionnels ?",
+                    options: { a: "Il doit informer oralement des risques les plus évidents", b: "Il peut ignorer les risques si aucun accident n'a eu lieu", c: "Il doit évaluer les risques sur chaque poste et les consigner dans un document", d: "Cette obligation ne concerne que les grandes entreprises" },
+                    reponse: "c",
+                    explication: "L'employeur doit évaluer les risques professionnels sur chaque poste de travail. Ces risques sont consignés dans un document.",
+                    page: "SMSST-9"
+                },
+                {
+                    question: "Le non-respect d'une obligation de sécurité met en jeu l'intégrité des collaborateurs, mais aussi :",
+                    options: { a: "Uniquement la réputation du dirigeant", b: "Des éléments extérieurs à l'entreprise comme l'environnement ou les riverains", c: "Uniquement les bénéfices de l'entreprise", d: "La vitesse de la connexion internet" },
+                    reponse: "b",
+                    explication: "Le non-respect d'une obligation de sécurité met en jeu... mais aussi des éléments extérieurs à l'entreprise (environnement, riverains...).",
+                    page: "SMSST-10"
                 },
                 {
                     question: "Un SMSST est une démarche qui doit être :",
@@ -741,6 +933,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     explication: "Le schéma de développement d'un SMSST s'inscrit dans une dynamique de changement qui requiert de la pédagogie, une démarche participative et collaborative.",
                     page: "SMSST-12"
                 },
+                // --- CHAPITRE 4 : SMSI ---
                 {
                     section: "Chapitre 4 : Le Système de Management de la Sécurité de l'Information (SMSI)",
                     question: "Que permet principalement un Système de Management de la Sécurité de l'Information (SMSI) ?",
@@ -757,11 +950,60 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: "SMSI-4"
                 },
                 {
+                    question: "Un SMSI vise à protéger l'intégrité des technologies contre quoi notamment ?",
+                    options: { a: "Les pannes matérielles uniquement", b: "Les erreurs des utilisateurs uniquement", c: "Les cyberattaques, les dommages ou les menaces", d: "La lenteur du réseau" },
+                    reponse: "c",
+                    explication: "C'est un ensemble de stratégies de sécurité qui protègent l'intégrité des technologies de l'information... contre les cyberattaques, les dommages ou menaces.",
+                    page: "SMSI-5"
+                },
+                {
+                    question: "En plus de la protection des données sensibles, quel autre aspect crucial un SMSI doit-il prendre en compte ?",
+                    options: { a: "La stratégie marketing", b: "La satisfaction des employés", c: "La continuité des opérations et la conformité réglementaire", d: "La gestion des fournisseurs" },
+                    reponse: "c",
+                    explication: "La continuité des opérations, la conformité réglementaire et la protection de la vie privée et de l'identité sont autant d'aspects cruciaux à prendre en compte pour minimiser les risques.",
+                    page: "SMSI-6"
+                },
+                {
+                    question: "Selon le cours, à quels niveaux l'information est-elle essentielle au processus de prise de décisions ?",
+                    options: { a: "Uniquement au niveau stratégique", b: "Uniquement au niveau opérationnel", c: "Tant au niveau stratégique qu'au niveau opérationnel", d: "Uniquement pour le service marketing" },
+                    reponse: "c",
+                    explication: "L'information est essentielle au processus de prise de décisions tant au niveau stratégique qu'au niveau opérationnel.",
+                    page: "SMSI-7"
+                },
+                {
+                    question: "Quelles sont les deux finalités d'un Système d'Information (SI) ?",
+                    options: { a: "Technique et financière", b: "Fonctionnelle et sociale", c: "Commerciale et juridique", d: "Stratégique et marketing" },
+                    reponse: "b",
+                    explication: "Le SI a deux finalités : fonctionnelle et sociale.",
+                    page: "SMSI-8"
+                },
+                {
                     question: "Quels sont les trois objectifs fondamentaux de la sécurité de l'information (triade DIC) ?",
                     options: { a: "Données, Intégrité, Communication", b: "Disponibilité, Intégrité, Confidentialité", c: "Données, Informatique, Communication", d: "Disponibilité, Information, Contrôle" },
                     reponse: "b",
-                    explication: "Les objectifs sont : L'intégrité (garantir que les données sont correctes), La disponibilité (maintenir le bon fonctionnement), La confidentialité (rendre l'information inintelligible aux personnes non autorisées).",
+                    explication: "Les objectifs sont : La Disponibilité (maintenir le bon fonctionnement), L'Intégrité (garantir que les données sont correctes), La Confidentialité (rendre l'information inintelligible aux personnes non autorisées).",
                     page: "SMSI-10"
+                },
+                {
+                    question: "L'atténuation des risques dans un SMSI permet de mettre en œuvre des mesures de sécurité pour protéger :",
+                    options: { a: "Uniquement les biens matériels", b: "Uniquement les données informatiques", c: "Uniquement les personnes", d: "Les personnes, les biens ou l'environnement" },
+                    reponse: "d",
+                    explication: "L'atténuation des risques permet de mettre en œuvre des mesures de sécurité pour protéger les personnes, les biens ou l'environnement.",
+                    page: "SMSI-11"
+                },
+                {
+                    question: "Quelle est la première étape de la démarche de mise en œuvre d'un SMSI ?",
+                    options: { a: "La planification des actions", b: "La politique de prévention", c: "L'analyse initiale", d: "La mesure de la performance" },
+                    reponse: "c",
+                    explication: "La première étape de la mise en œuvre est l'Étape 1 : Analyse initiale.",
+                    page: "SMSI-13"
+                },
+                {
+                    question: "La dernière étape de la démarche de mise en œuvre d'un SMSI est :",
+                    options: { a: "L'organisation", b: "La mise en œuvre et le fonctionnement", c: "L'analyse initiale", d: "L'amélioration du système de management" },
+                    reponse: "d",
+                    explication: "La dernière étape (Étape 7) est l'Amélioration du système de management.",
+                    page: "SMSI-13"
                 }
             ]
         },
@@ -993,6 +1235,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialisation au chargement de la page ---
     populateDropdown();
 });
+
 
 
 
