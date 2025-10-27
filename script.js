@@ -6,13 +6,19 @@ document.addEventListener('DOMContentLoaded', () => {
         'M01': {
             title: 'MEO-M01 : Théorie des organisations',
             questions: [
-                // CHAPITRE I
                 {
                     section: "Chapitre I : Concepts des Organisations",
                     question: "Selon la définition de Henry Mintzberg, l'organisation est avant tout :",
                     options: { a: "Un ensemble de moyens structurés pour atteindre des objectifs", b: "Le lieu d'exercice du pouvoir et de la hiérarchie", c: "Une action collective à la poursuite de la réalisation d'une mission commune", d: "Une discipline située entre l'économie et la sociologie" },
                     reponse: "c",
                     explication: "Pour Henry Mintzberg (1989), et de façon plus simple, \"L'organisation se définit comme une action collective à la poursuite de la réalisation d'une mission commune\".",
+                    page: 6
+                },
+                {
+                    question: "Laquelle de ces propositions ne correspond pas à la définition d'une organisation ?",
+                    options: { a: "Un ensemble d'individus regroupés", b: "Un objectif commun", c: "Des ressources et moyens mis en commun", d: "Une absence totale de hiérarchie et de règles" },
+                    reponse: "d",
+                    explication: "Une organisation suppose un objectif commun, un regroupement d'individus et la mise en commun de moyens, généralement dans un cadre structuré (hiérarchie, règles).",
                     page: 6
                 },
                 {
@@ -29,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     explication: "De grands auteurs comme Henri Fayol (1841-1925) et Frederic Winslow Taylor (1856-1915), ou encore Max Weber (1864-1920), qui appartiennent à l'école classique des organisations, vont poser les premières bases...",
                     page: 7
                 },
-                // CHAPITRE II
                 {
                     section: "Chapitre II : Historique et Évolution",
                     question: "Dans le classement de W. R. Scott, l'axe horizontal de l'évolution des théories représente le passage :",
@@ -53,13 +58,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: 10
                 },
                 {
+                    question: "L'école des relations humaines (1930-1960) a été fondée principalement par des :",
+                    options: { a: "Ingénieurs", b: "Économistes", c: "Sociologues et psychologues", d: "Chefs militaires" },
+                    reponse: "c",
+                    explication: "La deuxième phase (1930 - 1960)... correspond à l'école des relations humaines, fondée par des sociologues et des psychologues.",
+                    page: 11
+                },
+                {
                     question: "L'école systémique de la contingence (1960) abandonne quel postulat fondamental des écoles précédentes ?",
                     options: { a: "La division du travail", b: "La hiérarchie des besoins", c: "Le principe de l'unité de commandement", d: "L'idée du « the one best way » (la meilleure façon unique de faire)" },
                     reponse: "d",
                     explication: "L'école de la contingence ou systémique abandonne définitivement le préalable, longtemps dominant, du « the one best way » des écoles : classique et des relations humaines.",
                     page: 12
                 },
-                // CHAPITRE III
                 {
                     section: "Chapitre III : Types et Modèles d'Organisation",
                     question: "Dans l'école classique, l'entreprise est considérée comme :",
@@ -76,10 +87,31 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: 15
                 },
                 {
+                    question: "Henri Fayol, contrairement à Taylor, centre son analyse sur :",
+                    options: { a: "L'organisation de l'atelier de production", b: "Le métier de dirigeant et la fonction d'administration", c: "La psychologie des ouvriers", d: "Les relations informelles dans les groupes" },
+                    reponse: "b",
+                    explication: "Henri Fayol, contrairement à Taylor, centre son analyse sur le métier de dirigeant... et sur la fonction d'administration, c'est-à-dire de management.",
+                    page: 15
+                },
+                {
+                    question: "Parmi les 14 principes de gestion de Fayol, lequel est 'l'union du personnel' ?",
+                    options: { a: "L'équité", b: "L'initiative", c: "La stabilité du personnel", d: "L'esprit de corps" },
+                    reponse: "d",
+                    explication: "Le principe N°14, 'L'union du personnel fait la force', est aussi appelé l'esprit de corps.",
+                    page: 20
+                },
+                {
                     question: "Selon Max Weber, quelle forme d'autorité est fondée sur des règles juridiques écrites et la compétence, où l'on obéit à la fonction et non à la personne ?",
                     options: { a: "La légitimité traditionnelle", b: "La légitimité charismatique", c: "La légitimité rationnelle et légale", d: "La légitimité bureaucratique" },
                     reponse: "c",
                     explication: "c) La légitimité rationnelle et légale... le leader exerce son autorité sur la base des règles juridiques formalisées par écrit... C'est la fonction qui est investie d'une autorité et non la personne.",
+                    page: 17
+                },
+                {
+                    question: "Laquelle de ces propositions N'EST PAS une caractéristique de la bureaucratie wébérienne ?",
+                    options: { a: "La division du travail clairement définie", b: "Le caractère impersonnel des relations", c: "Des règles et règlements normalisés", d: "Le recrutement basé sur les relations personnelles" },
+                    reponse: "d",
+                    explication: "La bureaucratie de Weber repose sur une sélection du personnel fondée sur la formation et les connaissances techniques, vérifiées par des tests, et non sur des relations.",
                     page: 17
                 },
                 {
@@ -132,11 +164,46 @@ document.addEventListener('DOMContentLoaded', () => {
                     page: 27
                 },
                 {
+                    question: "Selon la théorie des deux facteurs de Herzberg, un 'facteur de motivation' est un élément qui :",
+                    options: { a: "Empêche l'insatisfaction s'il est présent (ex: un bon salaire)", b: "Augmente la satisfaction et motive s'il est présent (ex: la reconnaissance, l'évolution de carrière)", c: "Est neutre et n'a aucun impact sur l'employé", d: "Crée de l'insatisfaction s'il est absent, mais ne motive pas s'il est présent" },
+                    reponse: "b",
+                    explication: "Les 'facteurs de satisfaction' (ou motivation) peuvent augmenter le degré de satisfaction et motiver. Ils sont liés au développement et à l'épanouissement.",
+                    page: 21
+                },
+                {
+                    question: "L'école néo-classique, avec des auteurs comme Peter Drucker, met l'accent sur :",
+                    options: { a: "Le retour aux principes stricts du Taylorisme", b: "La psychologie individuelle de chaque employé", c: "Des approches plus pragmatiques comme la direction par objectifs (DPO) et la décentralisation", d: "L'analyse des systèmes ouverts" },
+                    reponse: "c",
+                    explication: "L'école néo-classique est fondée sur des postulats comme la maximisation du profit, la décentralisation des décisions et la direction par objectif (DPO).",
+                    page: 25
+                },
+                {
+                    question: "Qu'est-ce que la 'décentralisation coordonnée' proposée par Alfred Sloan ?",
+                    options: { a: "Une centralisation de toutes les fonctions de l'entreprise", b: "Laisser une autonomie aux divisions, jugées sur leur rentabilité, tout en centralisant certaines fonctions (finance, juridique)", c: "Donner une autonomie totale à chaque employé", d: "Fusionner toutes les divisions en une seule" },
+                    reponse: "b",
+                    explication: "La théorie de la décentralisation coordonnée repose sur l'autonomie laissée aux divisions (jugées sur la rentabilité) et la centralisation de certaines fonctions comme les finances, le juridique, la publicité...",
+                    page: 25
+                },
+                {
+                    question: "L'école socio-technique intègre les individus et la technique en créant :",
+                    options: { a: "Des postes de travail plus spécialisés", b: "Des chaînes de montage plus rapides", c: "Des groupes autonomes de travail responsables de la production d'une entité", d: "Une hiérarchie plus stricte" },
+                    reponse: "c",
+                    explication: "L'organisation sociotechnique intègre les individus et la technique dans un modèle caractérisé par la création de groupes autonomes de travail permettant d'accomplir des tâches.",
+                    page: 27
+                },
+                {
                     question: "Selon la théorie des contingences structurelles de Burns et Stalker, une organisation 'organique' est adaptée à quel type d'environnement ?",
                     options: { a: "Un environnement stable avec peu de changements", b: "Un environnement instable avec des changements technologiques et de marché", c: "Un environnement où la hiérarchie est très importante", d: "Un environnement où les tâches sont standardisées" },
                     reponse: "b",
                     explication: "Les organisations organiques, à structure souple pour un environnement dit instable.",
                     page: 30
+                },
+                {
+                    question: "Selon Greiner, la croissance d'une entreprise passe par une série de phases, chacune se terminant par :",
+                    options: { a: "Une période de stabilité", b: "Une augmentation de la rentabilité", c: "Une crise à surmonter pour passer à la phase suivante", d: "Une réorganisation complète" },
+                    reponse: "c",
+                    explication: "L'entreprise passe par une série de phases. Chaque phase se caractérise par une crise à surmonter pour passer à la phase suivante (crise de leadership, d'autonomie, de contrôle...).",
+                    page: 28
                 },
                 {
                     question: "Selon Henry Mintzberg, une 'adhocratie' est une structure particulièrement adaptée pour :",
@@ -151,6 +218,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     reponse: "b",
                     explication: "Selon cette théorie, l'homme ne subit pas passivement la pression de l'organisation... Bien au contraire, la sociologie des organisations prend appui sur un individu qui est un acteur qui structure le champ dans lequel il évolue.",
                     page: 34
+                },
+                {
+                    question: "Dans l'analyse de Crozier, le pouvoir est lié à la maîtrise d'une :",
+                    options: { a: "Compétence facilement remplaçable", b: "Zone d'incertitude", c: "Règle organisationnelle claire", d: "Relation hiérarchique directe" },
+                    reponse: "b",
+                    explication: "Ces quatre sources de pouvoir (connaissance, relations, communication, règles) renvoient à la maîtrise d'une zone d'incertitude, condition d'existence du pouvoir.",
+                    page: 30
                 }
             ]
         },
@@ -1459,6 +1533,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialisation au chargement de la page ---
     populateDropdown();
 });
+
 
 
 
