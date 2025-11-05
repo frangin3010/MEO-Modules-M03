@@ -1380,7 +1380,254 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             ]
         },
-        
+
+        // Module 07 _ Comptabilité Générale
+
+        'M07': {
+            title: 'MEO-M07 : Comptabilité Générale (Chap. 1 à 6)',
+            questions: [
+                {
+                    question: "Une entité économique est :",
+                    options: { a: "Une personne physique isolée", b: "Un ensemble organisé de personnes et de moyens poursuivant un objectif économique propre", c: "Une entreprise industrielle uniquement", d: "Une association sans but lucratif" },
+                    reponse: "b",
+                    explication: "Une entité économique est un ensemble organisé de personnes et de moyens (matériels, financiers) qui cherche à atteindre un objectif économique qui lui est propre."
+                },
+                {
+                    question: "L'activité économique désigne :",
+                    options: { a: "Toute activité produisant des biens ou services", b: "Une activité exclusivement commerciale", c: "Une activité financière uniquement", d: "Une activité agricole uniquement" },
+                    reponse: "a",
+                    explication: "De manière générale, l'activité économique englobe toute action visant à produire, distribuer ou consommer des biens et des services pour satisfaire des besoins."
+                },
+                {
+                    question: "La classification des entités se fait selon :",
+                    options: { a: "Trois critères", b: "Deux critères", c: "Cinq critères", d: "Aucun critère" },
+                    reponse: "a",
+                    explication: "Les entités économiques sont généralement classées selon trois critères principaux : le statut juridique, le secteur d'activité et la taille."
+                },
+                {
+                    question: "Parmi les critères de classification, lequel n'en fait pas partie ?",
+                    options: { a: "Statut juridique", b: "Secteur d'activité", c: "Taille", d: "Localisation géographique" },
+                    reponse: "d",
+                    explication: "La localisation géographique est une caractéristique d'une entreprise, mais pas un des trois critères fondamentaux de classification (Statut juridique, Secteur, Taille)."
+                },
+                {
+                    question: "Une entreprise parapublique est :",
+                    options: { a: "Une entreprise entièrement privée", b: "Une entreprise entièrement publique", c: "Une entreprise à capitaux mixtes (publics et privés)", d: "Une société étrangère" },
+                    reponse: "c",
+                    explication: "Une entreprise parapublique est une société d'économie mixte où l'État ou une collectivité publique détient une partie du capital aux côtés d'actionnaires privés."
+                },
+                {
+                    question: "Les entreprises agricoles appartiennent au secteur :",
+                    options: { a: "Primaire", b: "Secondaire", c: "Tertiaire", d: "Quaternaire" },
+                    reponse: "a",
+                    explication: "Le secteur primaire regroupe les activités liées à l'exploitation des ressources naturelles, comme l'agriculture, la pêche et l'exploitation minière."
+                },
+                {
+                    question: "La valeur ajoutée représente :",
+                    options: { a: "Les ventes totales", b: "La richesse créée à l'intérieur de l'entreprise", c: "Les capitaux propres", d: "Les amortissements" },
+                    reponse: "b",
+                    explication: "La valeur ajoutée mesure la richesse réellement créée par une entreprise. Elle se calcule par la différence entre la valeur de sa production et la valeur des consommations intermédiaires."
+                },
+                {
+                    question: "La comptabilité est un système d'organisation de l'information :",
+                    options: { a: "Technique uniquement", b: "Financière", c: "Commerciale", d: "Administrative" },
+                    reponse: "b",
+                    explication: "La comptabilité est avant tout un système d'information financière qui permet de collecter, traiter et communiquer des informations sur la situation économique d'une entité."
+                },
+                {
+                    question: "La comptabilité publique concerne :",
+                    options: { a: "Les entreprises privées", b: "L'État et les collectivités publiques", c: "Les ONG", d: "Les associations" },
+                    reponse: "b",
+                    explication: "La comptabilité publique s'applique aux administrations publiques (État, collectivités territoriales, établissements publics) pour suivre l'exécution de leur budget."
+                },
+                {
+                    question: "La comptabilité analytique permet principalement :",
+                    options: { a: "D'évaluer les résultats globaux", b: "De calculer les coûts de revient", c: "D'établir les bilans", d: "De calculer les impôts" },
+                    reponse: "b",
+                    explication: "Contrairement à la comptabilité générale qui donne une vue globale, la comptabilité analytique est un outil de gestion interne qui permet de calculer et d'analyser les coûts (coût de revient, coût par produit, etc.)."
+                },
+                {
+                    question: "Le bilan présente :",
+                    options: { a: "Les charges et produits", b: "Les biens (actifs) et dettes (passifs) à une date donnée", c: "Les flux de trésorerie", d: "Les résultats prévisionnels" },
+                    reponse: "b",
+                    explication: "Le bilan est une 'photographie' du patrimoine de l'entreprise à un instant T, listant ce qu'elle possède (actif) et ce qu'elle doit (passif)."
+                },
+                {
+                    question: "Les biens d'une entreprise figurent :",
+                    options: { a: "À l'actif du bilan", b: "Au passif du bilan", c: "Dans le compte de résultat", d: "Dans la trésorerie-passif" },
+                    reponse: "a",
+                    explication: "L'actif du bilan regroupe tous les biens et droits que possède l'entreprise (immobilisations, stocks, créances, etc.)."
+                },
+                {
+                    question: "Les dettes de l'entreprise figurent :",
+                    options: { a: "À l'actif du bilan", b: "Au passif du bilan", c: "Dans les charges", d: "Dans les produits" },
+                    reponse: "b",
+                    explication: "Le passif du bilan regroupe toutes les ressources de l'entreprise, qui sont aussi ses dettes envers les apporteurs de capitaux (capitaux propres) et les tiers (dettes financières, fournisseurs, etc.)."
+                },
+                {
+                    question: "Les créances clients sont :",
+                    options: { a: "Des dettes", b: "Des biens incorporels", c: "Des actifs circulants", d: "Des capitaux propres" },
+                    reponse: "c",
+                    explication: "Les créances clients représentent l'argent que les clients doivent à l'entreprise. C'est un droit, donc un actif, destiné à être encaissé à court terme (circulant)."
+                },
+                {
+                    question: "Les capitaux propres regroupent :",
+                    options: { a: "Les dettes à long terme", b: "Les ressources internes de l'entreprise (capital, réserves, résultat)", c: "Les emprunts bancaires", d: "Les créances" },
+                    reponse: "b",
+                    explication: "Les capitaux propres représentent les ressources stables de l'entreprise, appartenant à ses propriétaires (capital social, réserves accumulées, résultat de l'exercice)."
+                },
+                {
+                    question: "La situation nette est calculée par :",
+                    options: { a: "Total des biens – total des dettes", b: "Actif – passif (qui est toujours égal à zéro)", c: "Capitaux propres – dettes", d: "Actif + passif" },
+                    reponse: "a",
+                    explication: "La situation nette, ou capitaux propres, représente ce qui resterait aux propriétaires si l'entreprise remboursait toutes ses dettes. Elle est donc égale au total des biens (actif) moins le total des dettes envers les tiers."
+                },
+                {
+                    question: "Les dettes financières (emprunts) sont classées :",
+                    options: { a: "Dans le passif circulant", b: "Dans le passif immobilisé", c: "Dans les ressources durables (Passif)", d: "Dans l'actif circulant" },
+                    reponse: "c",
+                    explication: "Les dettes financières à long terme constituent une ressource stable pour l'entreprise, elles sont donc classées dans les ressources durables du passif."
+                },
+                {
+                    question: "Les dettes fournisseurs font partie :",
+                    options: { a: "Du passif circulant", b: "Des capitaux propres", c: "De l'actif", d: "Des immobilisations" },
+                    reponse: "a",
+                    explication: "Les dettes fournisseurs sont des dettes à court terme liées au cycle d'exploitation, elles font donc partie du passif circulant."
+                },
+                {
+                    question: "Les disponibilités regroupent :",
+                    options: { a: "Les stocks", b: "Les avoirs en caisse et en banque", c: "Les créances", d: "Les amortissements" },
+                    reponse: "b",
+                    explication: "Les disponibilités représentent l'argent immédiatement utilisable par l'entreprise, c'est-à-dire les soldes des comptes bancaires et le contenu de la caisse."
+                },
+                {
+                    question: "La trésorerie-passif comprend :",
+                    options: { a: "Les crédits de trésorerie (concours bancaires courants)", b: "Les stocks de matières", c: "Les créances clients", d: "Les subventions d'investissement" },
+                    reponse: "a",
+                    explication: "La trésorerie-passif regroupe les dettes financières à très court terme, comme les découverts bancaires et autres crédits de trésorerie."
+                },
+                {
+                    question: "Le compte de résultat retrace :",
+                    options: { a: "Les flux d'investissement", b: "Les charges et produits de l'exercice", c: "Les biens et dettes", d: "Les variations de capitaux propres" },
+                    reponse: "b",
+                    explication: "Le compte de résultat est le 'film' de l'activité de l'entreprise sur une période (l'exercice). Il synthétise tous les enrichissements (produits) et appauvrissements (charges) pour déterminer le résultat."
+                },
+                {
+                    question: "Le résultat net se calcule comme :",
+                    options: { a: "Total produits – total charges", b: "Total charges – total produits", c: "Actif – passif", d: "Bilan – compte de résultat" },
+                    reponse: "a",
+                    explication: "Le résultat net de l'exercice est la différence entre le total des produits (tout ce que l'entreprise a gagné) et le total des charges (tout ce qu'elle a consommé)."
+                },
+                {
+                    question: "Une charge correspond à :",
+                    options: { a: "Un appauvrissement de l'entreprise", b: "Une ressource", c: "Un produit", d: "Une immobilisation" },
+                    reponse: "a",
+                    explication: "Une charge représente une consommation de biens ou de services qui appauvrit l'entreprise (achat de marchandises, salaires, loyers, etc.)."
+                },
+                {
+                    question: "Un produit représente :",
+                    options: { a: "Une dette", b: "Une ressource ou un enrichissement", c: "Un flux de sortie", d: "Une dépense d'investissement" },
+                    reponse: "b",
+                    explication: "Un produit représente une ressource qui enrichit l'entreprise, provenant de son activité (ventes de marchandises, prestations de services, etc.)."
+                },
+                {
+                    question: "Les activités financières concernent :",
+                    options: { a: "Les ventes et achats", b: "Les opérations de crédit, intérêts, placements", c: "Les salaires", d: "Les amortissements" },
+                    reponse: "b",
+                    explication: "Les activités financières regroupent les opérations liées au financement de l'entreprise, comme les intérêts sur emprunts (charge) ou les revenus de placements (produit)."
+                },
+                {
+                    question: "Les charges de personnel figurent parmi :",
+                    options: { a: "Les charges d'exploitation", b: "Les charges financières", c: "Les produits HAO", d: "Les immobilisations" },
+                    reponse: "a",
+                    explication: "Les charges de personnel (salaires, cotisations sociales) sont directement liées à l'activité normale et courante de l'entreprise, ce sont donc des charges d'exploitation."
+                },
+                {
+                    question: "Les produits HAO signifient :",
+                    options: { a: "Hors activités ordinaires", b: "Hautes activités organisationnelles", c: "Honoraires et autres opérations", d: "Héritages actifs obligatoires" },
+                    reponse: "a",
+                    explication: "HAO est l'acronyme pour 'Hors Activités Ordinaires'. Il s'agit de produits ou charges qui ont un caractère exceptionnel et ne sont pas liés à l'activité courante de l'entreprise."
+                },
+                {
+                    question: "Un flux économique représente :",
+                    options: { a: "Un mouvement d'entrée ou de sortie de valeur", b: "Un bénéfice net", c: "Un capital fixe", d: "Une dette fiscale" },
+                    reponse: "a",
+                    explication: "Un flux économique matérialise un mouvement de biens, de services ou de monnaie entre l'entreprise et ses partenaires, représentant un transfert de valeur."
+                },
+                {
+                    question: "L'analyse comptable d'une opération consiste à :",
+                    options: { a: "Identifier le journal utilisé", b: "Distinguer la ressource (origine du flux) et l'emploi (destination du flux)", c: "Enregistrer la date seulement", d: "Déterminer le bénéfice brut" },
+                    reponse: "b",
+                    explication: "L'analyse de toute opération comptable repose sur le principe de la partie double : identifier l'origine du flux (la ressource) et sa destination (l'emploi)."
+                },
+                {
+                    question: "La relation fondamentale en comptabilité est :",
+                    options: { a: "Actif = Passif", b: "Ressources = Emplois", c: "Produits = Charges", d: "Débit = Crédit uniquement" },
+                    reponse: "b",
+                    explication: "Le principe de base de la comptabilité en partie double est que pour chaque opération, le montant total des emplois doit être égal au montant total des ressources."
+                },
+                {
+                    question: "Un flux sortant correspond à :",
+                    options: { a: "Un emploi", b: "Une ressource", c: "Une charge fictive", d: "Une créance" },
+                    reponse: "b",
+                    explication: "Un flux sortant représente l'origine de la valeur, ce que l'entreprise fournit. C'est donc une ressource. Par exemple, lors d'un paiement, l'argent qui sort de la banque est la ressource."
+                },
+                {
+                    question: "Un compte en comptabilité est :",
+                    options: { a: "Un journal des opérations", b: "Un tableau enregistrant des flux de même nature", c: "Un registre des immobilisations", d: "Un document fiscal" },
+                    reponse: "b",
+                    explication: "Un compte est un tableau qui permet de suivre tous les mouvements (flux) concernant un même élément du patrimoine ou de l'activité (ex: le compte 'Banque', le compte 'Clients', le compte 'Ventes')."
+                },
+                {
+                    question: "La partie gauche du compte est appelée :",
+                    options: { a: "Crédit", b: "Débit", c: "Passif", d: "Produit" },
+                    reponse: "b",
+                    explication: "Par convention comptable, la colonne de gauche d'un compte est appelée le Débit."
+                },
+                {
+                    question: "La partie droite du compte est appelée :",
+                    options: { a: "Débit", b: "Crédit", c: "Actif", d: "Emploi" },
+                    reponse: "b",
+                    explication: "Par convention comptable, la colonne de droite d'un compte est appelée le Crédit."
+                },
+                {
+                    question: "Le principe de la partie double signifie que :",
+                    options: { a: "Chaque opération affecte au moins deux comptes", b: "Chaque opération est enregistrée une seule fois", c: "Les ressources sont supérieures aux emplois", d: "Le débit est toujours égal au passif" },
+                    reponse: "a",
+                    explication: "La partie double implique que chaque opération a une double facette (un emploi et une ressource) et doit donc être enregistrée dans au moins deux comptes pour maintenir l'équilibre."
+                },
+                {
+                    question: "Le principe de la partie double conduit à l'égalité :",
+                    options: { a: "Débit ≠ Crédit", b: "Total des Emplois = Total des Ressources", c: "Actif < Passif", d: "Charges = Produits" },
+                    reponse: "b",
+                    explication: "La conséquence directe du principe de la partie double est que pour toute opération, le montant total des emplois (inscrits au débit) est toujours égal au montant total des ressources (inscrites au crédit)."
+                },
+                {
+                    question: "Dans un compte, les flux entrants (emplois) sont enregistrés :",
+                    options: { a: "Au crédit", b: "Au débit", c: "Dans les deux côtés", d: "En observation" },
+                    reponse: "b",
+                    explication: "Les emplois, qui représentent une augmentation des biens ou des charges, sont enregistrés au débit des comptes concernés."
+                },
+                {
+                    question: "Dans un compte, les flux sortants (ressources) sont enregistrés :",
+                    options: { a: "Au débit", b: "Au crédit", c: "Dans le journal", d: "À l'actif" },
+                    reponse: "b",
+                    explication: "Les ressources, qui représentent une augmentation des dettes ou des produits, sont enregistrées au crédit des comptes concernés."
+                },
+                {
+                    question: "Le plan comptable SYSCOHADA comprend :",
+                    options: { a: "6 classes", b: "7 classes", c: "8 classes pour la comptabilité générale et 1 pour les engagements hors bilan", d: "10 classes" },
+                    reponse: "c",
+                    explication: "Le plan comptable SYSCOHADA est structuré en 8 classes de comptes pour la comptabilité générale (1 à 8) et une classe 9 pour les engagements hors bilan et la comptabilité analytique."
+                },
+                {
+                    question: "Le rôle du plan comptable est de :",
+                    options: { a: "Gérer le personnel", b: "Normaliser et organiser les enregistrements comptables", c: "Calculer la rentabilité", d: "Établir les ratios financiers" },
+                    reponse: "b",
+                    explication: "Le plan comptable fournit une liste de comptes standardisée et des règles de fonctionnement pour que toutes les entreprises enregistrent leurs opérations de manière uniforme et cohérente."
+                }
+            ]
+        },
         // Vous pourrez ajouter 'M05', etc. ici
      
     };
@@ -1608,6 +1855,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialisation au chargement de la page ---
     populateDropdown();
 });
+
 
 
 
