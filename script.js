@@ -1628,6 +1628,502 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             ]
         },
+        
+        //Module 08 Gestion Financière
+        //M08_Partie 1
+        'M08P1': {
+            title: 'MEO-M08 : Gestion Financière de Projet (Partie 1/2)',
+            questions: [
+                {
+                    question: "Parmi les trois assertions suivantes, laquelle traduit le mieux le sens économique de l'acte d'investir ?",
+                    options: { a: "Assurer durablement les besoins de fonctionnement d'une entité.", b: "L'échange d'une satisfaction immédiate et certaine contre une espérance de revenus futurs.", c: "L'acquisition de biens de consommation par emprunt bancaire." },
+                    reponse: "b",
+                    explication: "L'acte d'investir consiste à renoncer à une satisfaction immédiate (une dépense certaine) pour une espérance de gains futurs (revenus incertains)."
+                },
+                {
+                    question: "Selon une classification purement économique, quelle distinction fait-on entre les investissements ?",
+                    options: { a: "Investissements productifs et non productifs.", b: "Investissements locaux et à l'étranger.", c: "Investissements durables et non durables." },
+                    reponse: "a",
+                    explication: "D'un point de vue économique, on distingue les investissements productifs (qui accroissent la production) des improductifs (qui ne l'accroissent pas, ex: locaux administratifs)."
+                },
+                {
+                    question: "Comment définit-on un investissement improductif ?",
+                    options: { a: "Un investissement neutre au regard de la production, qui n'autorise pas un accroissement de profit.", b: "Un investissement qui ne produit aucun bien ou service.", c: "Un investissement qui ne peut occasionner aucune création d'emploi." },
+                    reponse: "a",
+                    explication: "Un investissement improductif (ou non productif) n'a pas pour but d'augmenter directement la production ou le profit. Il est souvent nécessaire au fonctionnement."
+                },
+                {
+                    question: "Selon la classification comptable, quelles sont les trois catégories d'investissement ?",
+                    options: { a: "Investissements à court, moyen et long terme.", b: "Investissements agricoles, industriels et commerciaux.", c: "Actifs corporels, actifs incorporels et actifs financiers." },
+                    reponse: "c",
+                    explication: "La classification comptable se base sur la nature de l'actif acquis : corporel (machines), incorporel (brevets) et financier (participations)."
+                },
+                {
+                    question: "Qu'est-ce qu'un actif corporel ?",
+                    options: { a: "Un bien physique (équipement, installation technique, machine, outillage...).", b: "Un investissement réalisé par des corporations de travailleurs.", c: "Un investissement s'inscrivant dans un corps de métier déterminé." },
+                    reponse: "a",
+                    explication: "Un actif corporel a une existence matérielle, physique. Il est tangible (on peut le toucher), comme un bâtiment ou une machine."
+                },
+                {
+                    question: "Qu'est-ce qu'un investissement d'expansion ?",
+                    options: { a: "Un investissement qui contribue à la croissance de l'entreprise en réponse à un accroissement de la demande.", b: "Un simple investissement.", c: "Un investissement de remplacement." },
+                    reponse: "a",
+                    explication: "L'investissement d'expansion (ou de capacité) vise à augmenter la capacité de production pour répondre à une demande croissante du marché."
+                },
+                {
+                    question: "Qu'est-ce qu'un investissement d'innovation ?",
+                    options: { a: "Le financement d'un projet de recherche scientifique de pointe.", b: "Un investissement financé grâce à un montage financier novateur.", c: "Le développement d'activités nouvelles, le lancement de nouveaux produits ou la création de nouveaux marchés." },
+                    reponse: "c",
+                    explication: "L'investissement d'innovation est stratégique et vise à introduire de la nouveauté, que ce soit dans les produits, les procédés ou les marchés."
+                },
+                {
+                    question: "Qu'est-ce que le coût d'un projet d'investissement ?",
+                    options: { a: "Le coût total d'acquisition des moyens durables de production.", b: "L'ensemble des dépenses effectuées dans le cadre de ce projet.", c: "Le montant total des sommes apportées par le promoteur." },
+                    reponse: "b",
+                    explication: "Le coût d'un projet inclut l'ensemble des dépenses nécessaires à sa réalisation, pas seulement l'acquisition des moyens de production."
+                },
+                {
+                    question: "Qu'appelle-t-on « dépenses d'exploitation » d'un projet ?",
+                    options: { a: "Les dépenses pour acquérir les équipements.", b: "Les dépenses nécessaires pour le fonctionnement du projet une fois mis en place.", c: "Les dépenses pour remplir les formalités juridiques et administratives." },
+                    reponse: "b",
+                    explication: "Les dépenses d'exploitation sont les coûts récurrents liés au fonctionnement normal du projet après son lancement (matières premières, salaires, énergie...)."
+                },
+                {
+                    question: "Qu'appelle-t-on « Recettes d'exploitation » ?",
+                    options: { a: "Des sommes empruntées pour le projet.", b: "Des bénéfices réalisés par le projet.", c: "Les chiffres d'affaires générés par la production ou l'accroissement de production liée à l'investissement." },
+                    reponse: "c",
+                    explication: "Les recettes d'exploitation représentent le chiffre d'affaires, c'est-à-dire le total des ventes de biens ou services produits grâce à l'investissement."
+                },
+                {
+                    question: "Qu'est-ce que la Valeur Résiduelle d'un investissement ?",
+                    options: { a: "Le prix de vente possible de tout ou partie du matériel à la fin de la durée de vie du projet.", b: "Le bénéfice généré par l'investissement durant sa dernière année.", c: "La différence entre la valeur de vente des biens et l'ensemble des dettes." },
+                    reponse: "a",
+                    explication: "La valeur résiduelle est la valeur de revente estimée des actifs (matériel, etc.) à la fin de leur utilisation dans le projet."
+                },
+                {
+                    question: "Qu'est-ce que le Cash-flow (solde de flux de caisse) ?",
+                    options: { a: "Les sommes d'argent encaissées pendant une année.", b: "Le solde des flux de caisse (entrées - sorties) engendrés par un investissement à la fin d'une période.", c: "Le bénéfice réalisé par un projet au cours d'une année." },
+                    reponse: "b",
+                    explication: "Le cash-flow (ou flux de trésorerie) représente l'argent réellement généré ou consommé par le projet sur une période. C'est le solde entre les encaissements et les décaissements."
+                },
+                {
+                    question: "Qu'est-ce que le Cash-flow (notion de trésorerie) ?",
+                    options: { a: "La différence entre les entrées et les sorties monétaires au cours d'une période.", b: "La différence entre les produits et les charges (notions comptables).", c: "La différence entre les sommes versées par les banques et les intérêts versés." },
+                    reponse: "a",
+                    explication: "Le cash-flow est une notion de trésorerie (monétaire), à ne pas confondre avec le bénéfice qui est une notion comptable (produits - charges)."
+                },
+                {
+                    question: "Le cash-flow se calcule grâce à la formule suivante (VR = Valeur Résiduelle) :",
+                    options: { a: "CFk = Rk - Dk - Ik + VR", b: "CFk = Rk - Dk + Ik + VR", c: "CFk = Rk + Dk - Ik + VR" },
+                    reponse: "a",
+                    explication: "CF = Recettes (entrée) - Dépenses d'exploitation (sortie) - Investissement (sortie) + Valeur Résiduelle (entrée, uniquement la dernière année)."
+                },
+                {
+                    question: "Quel est le double rôle du taux d'intérêt ?",
+                    options: { a: "Rémunérer le prêteur et le protéger de l'inflation.", b: "Permettre à l'État d'engranger des recettes.", c: "Accroître la rentabilité des projets et orienter les investisseurs." },
+                    reponse: "a",
+                    explication: "Le taux d'intérêt compense le prêteur pour sa renonciation à une consommation immédiate et pour le risque de perte de pouvoir d'achat dû à l'inflation."
+                },
+                {
+                    question: "Qu'est-ce que la Valeur Nette (VN) d'un investissement ?",
+                    options: { a: "La somme des flux de trésorerie positifs uniquement.", b: "La somme de tous les revenus futurs (flux de trésorerie, positifs ou négatifs).", c: "Le coût global de l'investissement diminué des impôts." },
+                    reponse: "b",
+                    explication: "La Valeur Nette (à ne pas confondre avec la VAN) est une simple somme arithmétique de tous les flux futurs, sans tenir compte de leur date d'occurrence."
+                },
+                {
+                    question: "Soit les flux Fo, F1, ..., Fn. Quelles sont leurs valeurs actualisées ?",
+                    options: { a: "Fo, F1(1+i), F2(1+i)², ...", b: "Fo, F1(1+i)¹/², F2(1+i)¹/³, ...", c: "Fo, F1(1+i)⁻¹, F2(1+i)⁻², ..." },
+                    reponse: "c",
+                    explication: "Actualiser un flux futur Fk consiste à le multiplier par le coefficient d'actualisation (1+i)⁻ᵏ pour trouver sa valeur aujourd'hui."
+                },
+                {
+                    question: "Qu'est-ce que la Valeur Actuelle Nette (VAN) d'un investissement ?",
+                    options: { a: "La somme des cash-flows du projet.", b: "La somme des cash-flows actualisés générés par le projet.", c: "La somme actualisée des cash-flows positifs uniquement." },
+                    reponse: "b",
+                    explication: "La VAN est la somme de TOUS les cash-flows (positifs et négatifs, y compris l'investissement initial) ramenés à leur valeur à la date 0 (actualisés)."
+                },
+                {
+                    question: "Quelle formule permet de calculer la VAN (sans impôt) ?",
+                    options: { a: "VAN = -Io + F1(1+i) + F2(1+i)² + ...", b: "VAN = -Io(1+i)⁻¹ + F1(1+i)⁻² + ...", c: "VAN = -Io + F1(1+i)⁻¹ + F2(1+i)⁻² + ..." },
+                    reponse: "c",
+                    explication: "La formule de la VAN est la somme des flux futurs actualisés, à laquelle on ajoute l'investissement initial (qui est un flux négatif à la date 0, donc déjà à sa valeur actuelle)."
+                },
+                {
+                    question: "La VAN peut être calculée par la formule suivante :",
+                    options: { a: "VAN = -Io + Σ CFk(1+i)⁻ᵏ", b: "VAN = Io + Σ CFk(1+i)⁻ᵏ", c: "VAN = -Io + Σ CFk(1+i)ᵏ" },
+                    reponse: "a",
+                    explication: "C'est la notation mathématique de la somme des cash-flows actualisés, en considérant l'investissement initial Io comme une sortie à la date 0."
+                },
+                {
+                    question: "Quelle relation lie la VAN et le taux d'intérêt i ?",
+                    options: { a: "La VAN est indépendante du taux i.", b: "La VAN est une fonction monotone décroissante du taux i.", c: "La VAN est une fonction monotone croissante du taux i." },
+                    reponse: "b",
+                    explication: "Plus le taux d'actualisation 'i' est élevé, plus la valeur des flux futurs est faible, et donc plus la VAN diminue. La VAN est une fonction décroissante de i."
+                },
+                {
+                    question: "Choisissez la bonne assertion.",
+                    options: { a: "À un taux d'actualisation élevé correspond une VAN d'autant plus réduite que les flux sont éloignés dans le temps.", b: "À un taux d'actualisation élevé correspond une VAN d'autant plus élevée.", c: "Le taux d'actualisation n'a aucune incidence sur le niveau de la VAN." },
+                    reponse: "a",
+                    explication: "L'effet de l'actualisation est plus fort sur les flux lointains. Un taux élevé 'pénalise' donc davantage les projets dont les revenus sont attendus tardivement."
+                },
+                {
+                    question: "Quelle est la signification économique de la VAN ?",
+                    options: { a: "La somme des bénéfices que le projet génère.", b: "La somme des bénéfices actualisés.", c: "La richesse (le surplus) que génère le projet, au-delà de la rentabilité minimale exigée par le taux d'actualisation." },
+                    reponse: "c",
+                    explication: "La VAN représente la richesse créée par le projet APRÈS avoir remboursé le capital et rémunéré les apporteurs de fonds au taux 'i'. C'est le vrai surplus de valeur."
+                },
+                {
+                    question: "Dire qu'une VAN à 10% est de 20M FCFA sur 12 ans signifie :",
+                    options: { a: "Le total des intérêts encaissés est de 20M FCFA.", b: "Pour 100 FCFA investis, le projet rapporte 10F par an ET crée en plus un surplus total actualisé de 20M FCFA.", c: "Le résultat comptable annuel croîtra pour atteindre 20M FCFA." },
+                    reponse: "b",
+                    explication: "Une VAN positive signifie que le projet est plus rentable que le taux d'actualisation utilisé. Le montant de la VAN est la richesse additionnelle créée."
+                },
+                {
+                    question: "Que signifie une VAN positive pour un investissement ?",
+                    options: { a: "Le projet a un taux de rentabilité supérieur à celui du marché (le taux d'actualisation).", b: "La rentabilité du projet est identique à celle du marché.", c: "Le projet dégage des cash-flows tous positifs." },
+                    reponse: "a",
+                    explication: "Une VAN > 0 signifie que le projet est créateur de valeur, car sa rentabilité intrinsèque est supérieure au coût d'opportunité du capital (le taux 'i')."
+                },
+                {
+                    question: "Un projet d'investissement ayant une VAN positive :",
+                    options: { a: "Appauvrit son promoteur et doit être rejeté.", b: "Est trop coûteux et devrait être abandonné.", c: "Enrichit son promoteur et mérite d'être réalisé." },
+                    reponse: "c",
+                    explication: "Puisqu'une VAN positive indique une création de richesse, le projet est acceptable et enrichit l'investisseur."
+                },
+                {
+                    question: "Un projet ayant une VAN négative :",
+                    options: { a: "Est un projet dont la rentabilité est insuffisante et qui appauvrit son promoteur.", b: "Est un projet très endetté qui ne pourra pas faire face à ses charges.", c: "Est un projet qui nécessite un investissement faible." },
+                    reponse: "a",
+                    explication: "Une VAN < 0 signifie que la rentabilité du projet est inférieure au taux exigé. Le projet détruit de la valeur et doit être rejeté."
+                },
+                {
+                    question: "Lorsque les cash-flows (F) sont constants, la VAN se calcule par :",
+                    options: { a: "VAN = F + Io x [ ... ]", b: "VAN = -Io + F x [ (1 - (1+i)⁻ⁿ) / i ]", c: "VAN = Io + F x [ ... ]" },
+                    reponse: "b",
+                    explication: "Cette formule utilise le coefficient d'actualisation d'une suite d'annuités constantes pour simplifier le calcul de la somme des cash-flows futurs."
+                },
+                {
+                    question: "En cas de comparaison entre deux projets exclusifs, le choix va :",
+                    options: { a: "Au projet ayant la VAN la plus faible.", b: "Aucun des deux car la VAN n'est pas adaptée.", c: "Au projet ayant la VAN la plus élevée." },
+                    reponse: "c",
+                    explication: "Entre deux projets qui s'excluent mutuellement, on choisit celui qui crée le plus de richesse, c'est-à-dire celui qui a la VAN la plus élevée."
+                },
+                {
+                    question: "Les Dotations aux Amortissements (DA) sont :",
+                    options: { a: "À la fois des charges et des dépenses.", b: "Des charges (comptables) mais pas des dépenses (flux de trésorerie).", c: "Des dépenses mais pas des charges." },
+                    reponse: "b",
+                    explication: "L'amortissement est une charge calculée qui constate la perte de valeur d'un bien, mais elle n'entraîne pas de sortie d'argent. C'est une charge non décaissée."
+                },
+                {
+                    question: "Comment calcule-t-on le Cash-Flow (CF) à partir du Résultat après impôt ?",
+                    options: { a: "CF = Résultat après impôt - Dotation aux Amortissements (DA)", b: "CF = Résultat après impôt + Dotation aux Amortissements (DA)", c: "CF = Dotation aux Amortissements (DA) - Résultat après impôt" },
+                    reponse: "b",
+                    explication: "Pour passer du résultat comptable (qui a soustrait les DA) au flux de trésorerie, on doit 'réannuler' cette charge non décaissée en la rajoutant."
+                },
+                {
+                    question: "Le Résultat avant impôt s'obtient par le calcul suivant :",
+                    options: { a: "Total Produits – Total Charges (y compris les Dotations aux Amortissements)", b: "Total Produits + Total Charges (y compris les DA)", c: "Total Produits – Total Charges (hors DA)" },
+                    reponse: "a",
+                    explication: "Le résultat avant impôt est calculé après avoir déduit toutes les charges d'exploitation, y compris les dotations aux amortissements qui sont fiscalement déductibles."
+                },
+                {
+                    question: "Formule développée du Cash-Flow (CF) avec impôt (t%) :",
+                    options: { a: "[...] + Dotations aux Amortissements + Investissements", b: "[(Recettes – Dépenses – DA) – (Recettes – Dépenses – DA) x t%] + DA - Investissements", c: "[...] - Dotations aux Amortissements - Investissements" },
+                    reponse: "b",
+                    explication: "La formule complète est : Résultat après impôt [(Résultat avant impôt) x (1-t%)] + DA - I. La réponse B est une forme développée de ce calcul."
+                },
+                {
+                    question: "Le Cash-flow de la dernière année (n) avec impôt et Valeur Résiduelle (VR) est :",
+                    options: { a: "(Recettes n – Dépenses n + DA n + VR) – Impôt n + DA n – I n", b: "(Recettes n – Dépenses n – DA n + VR) – Impôt n - DA n - I n", c: "(Recettes n – Dépenses n – DA n + VR) – Impôt n + DA n - I n" },
+                    reponse: "c",
+                    explication: "Le cash-flow de la dernière année intègre la Valeur Résiduelle dans le calcul du résultat avant de calculer l'impôt, puis on réintègre la dotation aux amortissements."
+                },
+                {
+                    question: "Une critique de la VAN est qu'elle est fondée sur l'hypothèse :",
+                    options: { a: "De la redistribution des cash-flows aux promoteurs.", b: "Du réinvestissement intégral des cash-flows générés, ce qui est peu réaliste.", c: "Du non réinvestissement des cash-flows." },
+                    reponse: "b",
+                    explication: "La principale critique théorique de la VAN est qu'elle suppose implicitement que les flux de trésorerie intermédiaires sont réinvestis au taux d'actualisation 'i', ce qui n'est pas toujours le cas."
+                },
+                {
+                    question: "Indiquez l'assertion juste concernant les faiblesses de la VAN.",
+                    options: { a: "Elle résout le problème du financement.", b: "Elle accroît les problèmes de financement.", c: "Elle évalue la rentabilité mais ignore le problème du financement." },
+                    reponse: "c",
+                    explication: "La VAN indique si un projet est rentable, mais elle ne dit pas si l'entreprise aura les fonds nécessaires pour le financer. C'est une de ses limites pratiques."
+                },
+                {
+                    question: "Comment le choix du taux d'actualisation doit-il être fait ?",
+                    options: { a: "Il ne doit pas être inférieur au taux minimum de rémunération d'un placement sans risque.", b: "Il doit être inférieur à ce taux plancher.", c: "Il est choisi de façon indépendante des taux du marché." },
+                    reponse: "a",
+                    explication: "Le taux d'actualisation doit au minimum représenter le coût d'opportunité, c'est-à-dire le rendement qu'on pourrait obtenir avec un placement alternatif (le 'taux plancher')."
+                },
+                {
+                    question: "Pour un projet financé par crédit, quand sera-t-il jugé rentable ?",
+                    options: { a: "Si sa VAN est positive à un taux d'actualisation égal au taux d'intérêt du capital emprunté.", b: "Si sa VAN est positive à un taux inférieur au taux d'intérêt.", c: "Si sa VAN est positive, quel que soit le taux d'intérêt." },
+                    reponse: "a",
+                    explication: "Le taux du crédit représente le coût du capital. Pour être rentable, le projet doit générer un rendement supérieur à ce coût, ce qui se traduit par une VAN > 0 en utilisant le taux du crédit comme taux d'actualisation."
+                },
+                {
+                    question: "Pour un projet autofinancé, quand sera-t-il jugé intéressant ?",
+                    options: { a: "Si sa VAN est négative au taux de placement possible.", b: "Si sa VAN est positive au taux de placement possible.", c: "Si sa VAN est positive à un taux inférieur au taux de placement possible." },
+                    reponse: "c",
+                    explication: "Le projet est intéressant si sa rentabilité est supérieure à celle d'un placement alternatif. Donc, la VAN doit être positive en utilisant le taux de ce placement comme taux d'actualisation."
+                },
+                {
+                    question: "Le taux d'actualisation est-il exempt de l'incidence du taux d'inflation ?",
+                    options: { a: "Oui, totalement.", b: "Non, car les taux d'intérêt des marchés financiers intègrent généralement une anticipation de l'inflation.", c: "Non, car le taux d'actualisation est lui-même un taux d'inflation." },
+                    reponse: "b",
+                    explication: "Les taux de marché (taux nominaux) incluent une prime pour compenser l'inflation anticipée. Le taux d'actualisation, basé sur ces taux, en tient donc indirectement compte."
+                }
+            ]
+        },
+
+        //M08_Partie 2
+        'M08P2': {
+            title: 'MEO-M08 : Gestion Financière de Projet (Partie 2/2)',
+            questions: [
+                {
+                    question: "Le Délai de Récupération (DR) se définit comme :",
+                    options: { a: "La durée pour que les flux de trésorerie compensent le capital emprunté.", b: "La durée pour que la somme cumulée des flux de trésorerie positifs compense le capital investi.", c: "La durée pour que le projet atteigne son cash-flow le plus élevé." },
+                    reponse: "b",
+                    explication: "Le DR est le temps nécessaire pour que les flux de trésorerie générés par le projet 'remboursent' l'investissement initial."
+                },
+                {
+                    question: "Quelles sont les conditions de calcul du Délai de Récupération (DR) ?",
+                    options: { a: "Il ne peut se calculer qu'avec des cash-flows non actualisés.", b: "Il ne peut se calculer qu'avec des cash-flows actualisés.", c: "Il peut se calculer avec des cash-flows non actualisés ou actualisés." },
+                    reponse: "c",
+                    explication: "Le DR peut être calculé de manière simple (sans actualisation) ou de manière plus rigoureuse (avec actualisation des flux)."
+                },
+                {
+                    question: "Laquelle de ces trois assertions est juste ?",
+                    options: { a: "Le DR actualisé est plus court que le DR non actualisé.", b: "Le DR actualisé est identique au DR non actualisé.", c: "Le DR actualisé est plus long que le DR non actualisé." },
+                    reponse: "c",
+                    explication: "Comme l'actualisation diminue la valeur des flux futurs, il faut plus de temps pour que leur somme cumulée atteigne le montant de l'investissement initial."
+                },
+                {
+                    question: "Choisissez l'assertion juste.",
+                    options: { a: "Au plan économique, il est plus pertinent de calculer le DR avec des cash-flows actualisés.", b: "Au plan économique, il est plus pertinent de calculer le DR avec des cash-flows non actualisés.", c: "Les deux méthodes sont aussi pertinentes l'une que l'autre." },
+                    reponse: "a",
+                    explication: "Le calcul avec actualisation (Délai de Récupération Actualisé - DRA) est économiquement plus juste car il prend en compte la valeur temporelle de l'argent."
+                },
+                {
+                    question: "Le calcul du DR actualisé (d) se fait par la formule :",
+                    options: { a: "La durée d telle que Σ CFk(1+i)⁻ᵏ = 2 x Io", b: "La durée d telle que Σ CFk(1+i)⁻ᵏ = Io", c: "La durée d telle que Σ CFk = Io" },
+                    reponse: "b",
+                    explication: "On cherche la durée 'd' pour laquelle la somme des cash-flows actualisés est exactement égale à l'investissement initial Io."
+                },
+                {
+                    question: "Dans la décision de réaliser un projet, le critère du DR conduit à :",
+                    options: { a: "Accepter un projet si son DR est supérieur ou égal au délai cible.", b: "Accepter un projet si son DR intervient avant la fin du projet.", c: "Accepter un projet si son DR est inférieur ou égal au délai cible fixé par le promoteur." },
+                    reponse: "c",
+                    explication: "Le DR est un critère de liquidité et de risque. On accepte les projets qui permettent de récupérer l'investissement dans un délai jugé acceptable (le délai cible)."
+                },
+                {
+                    question: "Pour choisir entre deux projets exclusifs, le critère du DR favorise :",
+                    options: { a: "Le projet ayant le DR le plus long.", b: "Le projet ayant le DR le plus court.", c: "Le choix ne peut pas être fait avec ce critère." },
+                    reponse: "b",
+                    explication: "Entre deux projets, on préfère celui qui permet de récupérer la mise de fonds le plus rapidement, minimisant ainsi le risque."
+                },
+                {
+                    question: "Choisissez la bonne assertion concernant le DR.",
+                    options: { a: "Le DR accorde une grande importance aux cash-flows des premières années et aucune aux cash-flows situés au-delà du délai.", b: "Le DR accorde une égale importance à tous les cash-flows.", c: "Le DR accorde plus d'importance aux cash-flows situés après le délai." },
+                    reponse: "a",
+                    explication: "C'est la principale limite du DR : il ignore complètement la rentabilité du projet après la période de récupération."
+                },
+                {
+                    question: "Quelle appréciation peut-on faire du DR comme critère de choix ?",
+                    options: { a: "C'est un bon critère car un remboursement rapide signifie un projet rentable.", b: "C'est un mauvais critère car il peut favoriser un projet peu rentable à long terme.", c: "C'est un bon critère car le cumul des cash-flows est un indicateur de rentabilité." },
+                    reponse: "b",
+                    explication: "Un projet peut avoir des flux importants au début (DR court) mais faibles par la suite, le rendant globalement moins rentable (VAN faible) qu'un projet avec un DR plus long."
+                },
+                {
+                    question: "Dans quels cas l'utilisation du DR est-elle la plus pertinente ?",
+                    options: { a: "Pour des projets risqués ou dans des technologies de pointe où les prévisions à long terme sont incertaines.", b: "Pour tous les projets où les prévisions de cash-flows sont aisées.", c: "Pour les projets se faisant par mise de fonds ponctuelle." },
+                    reponse: "a",
+                    explication: "Le DR est surtout utile comme indicateur de risque. Face à une grande incertitude, privilégier un retour sur investissement rapide est une stratégie prudente."
+                },
+                {
+                    question: "Qu'est-ce que le Taux de Rendement Interne (TRI) ?",
+                    options: { a: "Le taux pour lequel la VAN atteint son niveau le plus élevé.", b: "Le taux pour lequel la VAN se situe à son niveau le plus bas.", c: "Le taux d'actualisation pour lequel la Valeur Actuelle Nette (VAN) est nulle." },
+                    reponse: "c",
+                    explication: "Le TRI est le taux d'actualisation 'pivot' qui rend le projet neutre (VAN=0). C'est le taux de rentabilité propre, intrinsèque, de l'investissement."
+                },
+                {
+                    question: "Le TRI se calcule par la formule où i est le taux d'actualisation :",
+                    options: { a: "TRI = i tel que Io + Σ CFk(1+i)⁻ᵏ = 0", b: "TRI = i tel que Σ CFk(1+i)⁻ᵏ = Io (ou VAN = 0)", c: "TRI = i tel que -Io = Σ CFk(1+i)⁻ⁿ" },
+                    reponse: "b",
+                    explication: "Trouver le TRI, c'est trouver le taux 'i' pour lequel la somme des cash-flows futurs actualisés est exactement égale à la dépense d'investissement initiale."
+                },
+                {
+                    question: "Le calcul du TRI peut se faire par :",
+                    options: { a: "Un calcul de probabilités.", b: "Des calculs de capitalisation à intérêts composés.", c: "Essais successifs, interprétation graphique, interpolation linéaire, ou utilisation de tableur (Excel)." },
+                    reponse: "c",
+                    explication: "Le calcul du TRI n'est pas direct. Il nécessite des méthodes d'approximation comme les essais successifs (tester des taux) ou des outils informatiques."
+                },
+                {
+                    question: "Laquelle des assertions suivantes est juste ?",
+                    options: { a: "Le TRI est un taux d'actualisation calculé, propre à un projet donné.", b: "Le TRI est un taux estimé pour un ensemble d'investissements.", c: "Le TRI est le taux moyen des taux d'actualisation de plusieurs banques." },
+                    reponse: "a",
+                    explication: "Chaque projet d'investissement a son propre TRI, qui dépend uniquement de son échéancier de cash-flows."
+                },
+                {
+                    question: "Indiquez la bonne compréhension de la signification du TRI.",
+                    options: { a: "Le TRI permet d'être enrichissant pour son promoteur.", b: "Le TRI est un taux limite : si le taux d'actualisation appliqué est inférieur au TRI, la VAN est positive et le projet est rentable.", c: "Si le taux d'actualisation est inférieur au TRI, la VAN est négative et le projet n'est pas rentable." },
+                    reponse: "b",
+                    explication: "Le TRI sert de seuil de rentabilité. Si le coût du capital (taux d'actualisation) est inférieur au TRI du projet, alors le projet est rentable (VAN > 0)."
+                },
+                {
+                    question: "Soit un projet P avec Taux 15% -> VAN 201,52 et Taux 16% -> VAN -30,17. Quelle est la valeur du TRI par interpolation linéaire ?",
+                    options: { a: "14,85%", b: "16,15%", c: "15,87%" },
+                    reponse: "c",
+                    explication: "Interpolation : TRI ≈ 15% + (16%-15%) * [ 201,52 / (201,52 - (-30,17)) ] ≈ 15% + 1% * 0,87 ≈ 15,87%."
+                },
+                {
+                    question: "Un projet d'investissement est intéressant si :",
+                    options: { a: "Son TRI est supérieur au taux d'intérêt moyen des emprunts qui l'ont financé.", b: "Son TRI est inférieur au taux d'intérêt moyen des emprunts.", c: "Son TRI est égal au taux d'intérêt le plus bas des emprunts." },
+                    reponse: "a",
+                    explication: "Pour être intéressant, le rendement du projet (TRI) doit être supérieur au coût de son financement (taux d'intérêt)."
+                },
+                {
+                    question: "Pour choisir entre deux projets exclusifs, le critère du TRI favorise :",
+                    options: { a: "Le projet ayant le TRI le moins élevé.", b: "Le projet ayant le TRI le plus élevé.", c: "L'un ou l'autre, de façon indifférente." },
+                    reponse: "b",
+                    explication: "En théorie simple, on choisit le projet qui offre le meilleur taux de rentabilité intrinsèque, donc le TRI le plus élevé."
+                },
+                {
+                    question: "Choisissez l'affirmation juste.",
+                    options: { a: "Le TRI nécessite le choix d'un taux d'actualisation pour être calculé.", b: "Le TRI nécessite un taux d'actualisation pour comparer deux projets.", c: "Le TRI ne nécessite pas le choix d'un taux d'actualisation car il est lui-même un taux." },
+                    reponse: "c",
+                    explication: "Le TRI est calculé à partir des seuls cash-flows du projet. C'est son principal avantage apparent sur la VAN : il ne dépend pas d'un taux externe."
+                },
+                {
+                    question: "Le critère du TRI et celui de la VAN :",
+                    options: { a: "Aboutissent à la même décision si la VAN est une fonction continue, monotone et décroissante du taux d'actualisation.", b: "Aboutissent à la même décision si la VAN est croissante.", c: "Aboutissent toujours à des décisions différentes." },
+                    reponse: "a",
+                    explication: "Pour un projet 'classique' (investissement initial puis flux positifs), la VAN est décroissante et les deux critères sont cohérents : si TRI > i, alors VAN > 0."
+                },
+                {
+                    question: "Un projet (autofinancé) peut recueillir une décision positive si :",
+                    options: { a: "Son TRI est inférieur au coût d'opportunité du capital.", b: "Son TRI est supérieur au coût d'opportunité du capital (taux du marché).", c: "Son TRI est supérieur à la moyenne des TRI du secteur." },
+                    reponse: "b",
+                    explication: "Même sans emprunt, le projet doit être plus rentable qu'un placement alternatif. Son TRI doit donc dépasser le taux de ce placement (coût d'opportunité)."
+                },
+                {
+                    question: "Indiquez la bonne assertion.",
+                    options: { a: "Les critères du TRI et de la VAN peuvent aboutir à des choix contradictoires entre deux projets concurrents.", b: "Les critères du TRI et de la VAN aboutissent toujours au même choix.", c: "Les critères du TRI et de la VAN aboutissent toujours à des choix contraires." },
+                    reponse: "a",
+                    explication: "C'est la limite du TRI. Pour des projets de tailles ou de durées différentes, le projet avec le meilleur TRI n'est pas forcément celui avec la meilleure VAN (création de richesse absolue)."
+                },
+                {
+                    question: "Qu'appelle-t-on TRI équivalent de deux projets différents ?",
+                    options: { a: "Le TRI pour lequel les VAN des deux projets sont égales.", b: "Le TRI pour lequel les VAN des deux projets sont nulles.", c: "Le TRI correspondant au taux unique de financement des deux projets." },
+                    reponse: "a",
+                    explication: "Le TRI équivalent (ou Taux d'Equivalence) est le taux d'actualisation qui rend un investisseur indifférent entre les deux projets, car ils créent la même richesse (VANs égales)."
+                },
+                {
+                    question: "Quelle indication donne le Taux d'Équivalence (TE) pour le choix entre deux projets ?",
+                    options: { a: "Si le taux d'actualisation est < TE, les choix sont identiques ; si > TE, ils sont contraires.", b: "Si le taux d'actualisation est < TE, les choix sont contraires ; si > TE, ils sont identiques.", c: "Le TE n'a aucune influence sur le choix." },
+                    reponse: "b",
+                    explication: "Le Taux d'Équivalence est le point de croisement des courbes de VAN. Avant ce point, les classements VAN et TRI sont contradictoires ; après ce point, ils sont cohérents."
+                },
+                {
+                    question: "Le TRI est-il utilisable dans tous les cas ?",
+                    options: { a: "Oui, sa formule mathématique est toujours rigoureuse.", b: "Non, si la VAN n'est pas une fonction monotone (cash-flows non conventionnels), il peut y avoir plusieurs TRI.", c: "Oui, car tout projet a une valeur nulle à un certain taux." },
+                    reponse: "b",
+                    explication: "Lorsque les cash-flows alternent plusieurs fois entre positif et négatif, l'équation VAN=0 peut avoir plusieurs solutions (multiples TRI), rendant le critère inutilisable."
+                },
+                {
+                    question: "Une des faiblesses communes au TRI et à la VAN est :",
+                    options: { a: "Ils supposent un réinvestissement intégral des cash-flows générés.", b: "Ils nécessitent le choix préalable d'un taux d'actualisation.", c: "Ils ne permettent pas de classer plus de deux projets à la fois." },
+                    reponse: "a",
+                    explication: "Les deux méthodes supposent implicitement que les flux intermédiaires sont réinvestis : au taux 'i' pour la VAN, et au taux du TRI pour le TRI, ce qui est souvent irréaliste."
+                },
+                {
+                    question: "Est-il pertinent de comparer selon le TRI deux projets ayant des coûts de financement très éloignés ?",
+                    options: { a: "Oui, car le TRI est un taux intrinsèque à chaque projet.", b: "Oui, il suffit que les VAN soient continues et décroissantes.", c: "Non, car le taux d'actualisation pertinent pour la décision doit refléter le coût du capital." },
+                    reponse: "c",
+                    explication: "La décision d'investissement (TRI > coût du capital) dépend du coût du capital. Comparer des projets dont les coûts de financement sont très différents peut être trompeur."
+                },
+                {
+                    question: "Choisissez la bonne assertion.",
+                    options: { a: "Le TRI est calculé à partir de flux en monnaie fluctuante.", b: "Le TRI est calculé à partir de flux en monnaie courante (avec inflation).", c: "Le TRI est calculé à partir de flux en monnaie constante (sans inflation)." },
+                    reponse: "c",
+                    explication: "Par défaut, les calculs de rentabilité (TRI, VAN) se font sur la base de flux en monnaie constante (réels) pour ne pas être faussés par l'inflation."
+                },
+                {
+                    question: "Le TRI courant (avec inflation) se calcule à partir du TRI constant par la formule :",
+                    options: { a: "TRI courant = if + TRI constant (1 + if)", b: "TRI courant = if - TRI constant (1 + if)", c: "TRI courant = if + TRI constant x if" },
+                    reponse: "a",
+                    explication: "La relation de Fisher (approximée) lie le taux courant (nominal), le taux constant (réel) et le taux d'inflation (if) : (1+nominal) = (1+réel)(1+if)."
+                },
+                {
+                    question: "Qu'est-ce que l'Indice de Profitabilité (IP) ?",
+                    options: { a: "Le rapport entre l'investissement initial et la valeur actualisée des revenus.", b: "Le rapport entre la valeur actualisée des revenus futurs et le montant de l'investissement initial.", c: "Le rapport entre la valeur non actualisée des revenus et l'investissement." },
+                    reponse: "b",
+                    explication: "L'IP mesure le 'retour' en valeur actuelle pour chaque euro investi. C'est le ratio (Somme des CF futurs actualisés) / (Investissement initial)."
+                },
+                {
+                    question: "La formule de calcul de l'IP est la suivante :",
+                    options: { a: "IP = Io x Σ CFt(1+i)⁻ᵗ", b: "IP = [ Σ CFt(1+i)⁻ᵗ ] / Io", c: "IP = CFt(1+i)⁻ⁿ / Io" },
+                    reponse: "b",
+                    explication: "IP = (Valeur Actuelle des flux futurs) / (Investissement Initial). Le numérateur est la somme des CF de la période 1 à n, actualisés."
+                },
+                {
+                    question: "La formule de calcul de l'IP peut aussi s'écrire :",
+                    options: { a: "IP = 1 - (VAN / Io)", b: "IP = VAN / Io", c: "IP = (VAN / Io) + 1" },
+                    reponse: "c",
+                    explication: "Puisque VAN = (Σ CF futurs actualisés) - Io, on a (Σ CF futurs actualisés) = VAN + Io. Donc IP = (VAN + Io) / Io = (VAN / Io) + 1."
+                },
+                {
+                    question: "Comment s'apprécie un projet à l'aide de l'IP ?",
+                    options: { a: "Tout projet dont l'IP est supérieur à 1 est recevable.", b: "Tout projet dont l'IP est inférieur à 1 est recevable.", c: "Tout projet dont l'IP est supérieur à 0 est recevable." },
+                    reponse: "a",
+                    explication: "Un IP > 1 signifie que la valeur actuelle des revenus futurs est supérieure à l'investissement, ce qui est équivalent à dire que la VAN > 0. Le projet est donc rentable."
+                },
+                {
+                    question: "Que signifie le fait que l'IP d'un investissement soit supérieur à 1 ?",
+                    options: { a: "La VAN de cet investissement est supérieure à l'investissement initial.", b: "La VAN par unité investie est négative.", c: "La VAN par unité investie est positive, donc l'investissement est rentable." },
+                    reponse: "c",
+                    explication: "IP > 1 est strictement équivalent à VAN > 0. Cela signifie que le projet crée de la valeur."
+                },
+                {
+                    question: "Selon le critère de l'IP, comment se fait le choix entre deux projets concurrents ?",
+                    options: { a: "Le choix porte sur le projet dont l'IP est le plus élevé.", b: "Le choix porte sur le projet dont l'IP est le plus bas.", c: "Le choix porte sur le projet ayant un IP nul." },
+                    reponse: "a",
+                    explication: "On choisit le projet qui offre la plus grande rentabilité relative, c'est-à-dire celui qui génère le plus de valeur par euro investi."
+                },
+                {
+                    question: "Quand l'IP peut-il être utilisé comme critère complémentaire à la VAN ?",
+                    options: { a: "Le critère de la VAN est toujours suffisant.", b: "Lorsque deux projets ont des VAN très voisines mais des coûts d'investissement très différents.", c: "Lorsque l'IP du projet le moins cher est inférieur à celui du projet le plus cher." },
+                    reponse: "b",
+                    explication: "L'IP est très utile pour départager des projets quand on est en situation de rationnement du capital. Il favorise le projet le plus 'efficace' en termes de capital investi, même s'il ne crée pas le plus de richesse absolue (VAN)."
+                },
+                {
+                    question: "Qu'est-ce que le Prix de Revient Actualisé (PR) ?",
+                    options: { a: "Rapport des dépenses (non actualisées) aux quantités (non actualisées).", b: "Rapport de l'ensemble des dépenses actualisées à l'ensemble des quantités produites actualisées.", c: "Rapport des dépenses de fonctionnement (actualisées) aux quantités (actualisées)." },
+                    reponse: "b",
+                    explication: "Le PR est un coût unitaire moyen, mais calculé sur toute la durée de vie du projet en tenant compte de la valeur temporelle de l'argent (toutes les valeurs sont actualisées)."
+                },
+                {
+                    question: "La formule du Prix de Revient Actualisé (PR) est :",
+                    options: { a: "PR = (Σ Dépenses non actualisées) / (Σ Quantités non actualisées)", b: "PR = (Σ Dépenses futures actualisées) / (Σ Quantités futures actualisées)", c: "PR = (Σ Dépenses totales actualisées) / (Σ Quantités totales actualisées)" },
+                    reponse: "c",
+                    explication: "La formule correcte inclut toutes les dépenses (investissement + fonctionnement) et toutes les quantités, le tout étant actualisé à la date 0."
+                },
+                {
+                    question: "Si l'investissement est ponctuel (Io) et que D et Q sont constants, le PR se calcule par :",
+                    options: { a: "PR = [ Io * (i / (1-(1+i)⁻ⁿ)) + D ] / Q", b: "PR = [ Io / (1-(1+i)⁻ⁿ) - D ] / Q", c: "PR = [ Io + D ] / Q" },
+                    reponse: "a",
+                    explication: "Cette formule ramène l'investissement initial à un coût annuel équivalent, y ajoute la dépense de fonctionnement annuelle, et divise par la quantité annuelle pour obtenir un coût unitaire."
+                },
+                {
+                    question: "Quelle est l'utilité du Prix de Revient Actualisé ?",
+                    options: { a: "Il est utilisé lorsqu'on s'intéresse aux dépenses sans prendre en compte les recettes.", b: "Il est utilisé lorsqu'on s'intéresse aux dépenses sans valoriser la production.", c: "Il est utilisé lorsqu'on s'intéresse aux dépenses sans valoriser la production." },
+                    reponse: "a",
+                    explication: "Le critère du PR est particulièrement utile pour les projets de services publics ou d'infrastructures où l'objectif est de minimiser un coût pour un service donné, plutôt que de maximiser un profit (ex: coût du m³ d'eau)."
+                }
+            ]
+        },
+        
         // Vous pourrez ajouter 'M05', etc. ici
      
     };
@@ -1855,6 +2351,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialisation au chargement de la page ---
     populateDropdown();
 });
+
 
 
 
