@@ -1384,7 +1384,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Module 07 _ Comptabilité Générale
 
         'M07': {
-            title: 'MEO-M07 : Comptabilité Générale (Chap. 1 à 6)',
+            title: 'MEO-M07 : Comptabilité Générale (Questions de Cours)',
             questions: [
                 {
                     question: "Une entité économique est :",
@@ -1848,7 +1848,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //Module 08 Gestion Financière
         //M08_Partie 1
         'M08P1': {
-            title: 'MEO-M08 : Gestion Financière de Projet (Partie 1/2)',
+            title: 'MEO-M08 : Gestion Financière (Questions de Cours_Partie 1/2)',
             questions: [
                 {
                     question: "Parmi les trois assertions suivantes, laquelle traduit le mieux le sens économique de l'acte d'investir ?",
@@ -2095,7 +2095,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         //M08_Partie 2
         'M08P2': {
-            title: 'MEO-M08 : Gestion Financière de Projet (Partie 2/2)',
+            title: 'MEO-M08 : Gestion Financière (Questions de Cours_Partie 2/2)',
             questions: [
                 {
                     question: "Le Délai de Récupération (DR) se définit comme :",
@@ -2784,6 +2784,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialisation au chargement de la page ---
     populateDropdown();
 });
+
 
 
 
