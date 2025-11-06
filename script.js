@@ -1628,6 +1628,222 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             ]
         },
+        //Module Comptabilité Générale_Style Pré-Test
+        'M07P': {
+            title: 'MEO-M07 : Comptabilité Générale (Style Pré-test)',
+            questions: [
+                {
+                    question: "Selon la classification par taille, lequel de ces éléments n'est PAS un critère principal ?",
+                    options: { a: "Le chiffre d'affaires", b: "La valeur ajoutée", c: "Le résultat de l'entreprise", d: "Le secteur d'activité" },
+                    reponse: "d",
+                    explication: "Le secteur d'activité est un critère de classification des entités, mais pas selon la taille. La taille se mesure par le chiffre d'affaires, la valeur ajoutée, l'effectif, etc."
+                },
+                {
+                    question: "Comment appelle-t-on la photographie du patrimoine de l'entreprise à une date donnée ?",
+                    options: { a: "Le compte de résultat", b: "Le bilan", c: "Le journal", d: "La balance" },
+                    reponse: "b",
+                    explication: "Le bilan est la représentation du patrimoine (ce que l'entreprise possède et ce qu'elle doit) à un instant T."
+                },
+                {
+                    question: "Dans un bilan, la partie gauche qui présente les biens de l'entreprise est appelée :",
+                    options: { a: "Le passif", b: "Les ressources", c: "L'actif", d: "Le crédit" },
+                    reponse: "c",
+                    explication: "La partie gauche du bilan est l'Actif, qui liste tous les biens et droits possédés par l'entreprise."
+                },
+                {
+                    question: "Dans quel compartiment du passif classe-t-on les emprunts bancaires à long terme ?",
+                    options: { a: "Le passif circulant", b: "Les ressources durables", c: "La trésorerie-passif", d: "Les capitaux propres" },
+                    reponse: "b",
+                    explication: "Les dettes financières à long et moyen terme, comme les emprunts, sont des ressources stables pour l'entreprise et figurent dans les ressources durables."
+                },
+                {
+                    question: "Un brevet, une licence ou un fonds commercial sont classés comme :",
+                    options: { a: "Immobilisations corporelles", b: "Immobilisations financières", c: "Actif circulant", d: "Immobilisations incorporelles" },
+                    reponse: "d",
+                    explication: "Ces éléments n'ont pas de substance physique. Ils représentent des droits et valeurs immatériels et sont donc des immobilisations incorporelles."
+                },
+                {
+                    question: "Selon l'ordre de liquidité croissant de l'actif, quel élément est généralement le plus liquide ?",
+                    options: { a: "Les terrains et bâtiments", b: "Les stocks de marchandises", c: "Les créances clients", d: "Les avoirs en banque et en caisse" },
+                    reponse: "d",
+                    explication: "La liquidité représente la facilité à transformer un actif en argent. Les avoirs en banque et caisse sont déjà de l'argent, ils sont donc les plus liquides."
+                },
+                {
+                    question: "Comment se calcule le patrimoine net (ou situation nette) ?",
+                    options: { a: "Total actif + total dettes", b: "Total biens - total dettes", c: "Total actif + total passif", d: "Total capitaux propres - total dettes" },
+                    reponse: "b",
+                    explication: "Le patrimoine net (ou capitaux propres) est ce qui reste aux propriétaires une fois toutes les dettes remboursées. C'est la différence entre les biens (l'actif) et les dettes."
+                },
+                {
+                    question: "Le compte de résultat a pour objectif principal de :",
+                    options: { a: "Présenter le patrimoine de l'entreprise.", b: "Lister les flux de trésorerie.", c: "Déterminer le résultat (bénéfice ou perte) d'un exercice.", d: "Montrer les dettes envers les fournisseurs." },
+                    reponse: "c",
+                    explication: "Le compte de résultat est le 'film' de l'activité. Il compare les produits (enrichissements) et les charges (appauvrissements) sur une période pour en déduire le résultat."
+                },
+                {
+                    question: "Le résultat d'un exercice est bénéficiaire si :",
+                    options: { a: "Le total des produits est supérieur au total des charges.", b: "Le total de l'actif est supérieur au total du passif.", c: "Les dettes sont inférieures aux créances.", d: "Le total des charges est supérieur au total des produits." },
+                    reponse: "a",
+                    explication: "Un bénéfice est réalisé lorsque l'ensemble des enrichissements (produits) sur une période est plus grand que l'ensemble des appauvrissements (charges)."
+                },
+                {
+                    question: "En comptabilité, qu'est-ce qu'un flux ?",
+                    options: { a: "Uniquement un mouvement d'argent.", b: "Uniquement un mouvement de marchandises.", c: "Un mouvement de valeur économique (biens, services, monnaie).", d: "Un document comptable." },
+                    reponse: "c",
+                    explication: "Un flux est un mouvement de valeur entre l'entreprise et un autre agent économique, qui peut être réel (biens), de service, ou financier (monnaie)."
+                },
+                {
+                    question: "Lors d'un achat à crédit, la contrepartie du flux réel (marchandise entrante) est :",
+                    options: { a: "Un flux financier sortant (caisse).", b: "Un flux de dette sortant (dette envers le fournisseur).", c: "Un flux financier entrant (banque).", d: "Un flux de créance entrant." },
+                    reponse: "b",
+                    explication: "L'achat à crédit génère une dette envers le fournisseur. Cette dette est la contrepartie (la ressource) de l'emploi (la marchandise)."
+                },
+                {
+                    question: "Quel est le principe fondamental de la 'partie double' ?",
+                    options: { a: "Chaque opération doit être vérifiée deux fois.", b: "Pour chaque opération, Total Emplois = Total Ressources.", c: "Il faut toujours deux personnes pour faire la comptabilité.", d: "Les charges sont toujours le double des produits." },
+                    reponse: "b",
+                    explication: "Le principe de la partie double stipule que chaque flux a une origine (ressource) et une destination (emploi) de même valeur, garantissant l'équilibre de chaque écriture."
+                },
+                {
+                    question: "Dans un compte, la partie gauche est appelée le débit. Qu'enregistre-t-on généralement au débit d'un compte d'actif ?",
+                    options: { a: "Les augmentations", b: "Les diminutions", c: "Les soldes créditeurs", d: "Les ressources" },
+                    reponse: "a",
+                    explication: "Les comptes d'actif (biens, créances) augmentent au débit et diminuent au crédit."
+                },
+                {
+                    question: "Comment fonctionnent les comptes de passif (dettes, capitaux propres) ?",
+                    options: { a: "Ils augmentent au débit et diminuent au crédit.", b: "Ils augmentent au crédit et diminuent au débit.", c: "Ils n'enregistrent que les augmentations.", d: "Ils fonctionnent comme les comptes d'actif." },
+                    reponse: "b",
+                    explication: "Les comptes de passif (ressources) fonctionnent à l'inverse des comptes d'actif : ils augmentent au crédit et diminuent au débit."
+                },
+                {
+                    question: "Comment fonctionnent les comptes de charges ?",
+                    options: { a: "Ils augmentent au crédit.", b: "Ils diminuent au débit.", c: "Ils augmentent au débit.", d: "Ils n'enregistrent que les diminutions." },
+                    reponse: "c",
+                    explication: "Les comptes de charges (appauvrissements) fonctionnent comme les comptes d'actif : ils augmentent au débit."
+                },
+                {
+                    question: "Le Plan Comptable SYSCOHADA divise les comptes en combien de classes ?",
+                    options: { a: "7 classes", b: "10 classes", c: "9 classes", d: "5 classes" },
+                    reponse: "c",
+                    explication: "Le plan des comptes est divisé en 9 classes : 1 à 5 pour les comptes de bilan, 6 et 7 pour les comptes de gestion, 8 pour les HAO, et 9 pour la compta analytique."
+                },
+                {
+                    question: "Les comptes de la classe 2 'Comptes d'actif immobilisé' sont généralement de nature :",
+                    options: { a: "Créditrice", b: "Nulle", c: "Débitrice", d: "Mixte" },
+                    reponse: "c",
+                    explication: "Les comptes d'actif (classes 2, 3, 4 débiteurs, 5) sont par nature débiteurs, car ils représentent ce que l'entreprise possède."
+                },
+                {
+                    question: "À quelle classe appartiennent les 'Comptes de charges des activités ordinaires' ?",
+                    options: { a: "Classe 7", b: "Classe 5", c: "Classe 6", d: "Classe 8" },
+                    reponse: "c",
+                    explication: "La classe 6 regroupe l'ensemble des charges liées à l'activité normale de l'entreprise (achats, salaires, etc.)."
+                },
+                {
+                    question: "Quel principe comptable impose de rattacher à un exercice tous les produits et charges qui le concernent, et seulement ceux-là ?",
+                    options: { a: "Le postulat de l'entité", b: "La convention de prudence", c: "Le postulat de la spécialisation des exercices", d: "La convention du coût historique" },
+                    reponse: "c",
+                    explication: "Ce principe oblige à 'découper' la vie de l'entreprise en exercices comptables et à affecter à chacun les charges et produits qui lui sont propres, indépendamment des dates de paiement."
+                },
+                {
+                    question: "La convention de prudence implique que :",
+                    options: { a: "Les produits ne doivent pas être surévalués et les charges ne doivent pas être sous-évaluées.", b: "Les actifs doivent être surévalués pour montrer une meilleure image.", c: "On peut créer des réserves occultes pour l'avenir.", d: "On doit toujours choisir la méthode la plus optimiste." },
+                    reponse: "a",
+                    explication: "La prudence vise à ne pas transférer sur l'avenir des risques actuels. On anticipe les pertes probables mais on ne comptabilise les gains que lorsqu'ils sont certains."
+                },
+                {
+                    question: "Le 'grand livre' est un document qui :",
+                    options: { a: "Est un autre nom pour le journal.", b: "Regroupe l'ensemble des comptes de l'entreprise.", c: "N'est utilisé que pour les grandes entreprises.", d: "Sert à calculer les impôts." },
+                    reponse: "b",
+                    explication: "Le grand livre présente toutes les opérations enregistrées au journal, mais classées par compte, permettant de suivre le détail et le solde de chaque compte."
+                },
+                {
+                    question: "La 'balance' est un instrument qui permet de contrôler :",
+                    options: { a: "La rentabilité de l'entreprise.", b: "L'exactitude arithmétique des enregistrements (Total débits = Total crédits).", c: "Le niveau des stocks.", d: "Le paiement des salaires." },
+                    reponse: "b",
+                    explication: "La balance est un tableau récapitulatif de tous les comptes qui permet de vérifier les égalités fondamentales issues du principe de la partie double."
+                },
+                {
+                    question: "Une 'facture d'avoir' est établie pour :",
+                    options: { a: "Confirmer une commande.", b: "Demander le paiement d'une vente.", c: "Constater un retour de marchandises ou accorder une réduction hors facture.", d: "Servir de relevé de compte mensuel." },
+                    reponse: "c",
+                    explication: "Une facture d'avoir est une 'facture négative' qui vient corriger une facture de 'doit' initiale, souvent suite à un retour de produit par le client."
+                },
+                {
+                    question: "Quelle est la différence entre une remise et un escompte ?",
+                    options: { a: "Il n'y en a aucune.", b: "La remise est financière, l'escompte est commercial.", c: "La remise est commerciale (liée aux quantités, etc.), l'escompte est financier (lié à un paiement anticipé).", d: "La remise est une majoration, l'escompte une réduction." },
+                    reponse: "c",
+                    explication: "Les réductions commerciales (rabais, remise, ristourne) sont liées à la vente elle-même. La réduction financière (escompte) est une récompense pour un paiement rapide."
+                },
+                {
+                    question: "Le salaire de base est souvent calculé sur la base de combien d'heures par semaine selon le cours ?",
+                    options: { a: "35 heures", b: "39 heures", c: "40 heures", d: "45 heures" },
+                    reponse: "c",
+                    explication: "Le cours indique que le salaire de base est souvent calculé sur une base de 40 heures par semaine, soit 173,33 heures par mois."
+                },
+                {
+                    question: "Les cotisations sociales payées par l'employeur (part patronale) sont enregistrées comme :",
+                    options: { a: "Un produit financier", b: "Une diminution des dettes", c: "Une charge pour l'entreprise", d: "Un revenu pour l'entreprise" },
+                    reponse: "c",
+                    explication: "Les charges sociales patronales représentent un coût pour l'entreprise, en plus du salaire brut versé à l'employé. Elles sont comptabilisées dans les comptes de la classe 6."
+                },
+                {
+                    question: "L'amortissement constate :",
+                    options: { a: "Une perte de valeur probable et réversible d'un actif.", b: "Une augmentation de la valeur d'un bien.", c: "L'amoindrissement de la valeur d'un bien, de manière irréversible.", d: "La création d'une dette." },
+                    reponse: "c",
+                    explication: "L'amortissement est la constatation comptable de la dépréciation définitive et irréversible d'une immobilisation due à l'usure, au temps, etc."
+                },
+                {
+                    question: "Quelle est la différence fondamentale entre un amortissement et une provision ?",
+                    options: { a: "L'amortissement est réversible, la provision est irréversible.", b: "L'amortissement est irréversible, la provision est réversible.", c: "L'amortissement concerne les stocks, la provision les immobilisations.", d: "Il n'y a pas de différence." },
+                    reponse: "b",
+                    explication: "Un amortissement constate une perte de valeur certaine et irréversible. Une provision constate une perte de valeur probable ou potentielle, qui peut ne jamais se réaliser (elle est donc réversible)."
+                },
+                {
+                    question: "Quel système d'amortissement est caractérisé par des annuités plus élevées au début et qui diminuent avec le temps ?",
+                    options: { a: "Le système linéaire", b: "Le système constant", c: "Le système dégressif", d: "Le système progressif" },
+                    reponse: "c",
+                    explication: "L'amortissement dégressif permet de constater une dépréciation plus rapide du bien dans les premières années de son utilisation."
+                },
+                {
+                    question: "La 'valeur nette comptable' (VNC) d'une immobilisation se calcule par :",
+                    options: { a: "Valeur d'Origine (VO) + Cumul des amortissements", b: "Valeur d'Origine (VO) - Cumul des amortissements", c: "Valeur d'Origine (VO) x Taux d'amortissement", d: "Cumul des amortissements - Valeur d'Origine (VO)" },
+                    reponse: "b",
+                    explication: "La VNC représente la valeur du bien encore inscrite au bilan. Elle est égale à son coût d'acquisition moins l'ensemble des amortissements déjà pratiqués."
+                },
+                {
+                    question: "Une provision pour dépréciation de créance est calculée sur le montant :",
+                    options: { a: "TTC de la créance", b: "HT de la créance", c: "De la TVA uniquement", d: "De la moitié de la créance" },
+                    reponse: "b",
+                    explication: "La perte probable pour l'entreprise ne concerne que le montant qu'elle aurait dû encaisser pour elle-même (le Hors Taxe). La TVA est collectée pour l'État et n'est pas un produit pour l'entreprise."
+                },
+                {
+                    question: "Lorsqu'une créance devient douteuse, quelle est la première écriture à passer ?",
+                    options: { a: "La virer du compte 'Clients' (411) au compte 'Clients douteux ou litigieux' (416).", b: "L'annuler directement par une perte.", c: "Calculer la provision sans rien changer d'autre.", d: "Envoyer une lettre de rappel." },
+                    reponse: "a",
+                    explication: "La première étape est de reclasser la créance dans le compte approprié pour signifier qu'il y a un risque de non-recouvrement, avant même de calculer la provision."
+                },
+                {
+                    question: "Quel est le but de la régularisation des stocks en inventaire intermittent ?",
+                    options: { a: "Uniquement compter les articles.", b: "Annuler le stock initial et constater le stock final.", c: "Vendre le stock restant.", d: "Calculer les salaires." },
+                    reponse: "b",
+                    explication: "En fin d'année, la procédure consiste à annuler la valeur du stock qui était au bilan au début (stock initial) et à la remplacer par la nouvelle valeur du stock réellement constaté à la fin (stock final)."
+                },
+                {
+                    question: "Le compte 'Variation de stock de marchandises' (6031) est débité lors de :",
+                    options: { a: "La constatation du stock final.", b: "L'annulation du stock initial si celui-ci est nul.", c: "L'annulation du stock initial (pour le solder).", d: "La constatation du stock final s'il est supérieur au stock initial." },
+                    reponse: "c",
+                    explication: "Pour annuler le stock initial (qui est un compte d'actif, donc à solde débiteur), on le crédite, et on débite en contrepartie le compte de variation de stock."
+                },
+                {
+                    question: "Le principe de permanence des méthodes signifie que :",
+                    options: { a: "L'entreprise doit toujours rester rentable.", b: "Les méthodes d'évaluation et de présentation doivent être identiques d'un exercice à l'autre.", c: "Les employés ne doivent pas changer de méthode de travail.", d: "La comptabilité doit être faite par la même personne." },
+                    reponse: "b",
+                    explication: "Ce principe assure la comparabilité des états financiers d'une année sur l'autre. Un changement de méthode doit être exceptionnel, justifié et expliqué."
+                }
+            ]
+        },
         
         //Module 08 Gestion Financière
         //M08_Partie 1
@@ -2124,6 +2340,223 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         
+        //Module 08_Style Prétest
+        'M08P': {
+            title: 'MEO-M08 : Gestion Financière (Style Pré-test)',
+            questions: [
+                {
+                    question: "En intérêts simples, la valeur acquise est une fonction __________ de la durée.",
+                    options: { a: "Exponentielle", b: "Affine (linéaire)", c: "Logarithmique", d: "Constante" },
+                    reponse: "b",
+                    explication: "En intérêts simples, la valeur acquise est proportionnelle à la durée, c'est une fonction affine (droite). Cn = C + C.n.t."
+                },
+                {
+                    question: "En intérêts composés, la valeur acquise est une fonction __________ de la durée.",
+                    options: { a: "Exponentielle", b: "Affine (linéaire)", c: "Logarithmique", d: "Quadratique" },
+                    reponse: "a",
+                    explication: "En intérêts composés, les intérêts génèrent eux-mêmes des intérêts, créant une croissance exponentielle. Cn = C(1+i)ⁿ."
+                },
+                {
+                    question: "Quelle opération est l'inverse de la capitalisation ?",
+                    options: { a: "L'amortissement", b: "L'actualisation", c: "Le provisionnement", d: "Le financement" },
+                    reponse: "b",
+                    explication: "La capitalisation calcule la valeur future d'un capital d'aujourd'hui. L'actualisation calcule la valeur d'aujourd'hui d'un capital futur."
+                },
+                {
+                    question: "Laquelle de ces formules calcule la Valeur Acquise (Vn) d'une suite de 'n' annuités constantes 'a' versées en fin de période ?",
+                    options: { a: "Vn = a * [ (1 - (1+i)⁻ⁿ) / i ]", b: "Vn = a * [ ((1+i)ⁿ - 1) / i ]", c: "Vn = a * n * (1+i)", d: "Vn = a / i" },
+                    reponse: "b",
+                    explication: "La formule de la valeur acquise d'une suite d'annuités constantes de fin de période est Vn = a * [ ((1+i)ⁿ - 1) / i ]."
+                },
+                {
+                    question: "Laquelle de ces formules calcule la Valeur Actuelle (Vo) d'une suite de 'n' annuités constantes 'a' versées en fin de période ?",
+                    options: { a: "Vo = a * [ (1 - (1+i)⁻ⁿ) / i ]", b: "Vo = a * [ ((1+i)ⁿ - 1) / i ]", c: "Vo = a * n * (1+i)⁻ⁿ", d: "Vo = n / i" },
+                    reponse: "a",
+                    explication: "La formule de la valeur actuelle d'une suite d'annuités constantes de fin de période est Vo = a * [ (1 - (1+i)⁻ⁿ) / i ]."
+                },
+                {
+                    question: "L'acte d'investir, selon P. Massé, est l'échange d'une satisfaction immédiate et certaine contre...",
+                    options: { a: "une autre satisfaction immédiate.", b: "un coût d'opportunité nul.", c: "une espérance de revenus futurs.", d: "une dette à long terme." },
+                    reponse: "c",
+                    explication: "Investir, c'est renoncer à consommer aujourd'hui (satisfaction certaine) dans l'espoir d'obtenir des revenus plus importants dans le futur (espérance)."
+                },
+                {
+                    question: "Un investissement de 'renouvellement' vise à :",
+                    options: { a: "Créer de nouveaux produits.", b: "Augmenter la capacité de production.", c: "Maintenir le potentiel de production et de distribution.", d: "Réduire les coûts de production." },
+                    reponse: "c",
+                    explication: "L'investissement de renouvellement (ou de remplacement) a pour but de remplacer du matériel usé pour maintenir l'outil de production en état."
+                },
+                {
+                    question: "Un brevet, un fonds de commerce ou un logiciel sont des exemples d'actifs :",
+                    options: { a: "Corporels", b: "Financiers", c: "Circulants", d: "Incorporels" },
+                    reponse: "d",
+                    explication: "Ce sont des actifs qui n'ont pas de substance physique (immatériels), classés en actifs incorporels."
+                },
+                {
+                    question: "Comment se calcule le cash-flow (CFk) d'une année k, avant impôt et sans valeur résiduelle ?",
+                    options: { a: "CFk = Recettes (Rk) - Dépenses (Dk) - Investissement (Ik)", b: "CFk = Rk + Dk - Ik", c: "CFk = Rk - Dk + Ik", d: "CFk = Rk - Ik" },
+                    reponse: "a",
+                    explication: "Le cash-flow est le solde de trésorerie : ce qui rentre (Recettes) moins tout ce qui sort (Dépenses d'exploitation et Investissement)."
+                },
+                {
+                    question: "La VAN est la somme des cash-flows futurs...",
+                    options: { a: "...multipliés par le taux d'intérêt.", b: "...auxquels on ajoute l'investissement initial.", c: "...actualisés.", d: "...non actualisés." },
+                    reponse: "c",
+                    explication: "La caractéristique fondamentale de la Valeur Actuelle Nette est qu'elle tient compte de la valeur temporelle de l'argent en actualisant tous les flux futurs."
+                },
+                {
+                    question: "Si la VAN d'un projet est supérieure à zéro (VAN > 0), cela signifie que :",
+                    options: { a: "Le projet est moins rentable que le taux d'actualisation.", b: "Le projet détruit de la valeur.", c: "Le projet doit être rejeté.", d: "Le projet est rentable et crée de la richesse." },
+                    reponse: "d",
+                    explication: "Une VAN positive indique que la rentabilité du projet est supérieure au coût du capital (taux d'actualisation). Il est donc créateur de valeur."
+                },
+                {
+                    question: "Le Taux de Rendement Interne (TRI) est le taux d'actualisation qui...",
+                    options: { a: "...maximise la VAN.", b: "...annule la VAN (VAN = 0).", c: "...minimise la VAN.", d: "...est égal au taux du marché." },
+                    reponse: "b",
+                    explication: "Le TRI est le taux de rentabilité propre au projet, c'est le taux exact pour lequel la somme des flux actualisés est égale à l'investissement, donc VAN = 0."
+                },
+                {
+                    question: "Un projet est jugé acceptable si son TRI est :",
+                    options: { a: "Inférieur au coût du capital (ou taux d'actualisation).", b: "Supérieur au coût du capital (ou taux d'actualisation).", c: "Égal à zéro.", d: "Négatif." },
+                    reponse: "b",
+                    explication: "Pour être accepté, le rendement intrinsèque du projet (TRI) doit être supérieur au coût des fonds investis (coût du capital)."
+                },
+                {
+                    question: "L'Indice de Profitabilité (IP) se calcule par la formule :",
+                    options: { a: "IP = Io / VAN", b: "IP = 1 + (VAN / Io)", c: "IP = VAN - Io", d: "IP = Io - VAN" },
+                    reponse: "b",
+                    explication: "L'IP est le rapport de la valeur actuelle des flux futurs sur l'investissement initial. Il peut se calculer simplement à partir de la VAN par la formule IP = 1 + (VAN / Io)."
+                },
+                {
+                    question: "Un projet est acceptable si son Indice de Profitabilité (IP) est :",
+                    options: { a: "Supérieur à 1", b: "Inférieur à 1", c: "Égal à 0", d: "Négatif" },
+                    reponse: "a",
+                    explication: "Un IP > 1 est strictement équivalent à une VAN > 0, signifiant que la valeur actuelle des revenus est supérieure à l'investissement."
+                },
+                {
+                    question: "Le Délai de Récupération (DR) est un critère qui mesure principalement :",
+                    options: { a: "La rentabilité du projet.", b: "La création de richesse du projet.", c: "La liquidité et le risque du projet.", d: "Le coût du projet." },
+                    reponse: "c",
+                    explication: "Le DR mesure le temps nécessaire pour récupérer sa mise. C'est avant tout un indicateur de la rapidité à laquelle l'investissement redevient liquide, et donc un indicateur de risque."
+                },
+                {
+                    question: "La principale critique faite au Délai de Récupération (DR) est qu'il :",
+                    options: { a: "Est trop compliqué à calculer.", b: "Nécessite de connaître le TRI.", c: "Ne tient pas compte des flux de trésorerie générés après le délai.", d: "Est toujours négatif." },
+                    reponse: "c",
+                    explication: "Le DR ignore complètement la rentabilité du projet sur le long terme, ce qui peut conduire à rejeter des projets très rentables dont les revenus arrivent tardivement."
+                },
+                {
+                    question: "Lequel de ces critères ne nécessite pas de connaître au préalable un taux d'actualisation pour être calculé ?",
+                    options: { a: "La VAN", b: "L'Indice de Profitabilité", c: "Le Délai de Récupération Actualisé", d: "Le TRI" },
+                    reponse: "d",
+                    explication: "Le TRI est calculé uniquement à partir de la séquence des cash-flows du projet. C'est son principal avantage apparent sur les autres critères."
+                },
+                {
+                    question: "Le cash-flow après impôt se calcule en ajoutant quoi au Résultat Net (Résultat après impôt) ?",
+                    options: { a: "L'investissement", b: "Les recettes", c: "Les dotations aux amortissements", d: "Les dépenses" },
+                    reponse: "c",
+                    explication: "Pour passer du résultat net au cash-flow, on 'réintègre' les charges non décaissées, principalement les dotations aux amortissements. CF = Résultat Net + DA."
+                },
+                {
+                    question: "Si le taux d'actualisation augmente, que devient la VAN d'un projet classique ?",
+                    options: { a: "Elle augmente.", b: "Elle diminue.", c: "Elle reste inchangée.", d: "Elle devient égale au TRI." },
+                    reponse: "b",
+                    explication: "La VAN est une fonction décroissante du taux d'actualisation. Un taux plus élevé réduit davantage la valeur actuelle des flux futurs, donc la VAN baisse."
+                },
+                {
+                    question: "Entre deux projets de tailles très différentes, quel critère est particulièrement utile pour mesurer l'efficacité du capital investi ?",
+                    options: { a: "La VAN", b: "Le Délai de Récupération", c: "L'Indice de Profitabilité", d: "Le Résultat Net" },
+                    reponse: "c",
+                    explication: "L'IP est un ratio qui mesure la valeur créée par euro investi. Il est donc très pertinent pour comparer l'efficacité de projets nécessitant des investissements de montants différents."
+                },
+                {
+                    question: "Le 'Taux d'Équivalence' entre deux projets est le taux d'actualisation pour lequel :",
+                    options: { a: "Les TRI des deux projets sont égaux.", b: "Les VAN des deux projets sont nulles.", c: "Les VAN des deux projets sont égales.", d: "Les délais de récupération sont égaux." },
+                    reponse: "c",
+                    explication: "C'est le point d'intersection des courbes de VAN des deux projets. A ce taux, l'investisseur est indifférent entre les deux projets car ils génèrent la même richesse."
+                },
+                {
+                    question: "Quelle est la particularité d'une charge d'amortissement ?",
+                    options: { a: "C'est une charge qui n'entraîne pas de sortie de trésorerie.", b: "C'est une dépense qui n'est pas une charge.", c: "Elle est toujours égale à l'investissement.", d: "Elle n'est pas déductible fiscalement." },
+                    reponse: "a",
+                    explication: "L'amortissement est une charge 'calculée' ou 'non décaissée'. Elle réduit le résultat imposable mais ne correspond pas à un décaissement d'argent réel."
+                },
+                {
+                    question: "Le Prix de Revient Actualisé est un critère particulièrement adapté pour :",
+                    options: { a: "Les projets de haute technologie.", b: "Les projets commerciaux à forte rentabilité.", c: "Les projets de service public où l'on cherche à minimiser le coût.", d: "Les investissements financiers." },
+                    reponse: "c",
+                    explication: "Il est utilisé pour calculer un coût unitaire (ex: coût du m³ d'eau, du km d'autoroute) quand l'objectif est de fournir un service au moindre coût, et non de maximiser un profit."
+                },
+                {
+                    question: "Si l'IP d'un projet est de 1,2, cela signifie que :",
+                    options: { a: "Le projet crée une valeur actuelle de 1,2€.", b: "Le projet crée une valeur actuelle de 0,20€ pour chaque euro investi.", c: "Le projet a une rentabilité de 120%.", d: "Le projet est 1,2 fois plus grand qu'un autre." },
+                    reponse: "b",
+                    explication: "IP = 1 + (VAN/Io). Si IP = 1,2, alors 1,2 = 1 + (VAN/Io), donc VAN/Io = 0,2. Cela signifie que la VAN représente 20% de l'investissement initial."
+                },
+                {
+                    question: "Un taux semestriel de 3% est un taux :",
+                    options: { a: "Proportionnel au taux annuel de 6%.", b: "Équivalent au taux annuel de 6%.", c: "Inférieur au taux mensuel de 1%.", d: "Nominal." },
+                    reponse: "a",
+                    explication: "Un taux est proportionnel s'il est calculé simplement en divisant ou multipliant. 6% / 2 = 3%. Le taux équivalent serait (1,06)^(1/2) - 1, soit environ 2,96%."
+                },
+                {
+                    question: "L'actualisation permet de rendre les flux de trésorerie...",
+                    options: { a: "...plus grands.", b: "...comparables entre eux quelle que soit leur date.", c: "...plus faciles à additionner.", d: "...plus risqués." },
+                    reponse: "b",
+                    explication: "En ramenant tous les flux à leur valeur équivalente à une date unique (la date 0), l'actualisation les rend comparables et additionnables."
+                },
+                {
+                    question: "Dans le calcul de la VAN avec impôt, pourquoi réintègre-t-on la Dotation aux Amortissements ?",
+                    options: { a: "Parce qu'elle augmente le bénéfice.", b: "Parce que c'est une recette.", c: "Parce qu'elle a été déduite pour le calcul de l'impôt mais ne correspond pas à une sortie de trésorerie.", d: "Parce qu'elle représente l'investissement." },
+                    reponse: "c",
+                    explication: "L'amortissement génère une économie d'impôt mais n'est pas un décaissement. Après avoir calculé l'impôt, on doit l'annuler en le rajoutant pour retrouver le flux de trésorerie réel."
+                },
+                {
+                    question: "Un conflit entre les critères de la VAN et du TRI peut apparaître quand on compare des projets...",
+                    options: { a: "...de même durée et de même taille.", b: "...qui sont tous les deux non rentables.", c: "...de durées ou de tailles (investissements initiaux) différentes.", d: "...qui ont le même Délai de Récupération." },
+                    reponse: "c",
+                    explication: "Le conflit survient souvent car la VAN favorise les grands projets (plus de richesse absolue) tandis que le TRI peut favoriser des petits projets très rentables (meilleur taux)."
+                },
+                {
+                    question: "Que représente le coût du capital (ou taux d'actualisation) dans la décision d'investissement ?",
+                    options: { a: "Le montant total de l'investissement.", b: "Le rendement minimum exigé par les apporteurs de fonds.", c: "Le bénéfice attendu du projet.", d: "Le montant des impôts à payer." },
+                    reponse: "b",
+                    explication: "C'est le seuil de rentabilité. Le projet doit générer un rendement au moins égal à ce que coûte son financement ou à ce que rapporterait un placement alternatif."
+                },
+                {
+                    question: "La formule CFk = Rk - Dk - Ik + VR s'applique :",
+                    options: { a: "Pour toutes les années du projet.", b: "Uniquement pour la première année.", c: "Uniquement pour la dernière année du projet.", d: "Uniquement si le projet n'est pas rentable." },
+                    reponse: "c",
+                    explication: "La Valeur Résiduelle (VR) n'est encaissée qu'à la fin du projet, lors de la revente des actifs. Elle n'intervient donc que dans le calcul du cash-flow de la dernière année."
+                },
+                {
+                    question: "Si la VAN d'un projet est nulle (VAN = 0), cela signifie que le TRI du projet est...",
+                    options: { a: "...égal au taux d'actualisation utilisé.", b: "...supérieur au taux d'actualisation.", c: "...inférieur au taux d'actualisation.", d: "...également nul." },
+                    reponse: "a",
+                    explication: "Par définition, le TRI est le taux qui annule la VAN. Donc, si la VAN calculée avec un taux 'i' est nulle, alors ce taux 'i' est précisément le TRI."
+                },
+                {
+                    question: "Lequel de ces éléments n'est PAS une dépense d'exploitation ?",
+                    options: { a: "L'achat des matières premières.", b: "Les salaires du personnel de production.", c: "L'achat initial d'une machine.", d: "La facture d'électricité de l'usine." },
+                    reponse: "c",
+                    explication: "L'achat initial d'une machine est une dépense d'investissement (Ik), tandis que les autres sont des dépenses de fonctionnement (Dk)."
+                },
+                {
+                    question: "Si un projet a une VAN de -10 000€, son Indice de Profitabilité sera :",
+                    options: { a: "Supérieur à 1", b: "Égal à 1", c: "Inférieur à 1", d: "Égal à -10 000" },
+                    reponse: "c",
+                    explication: "Une VAN négative signifie que la valeur actuelle des revenus est inférieure à l'investissement. Le ratio (IP) sera donc mathématiquement inférieur à 1."
+                },
+                {
+                    question: "Quelle est la principale force du critère de la VAN par rapport aux autres ?",
+                    options: { a: "Il est plus facile à calculer que le TRI.", b: "Il mesure directement la création de richesse en unités monétaires (euros, FCFA...).", c: "Il favorise toujours les projets à court terme.", d: "Il ne dépend pas d'un taux d'actualisation." },
+                    reponse: "b",
+                    explication: "La VAN donne un résultat concret et directement interprétable : 'Ce projet va créer X euros de richesse'. C'est son avantage majeur sur les autres critères qui sont des taux ou des ratios."
+                }
+            ]
+        },
+        
         // Vous pourrez ajouter 'M05', etc. ici
      
     };
@@ -2351,6 +2784,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialisation au chargement de la page ---
     populateDropdown();
 });
+
 
 
 
